@@ -1,0 +1,10 @@
+<span>Footer menu</span>
+<ul>
+  {{ range .Site.Menus.footer }}
+  <li{{ if or ($.IsMenuCurrent "footer" .) ($.HasMenuCurrent "footer" .) }} class="active" {{ end }}>
+    {{ if .URL }}<a href="{{ .URL }}" title="{{ .Title }}">{{ else }}<span>{{ end -}}
+        {{ .Name }}
+        {{- if .URL }}</a>{{ else }}</span>{{ end }}
+    </li>
+    {{ end }}
+</ul>

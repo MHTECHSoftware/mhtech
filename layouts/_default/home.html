@@ -1,0 +1,8 @@
+{{ define "head_extra" }}
+{{/* The following line ensures the _redirects file is generated */}}
+{{- $redirects := (resources.ExecuteAsTemplate "_redirects" . (resources.Get "_redirects")).Permalink -}}
+
+<script>if (window.location.hash.indexOf('token') > -1) window.location.href = window.location.origin + '/admin/' + window.location.hash;</script>
+{{ end }}
+
+{{ define "main" }}{{ .Content }}{{ end }}

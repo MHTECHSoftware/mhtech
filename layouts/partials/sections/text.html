@@ -1,0 +1,8 @@
+<section class="{{ .type }}">
+  {{ if not .hide_section_name }}{{ with .section_name -}}
+  <h2>{{ . }}</h2>
+  {{- end }}{{ end }}
+  <div>
+    {{ page.RenderString (dict "display" "block") .content }}
+  </div>
+</section>

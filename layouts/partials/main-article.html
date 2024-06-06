@@ -1,0 +1,3 @@
+{{- range .Params.sections }}
+{{ partial (printf "sections/%s" .type) . }}
+{{ end -}}

@@ -1,0 +1,10 @@
+{{- range site.Data.redirects.redirects -}}
+  {{- .from }} {{ .to }} 301 {{- print "\n" -}}
+{{- end -}}
+{{- range site.AllPages -}}
+  {{- $url := .RelPermalink -}}
+  {{- range .Params.redirects -}}
+    {{- . }} {{ $url }} 301 {{- print "\n" -}}
+  {{- end -}}
+{{- end -}}
+/* /404.html 404

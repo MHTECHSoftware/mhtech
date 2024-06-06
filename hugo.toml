@@ -1,3 +1,24 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://mhtech-preview.netlify.app'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+disableHugoGeneratorInject = true
+disableKinds = ['taxonomy']
+[markup.goldmark.renderer]
+unsafe = true
+[languages]
+  [languages.en]
+    contentDir = 'content'
+    disabled = false
+    languageCode = 'en-GB'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'MHTech'
+    weight = 1
+  [languages.nb]
+    contentDir = 'content'
+    disabled = false
+    languageCode = 'nb-NO'
+    languageDirection = 'ltr'
+    languageName = 'Norwegian Bokmål'
+    title = 'MHTech'
+    weight = 2

@@ -1,0 +1,14 @@
+{{- $destination := strings.TrimPrefix site.BaseURL .Destination }}
+{{- $title := .Title }}
+{{- with (site.GetPage $destination) }}
+{{- if not $title }}{{$title = .Title }}{{ end }}
+{{- $destination = .RelPermalink }}
+{{- else }}
+{{- with resources.GetMatch $destination }}
+{{- $destination = (resources.Fingerprint "md5" .).RelPermalink }}
+{{- end -}}
+{{- end -}}
+<a href="{{ $destination | safeURL }}" {{- with $title}} title="{{ . }}" {{- end }}{{- if or (strings.HasPrefix
+  .Destination "http" ) (strings.HasSuffix .Destination ".pdf" ) }} target="_blank" rel="noopener" {{- end }}>{{- .Text
+  | safeHTML -}}</a>
+{{- print "" -}}

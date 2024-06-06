@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+{{/* The following line ensures that all files in assets/i/ are copied to public/i/ on build */}}
+{{/* This is important mainly for previewing images in the CMS */}}
+{{- $imageLinks := slice }}{{ range resources.ByType "image" }}{{ $imageLinks = append .RelPermalink $imageLinks }}{{
+end -}}
+
+{{- $config := (resources.ExecuteAsTemplate "admin/config.yml" . (resources.Get "admin.yml")).Permalink -}}
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <title>{{ .Title }}</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    div[data-slate-editor=true] img[data-slate-object="inline"][src$="svg"] {
+      height: 1.2em;
+      width: auto;
+    }
+
+  </style>
+  <script>
+    function setupEditorComponents() {
+      var asideToHtml = function (obj) {
+        return '{{ print "{{" }}<aside side="' + obj.side + '">{{ print "}}" }}\n' + obj.content + '\n{{ print "{{" }}</aside>{{ print "}}" }}';
+      };
+      CMS.registerEditorComponent({
+        id: 'aside',
+        label: 'Aside',
+        fields: [{
+          name: 'side',
+          label: 'Side',
+          widget: 'select',
+          options: [
+            {label: 'Left', value: 'left'},
+            {label: 'Centre', value: 'center'},
+            {label: 'Right', value: 'right'}
+          ],
+          default: 'right'
+        }, {
+          name: 'content',
+          label: 'Content',
+          widget: 'markdown'
+        }],
+        pattern: /{{ print "{{" }}<aside side="(left|center|right)">{{ print "}}" }}\n([\s\S]*?)\n{{ print "{{" }}<\/aside>{{ print "}}" }}/,
+        fromBlock: function (match) {
+          return {
+            side: match[1],
+            content: match[2]
+          };
+        },
+        toBlock: asideToHtml,
+        toPreview: asideToHtml
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <script src="https://unpkg.com/decap-cms@^3.1.10/dist/decap-cms.js"></script>
+</body>
+
+</html>

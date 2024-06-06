@@ -1,0 +1,51 @@
+<!doctype html>
+{{- $p := .Page -}}
+<html lang="{{ .Language.Lang }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <title>{{ .Title }}</title>
+  {{- $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false) -}}
+  {{- $style := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | resources.ToCSS
+  $options | resources.Fingerprint "md5" -}}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css" media="all">
+  <meta property="og:title" content="{{ .Page.Title }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  {{ with .Params.meta.description -}}
+  <meta property="og:description" content="{{ . }}">
+  <meta name="description" content="{{ . }}">
+  {{- else -}}
+  <meta property="og:description" content="{{ .Summary }}">
+  <meta name="description" content="{{ .Summary }}">
+  {{- end }}
+  <meta property="og:type" content="{{ with .Params.meta.type }}.{{ else }}article{{ end }}">
+  <meta property="og:updated_time" content="{{ .Page.Lastmod.Unix }}">
+  <meta property="og:locale" content='{{ strings.Replace .Page.Language.LanguageCode "-" "_" }}'>
+  {{ $og := false -}}
+  {{- with .Params.meta.image }}{{ $og = resources.GetMatch . }}{{ end -}}
+  {{- if $og }}
+  <meta property="og:image" itemprop="image" content="{{ ($og.Fill " 1000x750 Smart" | resources.Fingerprint "md5"
+    ).Permalink }}">{{- end }}
+  {{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">{{ end }}
+  {{ block "head_extra" . -}}
+  {{- with .Params.head_extra }}.{{ end -}}
+  {{- end }}
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+  <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  <!-- <meta name="msapplication-TileColor" content="{{ .Site.Data.design.colors.primary }}"> -->
+  <!-- <meta name="theme-color" content="{{ .Site.Data.design.colors.primary }}"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ .Site.Data.design.colors.primary }}"> -->
+</head>
+
+<body class="{{ replace .Page.Type " -" " " }}">
+  {{ partial "nav" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer" . }}
+</body>
+
+</html>

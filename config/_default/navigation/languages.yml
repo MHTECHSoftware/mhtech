@@ -1,0 +1,40 @@
+en:
+  menus:
+    main:
+      - name: Home
+        url: /
+      - name: Sectors
+        url: /sectors
+      - name: Services
+        url: /services
+      - name: Products
+        url: /products
+      - name: About
+        url: /about
+      - name: Email us
+        url: mailto:kontakt@mhtech.no
+    footer:
+      - name: Privacy Policy
+        url: /privacy-policy
+      - name: LinkedIn
+        url: https://www.linkedin.com/company/mhtech-as
+nb:
+  menus:
+    main:
+      - name: Hjem
+        url: /nb/
+      - name: Sektorer
+        url: /nb/sektorer
+      - name: Tjenester
+        url: /nb/tjenester
+      - name: Produkter
+        url: /nb/produkter
+      - name: Om
+        url: /nb/om
+      - name: kontakt@mhtech.no
+        url: mailto:kontakt@mhtech.no
+    footer:
+      - name: Personvernerklæring
+        url: /nb/personvernerklæring
+      - name: LinkedIn
+        url: https://www.linkedin.com/company/mhtech-as

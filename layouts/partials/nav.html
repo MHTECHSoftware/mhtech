@@ -1,0 +1,21 @@
+<span>Main menu</span>
+<ul>
+  {{ range .Site.Menus.main }}
+  <li{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active" {{ end }}>
+    {{ if .URL }}<a href="{{ .URL }}" title="{{ .Title }}">{{ else }}<span>{{ end -}}
+        {{ .Name }}
+        {{- if .URL }}</a>{{ else }}</span>{{ end }}
+    </li>
+    {{ end }}
+</ul>
+{{ with .Translations }}
+<span>Translations of this page</span>
+<ul>
+  {{ range . }}
+  <li>
+    <a href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">{{ .LinkTitle }} ({{ or .Language.LanguageName
+      .Language.Lang }})</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -1,0 +1,230 @@
+---
+backend:
+{{- if eq hugo.Environment "development" }}
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+{{- else }}
+  name: git-gateway
+  branch: main
+{{- end }}
+site_url: "{{ .Site.BaseURL }}"
+media_folder: assets/images
+public_folder: /images/
+logo_url: {{ (resources.Get "icon.svg" | resources.Fingerprint "md5").RelPermalink }}
+i18n:
+  structure: multiple_folders
+  locales: [en, nb]
+  default_locale: en
+collections:
+  - name: pages
+    i18n:
+      structure: multiple_files
+      locales: [en, nb]
+      default_locale: en
+    label: Pages
+    identifier_field: languageKey
+    label_singular: Page
+    folder: content
+    create: true
+    format: frontmatter
+    editor: { preview: false }
+    fields:
+      - label: Page ID
+        name: languageKey
+        widget: string
+        i18n: duplicate
+        hint: 'Admin only: a key to make sure different translations are kept linked'
+      - label: Title
+        name: title
+        widget: string
+        i18n: true
+      - label: Sections
+        name: sections
+        label_singular: Section
+        widget: list
+        i18n: true
+        types:
+          - label: Short text
+            name: short-text
+            summary: '{{ print "{{section_name}}" }}'
+            fields:
+              - label: Section name
+                name: section_name
+                required: true
+                widget: string
+              - label: Hide section name?
+                name: hide_section_name
+                widget: boolean
+                default: true
+              - label: Image
+                name: image
+                widget: image
+              - label: Content
+                name: content
+                widget: markdown
+              - label: Layout
+                name: layout
+                widget: select
+                default: image_on_left
+                options:
+                  - { label: "Image on left", value: "image_on_left" }
+                  - { label: "Image on right", value: "image_on_right" }
+                hint: 'If you’ve provided just an image or just text, it will be centred'
+          - label: Long text
+            name: text
+            summary: '{{ print "{{section_name}}" }}'
+            fields:
+              - label: Section name
+                name: section_name
+                required: true
+                widget: string
+              - label: Hide section name?
+                name: hide_section_name
+                widget: boolean
+                default: true
+              - label: Content
+                name: content
+                widget: markdown
+          - label: Detail boxes
+            name: detail-boxes
+            summary: '{{ print "{{section_name}}" }}'
+            fields:
+              - label: Section name
+                name: section_name
+                required: true
+                widget: string
+              - label: Hide section name?
+                name: hide_section_name
+                widget: boolean
+                default: true
+              - label: Description
+                name: description
+                widget: markdown
+              - label: Description placement
+                name: layout
+                widget: select
+                default: description_on_left
+                options:
+                  - { label: "Description on left", value: "description_on_left" }
+                  - { label: "Description on right", value: "description_on_right" }
+                  - { label: "Description above", value: "description_above" }
+              - label: Box style
+                name: style
+                widget: select
+                default: alternating
+                options:
+                  - { label: "Alternating sides", value: "alternating" }
+                  - { label: "Slideshow", value: "slideshow" }
+                  - { label: "Left-aligned grid", value: "left-grid" }
+                  - { label: "Centred grid", value: "center-grid" }
+              - label: Smaller boxes?
+                name: smaller
+                widget: boolean
+                default: false
+              - label: Boxes
+                label_singular: Box
+                name: boxes
+                widget: list
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Blurb
+                    name: blurb
+                    widget: string
+                  - label: Link
+                    name: href
+                    widget: string
+          - label: Logo grid
+            name: logo-grid
+            summary: '{{ print "{{section_name}}" }}'
+            fields:
+              - label: Section name
+                name: section_name
+                required: true
+                widget: string
+              - label: Hide section name?
+                name: hide_section_name
+                widget: boolean
+                default: true
+              - label: Logos
+                label_singular: Logo
+                name: logos
+                widget: list
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Link
+                    name: href
+                    widget: string
+                    pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|mailto:.+@.+\..+)$', 'Should start / for internal links, http(s):// for external links, or mailto: for email addresses']
+                  - label: Image
+                    name: image
+                    widget: image
+                    media_folder: '/assets/logos/'
+      - label: Slug
+        name: slug
+        widget: string
+        required: true
+        pattern: ['^(<HOME>|[-a-zåøæ0-9]+)$', 'Can only contain lowercase letters, numbers and dashes']
+        i18n: true
+      - label: Keep as draft?
+        name: draft
+        widget: boolean
+        required: false
+        default: false
+        i18n: true
+        hint: Check this if you are not ready for the page to go live
+      - label: Redirects
+        label_singular: Redirect
+        name: redirects
+        widget: list
+        i18n: true
+        field:
+          name: from
+          label: From
+          hint: "Should start with a ‘/’"
+        summary: '{{ print "{{from}}" }}'
+  - label: Settings
+    name: settings
+    editor: { preview: false }
+    i18n:
+      structure: single_file
+      locales: [en, nb]
+      default_locale: en
+    files:
+      - label: Menus
+        name: menus
+        file: config/_default/navigation/languages.yml
+        i18n: true
+        fields:
+          - label: Menus
+            name: menus
+            widget: object
+            i18n: true
+            fields:
+              - label: Main
+                name: main
+                label_singular: Main menu item
+                widget: list
+                i18n: true
+                fields: &menuFields
+                  - label: Name
+                    name: name
+                    widget: string
+                    i18n: true
+                  - label: Link
+                    name: url
+                    widget: string
+                    i18n: true
+                    pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|mailto:.+@.+\..+)$', 'Should start / for internal links, http(s):// for external links, or mailto: for email addresses']
+              - label: Footer
+                name: footer
+                label_singular: Footer menu item
+                widget: list
+                i18n: true
+                fields: *menuFields
