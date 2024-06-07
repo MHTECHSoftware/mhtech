@@ -2,3 +2,15 @@
 {{- range .AlternativeOutputFormats }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
 {{ end }}
+{{- range .Page.Translations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+{{- end -}}
+{{ with .Page.NextInSection -}}
+<link rel="next" href="{{ .Permalink }}" />
+{{- end }}
+{{ with .Page.NextInSection -}}
+<link rel="next" href="{{ .Permalink }}" />
+{{- end }}
+{{ with .Page.PrevInSection -}}
+<link rel="prev" href="{{ .Permalink }}" />
+{{- end }}
