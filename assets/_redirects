@@ -10,6 +10,8 @@
 / /nb/ 303 Language=nb
 / /nb/ 303 Language=nn
 / /en/ 303
-/en/* /en/404.html 404
-/nb/* /nb/404.html 404
+/en/404/ /en/404/ 404
+/nb/404/ /nb/404/ 404
+/en/* /en/404/ 404
+/nb/* /nb/404/ 404
 /* /en/404.html 404
