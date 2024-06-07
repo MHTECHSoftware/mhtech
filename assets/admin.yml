@@ -358,3 +358,26 @@ collections:
             required: false
             pattern: ['^G-', 'Starts ‘G-’']
             i18n: duplicate
+      - label: Redirects
+        name: redirects
+        file: data/redirects.yml
+        fields:
+          - label: Redirects
+            label_singular: Redirect
+            name: redirects
+            widget: list
+            summary: '{{ print "{{from}} → {{to}}" }}'
+            fields:
+              - label: From
+                name: from
+                widget: string
+                default: "/"
+                pattern:
+                  - '^/'
+                  - 'Should start with a ‘/’'
+              - label: To
+                name: to
+                widget: string
+                pattern: 
+                  - '^(https?://|/)'
+                  - 'Should either start with a ‘/’ for this site, or ‘https://’ for another site'
