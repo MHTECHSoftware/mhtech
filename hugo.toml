@@ -1,6 +1,6 @@
 baseURL = 'https://mhtech-preview.netlify.app'
 defaultContentLanguage = 'en'
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 disableHugoGeneratorInject = true
 disableKinds = ['taxonomy']
 [markup.goldmark.renderer]
