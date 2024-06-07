@@ -41,7 +41,7 @@
   {{- end }}
 </head>
 
-<body class="{{ replace .Page.Type " -" " " }}">
+<body class="{{ replace .Page.Type '-' ' ' }}-type">
   {{ partial "header" . }}
   <main id="site-main">
     {{ block "main" . }}{{ end }}
