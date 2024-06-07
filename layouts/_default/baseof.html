@@ -8,9 +8,9 @@
   {{ partial "stylesheet" . }}
   {{ partial "opengraph" . }}
   {{ partial "head-links" . }}
-  {{ with .Site.Data.code.en.ga }}{{ partial "google-analytics" . }}{{ end }}
-  {{- $siteCode := index .Site.Data.code .Page.Language.Lang }}
-  {{- with $siteCode.head_extra }}{{.}}{{ end }}
+  {{- with .Site.Data.global_code.head_extra }}{{.}}{{ end }}
+  {{- $code := index .Site.Data.code .Page.Language.Lang }}
+  {{- with $code.head_extra }}{{.}}{{ end }}
   {{ block "head_extra" . -}}
   {{- with .Params.head_extra }}{{.}}{{ end }}
   {{- end }}
@@ -24,7 +24,8 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer" . }}
-  {{- with $siteCode.body_extra }}{{.}}{{ end }}
+  {{- with .Site.Data.global_code.body_extra }}{{.}}{{ end }}
+  {{- with $code.body_extra }}{{.}}{{ end }}
   {{ block "body_extra" . -}}
   {{- with .Params.body_extra }}{{.}}{{ end -}}
   {{- end }}
