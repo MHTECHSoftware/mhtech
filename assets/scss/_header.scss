@@ -16,11 +16,18 @@ $headerBg: $white;
     @include wrapper($hPadding: $headerPadding);
   }
 
-  .logo img {
-    height: $headerHeight;
-    width: auto;
-  }
+  .logo {
+    line-height: 1;
 
+    a {
+      display: block;
+    }
+
+    img {
+      height: $headerHeight;
+      width: auto;
+    }
+  }
 }
 
 @media #{$firstBreakpointStr} {
