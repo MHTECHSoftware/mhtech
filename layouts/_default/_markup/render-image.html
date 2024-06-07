@@ -1,12 +1,13 @@
 {{- $src := strings.TrimPrefix site.BaseURL .Destination }}
 {{- $media := "external-image" -}}
 {{- if not (hasPrefix .Destination "http") -}}
-  {{- $img := resources.GetMatch .Destination }}
-  {{- $media = $img.MediaType.SubType -}}
-    {{- if not (or (eq $media "webp") (eq $media "svg")) -}}
-      {{- $img = $img.Fit "2000x2000 webp" -}}
-    {{- end -}}
-  {{- $src = ($img | resources.Fingerprint "md5").RelPermalink -}}
+{{- $img := resources.GetMatch .Destination }}
+{{- $media = $img.MediaType.SubType -}}
+{{- if not (or (eq $media "webp") (eq $media "svg")) -}}
+{{- $img = $img.Fit "2000x2000 webp" -}}
 {{- end -}}
-<span class="md-image {{ $media }}"><img src="{{ $src }}" alt="{{ .Text }}" {{- with .Title}} title="{{ . }}" {{- end }}></span>
+{{- $src = ($img | resources.Fingerprint "md5").RelPermalink -}}
+{{- end -}}
+<span class="md-image {{ $media }}"><img src="{{ $src }}" alt="{{ .Text }}" {{- with .Title}} title="{{ . }}" {{- end
+    }}></span>
 {{- print "" -}}

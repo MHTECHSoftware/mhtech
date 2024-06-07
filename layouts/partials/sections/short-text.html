@@ -4,9 +4,14 @@
   {{- end }}{{ end }}
   <div {{- if and (and .content .image) (eq .layout "image_on_right" ) }} class="image-on-right" {{- end }}>
     {{- with .image -}}
-    {{ $image := resources.GetMatch . }}
+    {{- $img := resources.GetMatch . }}
+    {{- $media := $img.MediaType.SubType -}}
+    {{- if not (eq $media "svg") -}}
+    {{- $img = $img.Fit "1000x1000 webp" -}}
+    {{- end -}}
+    {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
     <div class="image">
-      <img src="{{ $image.RelPermalink }}">
+      <img src="{{ $src }}">
     </div>
     {{ end -}}
     {{- with .content -}}

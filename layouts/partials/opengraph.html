@@ -14,7 +14,7 @@
 {{ $isImage := false }}
 {{- with .Params.meta.image }}
 {{- with resources.GetMatch . }}
-{{- with (.Fill " 1000x750 Smart" | resources.Fingerprint "md5") }}
+{{- with (.Fill "1000x750 Smart" | resources.Fingerprint "md5") }}
 {{ $isImage = true }}
 <meta property="og:image" itemprop="image" content="{{ .Permalink }}">
 <meta name="twitter:image" content="{{ .Permalink }}">

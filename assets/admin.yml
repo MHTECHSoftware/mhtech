@@ -145,13 +145,17 @@ collections:
                     widget: image
                   - label: Title
                     name: title
+                    required: false
                     widget: string
                   - label: Blurb
                     name: blurb
+                    required: false
                     widget: string
                   - label: Link
+                    required: false
                     name: href
                     widget: string
+                    pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|mailto:.+@.+\..+)$', 'Should start / for internal links, http(s):// for external links, or mailto: for email addresses']
           - label: Logo grid
             name: logo-grid
             summary: '{{ print "{{section_name}}" }}'
@@ -182,6 +186,7 @@ collections:
                     name: image
                     widget: image
                     media_folder: '/assets/logos/'
+                    public_folder: '/logos/'
       - label: Slug
         name: slug
         widget: string

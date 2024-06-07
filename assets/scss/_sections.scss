@@ -1,0 +1,12 @@
+section.section {
+
+  >h2,
+  >div.wrapper {
+    @include wrapper();
+  }
+}
+
+@import "text-section";
+@import "short-text-section";
+@import "detail-boxes-section";
+@import "logo-grid-section";

@@ -2,4 +2,31 @@
   {{ if not .hide_section_name }}{{ with .section_name -}}
   <h2>{{ . }}</h2>
   {{- end }}{{ end }}
+  <div class="wrapper">
+    <ul>
+      {{ range .logos }}
+      {{- $src := false }}
+      {{- with .image -}}
+      {{- $img := resources.GetMatch . }}
+      {{- $media := $img.MediaType.SubType -}}
+      {{- if not (eq $media "svg") -}}
+      {{- $img = $img.Fit "200x200 webp" -}}
+      {{- end -}}
+      {{- $src = ($img | resources.Fingerprint "md5").RelPermalink -}}
+      {{- end -}}
+      <li>
+        {{ with .href }}
+        {{ $blank := or (strings.HasPrefix . "http" ) (strings.HasSuffix . ".pdf" ) }}
+        <a href="{{ . | safeURL }}" {{- if $blank }} target="_blank" {{- end }}>
+          {{ end }}
+          {{ if $src }}
+          <img src="{{ $src }}" alt="{{ .name }}">
+          {{ else }}
+          {{ .name }}
+          {{ end }}
+          {{ with .href }}</a>{{ end }}
+      </li>
+      {{ end -}}
+    </ul>
+  </div>
 </section>
