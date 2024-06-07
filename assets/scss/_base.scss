@@ -19,3 +19,7 @@ body {
     font-size: $fontSizeSecond;
   }
 }
+
+p:first-child {
+  margin-top: 0;
+}

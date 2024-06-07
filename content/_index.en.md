@@ -25,6 +25,21 @@ sections:
       - name: Innovation Norway
         href: https://en.innovasjonnorge.no
         image: /logos/innovation-norway.png
+      - name: Viken Technology Cluster
+        href: https://vikenklynge.no/english/
+        image: /logos/viken-technology-cluster.webp
+      - name: SAMS Norway
+        href: https://sams-norway.no
+        image: /logos/sams-norway.png
+      - name: Cluster for Applied AI
+        href: https://caai.no/en/
+        image: /logos/cluster-for-applied-ai.png
+      - name: NCE Smart Energy Markets
+        href: https://ncesmartenergymarkets.no/en/
+        image: /logos/nce-smart-energy-markets.webp
+      - name: Nordic Edge
+        href: https://nordicedge.org/
+        image: /logos/nordic-edge.png
 slug: <HOME>
 menu_title: Home
 meta:

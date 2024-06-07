@@ -1,8 +1,19 @@
 section.section {
+  position: relative;
 
-  >h2,
+
+  >h2 {
+    @include wrapper($hPadding: 0);
+    margin-bottom: 0;
+  }
+
   >div.wrapper {
-    @include wrapper();
+    @include wrapper($hPadding: $horizontalSectionPadding);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

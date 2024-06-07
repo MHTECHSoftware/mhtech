@@ -10,7 +10,7 @@
       {{- $img := resources.GetMatch . }}
       {{- $media := $img.MediaType.SubType -}}
       {{- if not (eq $media "svg") -}}
-      {{- $img = $img.Fit "200x200 webp" -}}
+      {{- $img = $img.Resize "x100 q75 webp" -}}
       {{- end -}}
       {{- $src = ($img | resources.Fingerprint "md5").RelPermalink -}}
       {{- end -}}

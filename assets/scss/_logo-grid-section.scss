@@ -8,10 +8,12 @@ section.logo-grid.section {
 
     li {
       padding: 0.7em;
+      height: 2.5em;
+      position: relative;
     }
 
     img {
-      height: 3em;
+      height: 100%;
       width: auto;
     }
   }

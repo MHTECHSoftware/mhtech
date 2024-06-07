@@ -7,7 +7,7 @@
     {{- $img := resources.GetMatch . }}
     {{- $media := $img.MediaType.SubType -}}
     {{- if not (eq $media "svg") -}}
-    {{- $img = $img.Fit "1000x1000 webp" -}}
+    {{- $img = $img.Fit "1000x1000 q75 webp" -}}
     {{- end -}}
     {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
     <div class="image">
