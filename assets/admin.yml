@@ -201,6 +201,37 @@ collections:
         required: false
         i18n: true
         hint: Uses page title if left blank
+      - label: OpenGraph/Social
+        name: meta
+        i18n: true
+        widget: object
+        required: false
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+            i18n: true
+            hint: Leave blank to use page title
+          - label: Description
+            name: description
+            widget: string
+            required: false
+            i18n: true
+            hint: Recommended
+          - label: Type
+            name: type
+            widget: string
+            required: false
+            default: article
+            i18n: true
+            hint: Probably ‘article’ or ‘website’. Defaults to ‘article’ if left blank
+          - label: Image
+            name: image
+            widget: image
+            required: false
+            i18n: true
+            hint: Recommended
       - label: Code for <head>
         name: head_extra
         required: false

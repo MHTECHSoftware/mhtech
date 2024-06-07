@@ -1,7 +1,9 @@
 ---
-title: MHTech
 languageKey: Home page
-slug: '<HOME>'
-menu_title: Home
+title: MHTech
 hide_title: true
+slug: <HOME>
+menu_title: Home
+meta:
+  type: website
 ---

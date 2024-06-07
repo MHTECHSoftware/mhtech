@@ -1,17 +1,24 @@
-  <meta property="og:title" content="{{ .Page.Title }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
-  {{ with .Params.meta.description -}}
-  <meta property="og:description" content="{{ . }}">
-  <meta name="description" content="{{ . }}">
-  {{- else -}}
-  <meta property="og:description" content="{{ .Summary }}">
-  <meta name="description" content="{{ .Summary }}">
-  {{- end }}
-  <meta property="og:type" content="{{ with .Params.meta.type }}.{{ else }}article{{ end }}">
-  <meta property="og:updated_time" content="{{ .Page.Lastmod.Unix }}">
-  <meta property="og:locale" content='{{ strings.Replace .Page.Language.LanguageCode "-" "_" }}'>
-  {{ $og := false -}}
-  {{- with .Params.meta.image }}{{ $og = resources.GetMatch . }}{{ end -}}
-  {{- if $og }}
-  <meta property="og:image" itemprop="image" content="{{ ($og.Fill " 1000x750 Smart" | resources.Fingerprint "md5"
-    ).Permalink }}">{{- end }}
+{{- with or .Params.meta.title .Title site.Title site.Params.title | plainify }}
+<meta property="og:title" content="{{ . }}">
+<meta name="twitter:title" content="{{ . }}">
+{{ end }}
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ $description := default .Summary .Params.meta.description }}
+{{ $description = $description | plainify | htmlUnescape | chomp }}
+<meta property="og:description" content="{{ $description }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="description" content="{{ $description }}">
+<meta property="og:type" content='{{ default "article" .Params.meta.type }}'>
+<meta property="og:updated_time" content="{{ .Page.Lastmod.Unix }}">
+<meta property="og:locale" content='{{ strings.Replace .Page.Language.LanguageCode "-" "_" }}'>
+{{ $isImage := false }}
+{{- with .Params.meta.image }}
+{{- with resources.GetMatch . }}
+{{- with (.Fill " 1000x750 Smart" | resources.Fingerprint "md5") }}
+{{ $isImage = true }}
+<meta property="og:image" itemprop="image" content="{{ .Permalink }}">
+<meta name="twitter:image" content="{{ .Permalink }}">
+{{- end -}}
+{{- end -}}
+{{- end -}}
+<meta name="twitter:card" content='{{ cond $isImage "summary_large_image" "summary" }}'>
