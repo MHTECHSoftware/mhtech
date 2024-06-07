@@ -2,10 +2,11 @@
 
 
 $lightGreen: scale-color($green, $lightness: $lightGreenLightness);
-$preFirstBreakpointStr: "(max-width: #{$firstBreakpoint - 1})";
+$beforeFirstBreakpointStr: "(max-width: #{$firstBreakpoint - 1})";
 $firstBreakpointStr: "(min-width: #{$firstBreakpoint})";
 $secondBreakpointStr: "(min-width: #{$secondBreakpoint})";
 $fontSizeSecond: $secondBreakpoint * ($fontSizeFirst/100vw);
+$headerHeightWithPadding: #{$headerHeight+2*$headerPadding};
 
 @import "normalize";
 @import "mixins";

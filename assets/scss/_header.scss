@@ -1,5 +1,4 @@
 $headerBg: $white;
-$menuIconSize: $headerHeight - 2*$horizontalPadding;
 
 #site-header {
   z-index: 10;
@@ -7,29 +6,44 @@ $menuIconSize: $headerHeight - 2*$horizontalPadding;
   top: 0;
   right: 0;
   left: 0;
-  height: $headerHeight;
   background-color: $headerBg;
 
   >div {
     display: flex;
     justify-content: space-between;
-    @include wrapper();
+    align-items: center;
+    height: $headerHeightWithPadding;
+    @include wrapper($hPadding: $headerPadding);
   }
 
   .logo img {
-    height: 100%;
+    height: $headerHeight;
     width: auto;
   }
 
-  .site.menu {
-    margin-bottom: 2rem;
+}
 
-    li {
-      text-align: center;
-      padding: 0.5em;
+@media #{$firstBreakpointStr} {
+  #main-menu {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+
+    .site.menu {
+      display: flex;
+      margin-right: 2em;
+
+      li {
+        &:not(:first-child) {
+          margin-left: 1em;
+        }
+      }
+    }
+
+    .languages.menu img {
+      height: 1em;
     }
   }
-
 }
 
 #main-menu-visible {
@@ -37,70 +51,82 @@ $menuIconSize: $headerHeight - 2*$horizontalPadding;
   visibility: hidden;
 }
 
-#main-menu-icon {
-  display: block;
-  width: $menuIconSize;
-  height: $menuIconSize;
-  cursor: pointer;
-  position: relative;
-  $lineWidth: $menuIconSize/7;
-  -moz-user-select: none;
-  user-select: none;
-
-  &:before,
-  &:after {
-    background-color: $black;
-    content: '';
+@media #{$beforeFirstBreakpointStr} {
+  #main-menu-icon {
     display: block;
-    width: $menuIconSize;
-    height: $lineWidth;
-    position: absolute;
-    left: 0;
-    @include transition(top bottom transform);
-  }
+    width: $headerHeight;
+    height: $headerHeight;
+    cursor: pointer;
+    position: relative;
+    $lineWidth: $headerHeight/7;
+    -moz-user-select: none;
+    user-select: none;
 
-  &:before {
-    margin-top: $lineWidth/-2;
-    top: 25%;
-  }
+    &:before,
+    &:after {
+      background-color: $black;
+      content: '';
+      display: block;
+      width: $headerHeight;
+      height: $lineWidth;
+      position: absolute;
+      left: 0;
+      @include transition(top bottom transform);
+    }
 
-  &:after {
-    bottom: 25%;
-    margin-bottom: $lineWidth/-2;
-  }
-
-  #main-menu-visible:checked+& {
     &:before {
-      top: 50%;
-      transform: rotate(135deg)
+      margin-top: $lineWidth/-2;
+      top: 25%;
     }
 
     &:after {
-      bottom: 50%;
-      transform: rotate(-135deg)
+      bottom: 25%;
+      margin-bottom: $lineWidth/-2;
+    }
+
+    #main-menu-visible:checked+& {
+      &:before {
+        top: 50%;
+        transform: rotate(135deg);
+      }
+
+      &:after {
+        bottom: 50%;
+        transform: rotate(-135deg);
+      }
     }
   }
-}
 
-#main-menu {
-  position: fixed;
-  z-index: -1;
-  @include transition(top);
-  top: -100vh;
+  #main-menu {
+    position: fixed;
+    z-index: -1;
+    @include transition(top);
+    top: -100vh;
 
-  #main-menu-visible:checked~& {
-    top: 0;
+    #main-menu-visible:checked~& {
+      top: 0;
+    }
+
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: $mainMenuBg;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: $headerHeightWithPadding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .site.menu {
+      margin-bottom: 2rem;
+
+      li {
+        text-align: center;
+        padding: 0.5em;
+      }
+    }
+
   }
-
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  background-color: $mainMenuBg;
-  height: 100vh;
-  box-sizing: border-box;
-  padding-top: $headerHeight;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }

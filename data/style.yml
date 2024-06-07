@@ -13,9 +13,10 @@ secondBreakpoint: 1200px
 fontSize: 4vw
 fontSizeFirst: 1.8vw
 lineHeight: 1.5
-headerHeight: 4rem
+headerHeight: 2rem
+headerPadding: 2rem
 verticalPadding: 1rem
 horizontalPadding: 1rem
-horizontalSectionPadding: 3rem;
+horizontalSectionPadding: 3rem
 ---
 

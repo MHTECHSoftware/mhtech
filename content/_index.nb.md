@@ -1,6 +1,7 @@
 ---
 languageKey: Home page
 title: MHTech
+hide_title: true
 sections:
   - type: logo-grid
     hide_section_name: false
