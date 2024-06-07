@@ -1,0 +1,21 @@
+:root {
+  --green: #{$green};
+  --white: #{$white};
+  --black: #{$black};
+  --lightGreen: #{$lightGreen};
+}
+
+body {
+  font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  line-height: $lineHeight;
+  background-color: $footerBg;
+  font-size: $fontSize;
+
+  @media #{$firstBreakpointStr} {
+    font-size: $fontSizeFirst;
+  }
+
+  @media #{$secondBreakpointStr} {
+    font-size: $fontSizeSecond;
+  }
+}

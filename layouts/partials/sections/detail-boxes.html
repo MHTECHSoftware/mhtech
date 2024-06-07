@@ -1,5 +1,5 @@
-<section class="{{ .type }}">
-  {{ with .section_name -}}
+<section class="{{ .type }} section">
+  {{ if not .hide_section_name }}{{ with .section_name -}}
   <h2>{{ . }}</h2>
-  {{- end }}
+  {{- end }}{{ end }}
 </section>

@@ -1,8 +1,8 @@
-<ul>
+<ul class="site menu">
   {{ range . -}}
   {{- if eq .type "page" -}}
   {{- with (index (where site.Pages ".Params.languageKey" .link) 0) -}}
-  <li><a href="{{ .RelPermalink }}">
+  <li><a href="{{ .RelPermalink }}" {{- if eq .RelPermalink page.RelPermalink }} class="current" {{ end }}>
       {{- default .Title .Params.menu_title -}}
     </a></li>
   {{- end -}}

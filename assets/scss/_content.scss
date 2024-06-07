@@ -1,0 +1,8 @@
+#site-main {
+  padding-top: $headerHeight;
+  background-color: $mainBg;
+
+  >h1 {
+    @include wrapper();
+  }
+}

@@ -38,6 +38,12 @@ collections:
         name: title
         widget: string
         i18n: true
+      - label: Hide title?
+        name: hide_title
+        widget: boolean
+        default: false
+        required: false
+        i18n: true
       - label: Sections
         name: sections
         label_singular: Section

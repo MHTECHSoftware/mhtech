@@ -1,0 +1,38 @@
+  ul.menu {
+    @include noBullets();
+
+    $b: 0.2em;
+
+    li a {
+      color: $green;
+      text-decoration: none;
+      border-bottom-width: $b;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
+      @include transition(border-color);
+
+      &.current {
+        color: $black;
+        border-bottom-color: $black;
+      }
+
+      &:hover {
+        border-bottom-color: $green;
+      }
+    }
+
+    &.languages {
+      display: flex;
+      $p: 0.4em;
+      padding: $p;
+
+      li:not(:first-child) {
+        margin-left: $p;
+      }
+
+      img {
+        height: $lineHeight*1em;
+        width: auto;
+      }
+    }
+  }

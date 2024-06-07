@@ -1,0 +1,21 @@
+#site-footer {
+  >div {
+    @include wrapper($vPadding: $verticalPadding, $hPadding: $horizontalSectionPadding);
+  }
+
+  ul.menu {
+    @media #{$firstBreakpointStr} {
+      display: flex;
+
+      li {
+        &:not(:first-child) {
+          margin-left: 2em;
+        }
+      }
+    }
+
+    li {
+      padding: 0.2em 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+---
+lightGrey: "#ccc"
+white: "#fff"
+black: "#000"
+green: "#689065"
+lightGreenLightness: 60%
+headerBg: "var(--white)"
+mainBg: "var(--white)"
+footerBg: "var(--lightGreen)"
+mainMenuBg: "var(--lightGreen)"
+firstBreakpoint: 700px
+secondBreakpoint: 1200px
+fontSize: 4vw
+fontSizeFirst: 1.8vw
+lineHeight: 1.5
+headerHeight: 4rem
+verticalPadding: 1rem
+horizontalPadding: 1rem
+horizontalSectionPadding: 3rem;
+---
+

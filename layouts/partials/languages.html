@@ -1,0 +1,17 @@
+<ul class="languages menu">
+  {{ range .Site.Sites -}}
+  {{- $flag := (resources.GetMatch (printf "%s.svg" .Language.LanguageCode) | resources.Fingerprint
+  "md5").RelPermalink
+  -}}
+  {{- if eq site.Language.LanguageCode .Language.LanguageCode -}}
+  <li><a class="current" href="{{ page.RelPermalink }}"><img src="{{ $flag }}"></a></li>
+  {{- else -}}
+  {{- $link := .Home.RelPermalink -}}
+  {{- $translation := where page.Translations ".Language.LanguageCode" .Language.LanguageCode -}}
+  {{- with index $translation 0 -}}
+  {{- $link = .RelPermalink -}}
+  {{- end -}}
+  <li><a href="{{ $link }}"><img src="{{ $flag }}"></a></li>
+  {{- end -}}
+  {{- end }}
+</ul>

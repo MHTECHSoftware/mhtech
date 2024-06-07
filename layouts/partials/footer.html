@@ -1,2 +1,5 @@
-<span>Footer menu</span>
-{{ partial "menu" (index .Site.Data.menus .Language.Lang).footer }}
+<footer id="site-footer">
+  <div>
+    {{ partial "menu" (index .Site.Data.menus .Language.Lang).footer }}
+  </div>
+</footer>

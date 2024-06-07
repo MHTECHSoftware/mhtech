@@ -1,0 +1,22 @@
+@mixin wrapper($width: $secondBreakpoint, $hPadding: $horizontalPadding, $vPadding: $verticalPadding) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $width;
+  padding-top: $hPadding;
+  padding-bottom: $hPadding;
+  padding-left: $vPadding;
+  padding-right: $vPadding;
+  box-sizing: border-box;
+}
+
+@mixin transition($what: all, $time: 0.1s, $fn: ease-in-out) {
+  transition-property: $what;
+  transition-duration: $time;
+  transition-timing-function: $fn;
+}
+
+@mixin noBullets() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,16 @@
+<header id="site-header">
+  <div>
+    <div class="logo">
+      <a href="{{ .Site.Home.RelPermalink }}">
+        {{- $logo := resources.GetMatch "logo.svg" | resources.Fingerprint "md5" -}}
+        <img src="{{ $logo.RelPermalink }}" title="{{ .Site.Title }}">
+      </a>
+    </div>
+    <input type="checkbox" id="main-menu-visible">
+    <label for="main-menu-visible" id="main-menu-icon"></label>
+    <nav id="main-menu">
+      {{ partial "menu" (index .Site.Data.menus .Language.Lang).main }}
+      {{ partial "languages" . }}
+    </nav>
+  </div>
+</header>
