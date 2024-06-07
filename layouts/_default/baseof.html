@@ -39,6 +39,7 @@
   {{ block "head_extra" . -}}
   {{- with .Params.head_extra }}.{{ end -}}
   {{- end }}
+  {{ partial "favicons" . }}
 </head>
 
 <body class="{{ replace .Page.Type '-' ' ' }}-type">
