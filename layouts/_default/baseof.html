@@ -8,8 +8,10 @@
   {{ partial "stylesheet" . }}
   {{ partial "opengraph" . }}
   {{ partial "head-links" . }}
+  {{- $siteCode := index .Site.Data.code .Page.Language.Lang }}
+  {{- with $siteCode.head_extra }}{{.}}{{ end }}
   {{ block "head_extra" . -}}
-  {{- with .Params.head_extra }}.{{ end -}}
+  {{- with .Params.head_extra }}{{.}}{{ end }}
   {{- end }}
   <script src="https://unpkg.com/@hotwired/turbo@^8.0.4/dist/turbo.es2017-esm.js" type="module" async></script>
   {{ partial "favicons" . }}
@@ -21,6 +23,10 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer" . }}
+  {{- with $siteCode.body_extra }}{{.}}{{ end }}
+  {{ block "body_extra" . -}}
+  {{- with .Params.body_extra }}{{.}}{{ end -}}
+  {{- end }}
 </body>
 
 </html>

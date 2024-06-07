@@ -3,6 +3,7 @@
 {{- $redirects := (resources.ExecuteAsTemplate "_redirects" . (resources.Get "_redirects")).Permalink -}}
 
 <script>if (window.location.hash.indexOf('token') > -1) window.location.href = window.location.origin + '/admin/' + window.location.hash;</script>
+{{- with .Params.head_extra }}{{.}}{{ end -}}
 {{ end }}
 
 {{ define "main" }}

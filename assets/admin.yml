@@ -199,7 +199,22 @@ collections:
         name: menu_title
         widget: string
         required: false
-        hint: 
+        i18n: true
+        hint: Uses page title if left blank
+      - label: Code for <head>
+        name: head_extra
+        required: false
+        widget: code
+        output_code_only: true
+        i18n: true
+        default_language: html
+      - label: Code for <body>
+        name: body_extra
+        required: false
+        widget: code
+        output_code_only: true
+        i18n: true
+        default_language: html
       - label: Redirects
         label_singular: Redirect
         name: redirects
@@ -284,3 +299,25 @@ collections:
             widget: list
             i18n: true
             types: *menuItemTypes
+      - label: Code
+        name: code
+        file: data/code.yml
+        i18n:
+          structure: single_file
+          locales: [en, nb]
+          default_locale: en
+        fields:
+          - label: Code for <head>
+            name: head_extra
+            widget: code
+            output_code_only: true
+            i18n: true
+            default_language: html
+            required: false
+          - label: Code for <body>
+            name: body_extra
+            widget: code
+            output_code_only: true
+            i18n: true
+            default_language: html
+            required: false
