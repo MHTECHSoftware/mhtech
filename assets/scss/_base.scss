@@ -23,3 +23,12 @@ body {
 p:first-child {
   margin-top: 0;
 }
+
+a {
+  @include transition(color);
+  color: $green;
+
+  &:hover {
+    color: $black;
+  }
+}

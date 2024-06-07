@@ -4,7 +4,6 @@
     $b: 0.2em;
 
     li a {
-      color: $green;
       text-decoration: none;
       border-bottom-width: $b;
       border-bottom-style: solid;
@@ -12,7 +11,6 @@
       @include transition(border-color);
 
       &.current {
-        color: $black;
         border-bottom-color: $black;
       }
 

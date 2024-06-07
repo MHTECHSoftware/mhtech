@@ -1,4 +1,6 @@
 #site-footer {
+  color: $footerFg;
+
   >div {
     @include wrapper($vPadding: $verticalPadding, $hPadding: $horizontalSectionPadding);
   }
@@ -6,16 +8,32 @@
   ul.menu {
     @media #{$firstBreakpointStr} {
       display: flex;
-
-      li {
-        &:not(:first-child) {
-          margin-left: 2em;
-        }
-      }
     }
 
     li {
-      padding: 0.2em 0;
+      @media #{$firstBreakpointStr} {
+        &:not(:first-child) {
+          margin-left: 2em;
+        }
+
+      }
+
+      @media #{$beforeFirstBreakpointStr} {
+        padding: 0.5em 0;
+      }
+
+      a {
+        padding: 0.2em 0;
+        color: $footerFg;
+
+        &.current {
+          border-color: $lightGreen;
+        }
+
+        &:hover {
+          border-color: $footerFg;
+        }
+      }
     }
   }
 }

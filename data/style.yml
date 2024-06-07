@@ -6,7 +6,8 @@ green: "#689065"
 lightGreenLightness: 60%
 headerBg: "var(--white)"
 mainBg: "var(--white)"
-footerBg: "var(--lightGreen)"
+footerBg: "var(--green)"
+footerFg: "var(--white)"
 mainMenuBg: "var(--lightGreen)"
 firstBreakpoint: 700px
 secondBreakpoint: 1200px
