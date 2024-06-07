@@ -2,4 +2,17 @@
   {{ if not .hide_section_name }}{{ with .section_name -}}
   <h2>{{ . }}</h2>
   {{- end }}{{ end }}
+  <div {{- if and (and .content .image) (eq .layout "image_on_right" ) }} class="image-on-right" {{- end }}>
+    {{- with .image -}}
+    {{ $image := resources.GetMatch . }}
+    <div class="image">
+      <img src="{{ $image.RelPermalink }}">
+    </div>
+    {{ end -}}
+    {{- with .content -}}
+    <div class="text">
+      {{ page.RenderString (dict "display" "block") . }}
+    </div>
+    {{- end }}
+  </div>
 </section>
