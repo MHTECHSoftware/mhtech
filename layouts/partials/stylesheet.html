@@ -1,0 +1,12 @@
+  {{- $options := dict
+  "targetPath" "style.css"
+  "outputStyle" "compressed"
+  "enableSourceMap" false
+  "vars" .Site.Data.style
+  -}}
+  {{- $style := resources.Get "scss/main.scss"
+  | resources.ToCSS $options
+  | resources.Minify
+  | resources.Fingerprint "md5"
+  -}}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css" media="all">

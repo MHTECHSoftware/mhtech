@@ -1,0 +1,17 @@
+  <meta property="og:title" content="{{ .Page.Title }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  {{ with .Params.meta.description -}}
+  <meta property="og:description" content="{{ . }}">
+  <meta name="description" content="{{ . }}">
+  {{- else -}}
+  <meta property="og:description" content="{{ .Summary }}">
+  <meta name="description" content="{{ .Summary }}">
+  {{- end }}
+  <meta property="og:type" content="{{ with .Params.meta.type }}.{{ else }}article{{ end }}">
+  <meta property="og:updated_time" content="{{ .Page.Lastmod.Unix }}">
+  <meta property="og:locale" content='{{ strings.Replace .Page.Language.LanguageCode "-" "_" }}'>
+  {{ $og := false -}}
+  {{- with .Params.meta.image }}{{ $og = resources.GetMatch . }}{{ end -}}
+  {{- if $og }}
+  <meta property="og:image" itemprop="image" content="{{ ($og.Fill " 1000x750 Smart" | resources.Fingerprint "md5"
+    ).Permalink }}">{{- end }}
