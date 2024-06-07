@@ -1,0 +1,44 @@
+en:
+  main:
+    - type: page
+      link: Home page
+    - type: page
+      link: Sectors
+    - type: page
+      link: Services
+    - type: page
+      link: Products
+    - type: page
+      link: About
+    - type: email
+      email_address: kontakt@mhtech.no
+  footer:
+    - type: page
+      link: Privacy policy
+    - type: email
+      email_address: kontakt@mhtech.no
+    - type: link
+      href: https://www.linkedin.com/company/mhtech-as
+      title: LinkedIn
+nb:
+  main:
+    - type: page
+      link: Home page
+    - type: page
+      link: Sectors
+    - type: page
+      link: Services
+    - type: page
+      link: Products
+    - type: page
+      link: About
+    - type: email
+      email_address: kontakt@mhtech.no
+  footer:
+    - type: page
+      link: Privacy policy
+    - type: email
+      email_address: kontakt@mhtech.no
+    - type: link
+      href: https://www.linkedin.com/company/mhtech-as
+      title: LinkedIn

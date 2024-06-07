@@ -1,21 +1,17 @@
 <span>Main menu</span>
+{{ partial "menu" (index .Site.Data.menus .Language.Lang).main }}
+<span>Languages</span>
 <ul>
-  {{ range .Site.Menus.main }}
-  <li{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="active" {{ end }}>
-    {{ if .URL }}<a href="{{ .URL }}" title="{{ .Title }}">{{ else }}<span>{{ end -}}
-        {{ .Name }}
-        {{- if .URL }}</a>{{ else }}</span>{{ end }}
-    </li>
-    {{ end }}
-</ul>
-{{ with .Translations }}
-<span>Translations of this page</span>
-<ul>
-  {{ range . }}
-  <li>
-    <a href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">{{ .LinkTitle }} ({{ or .Language.LanguageName
-      .Language.Lang }})</a>
-  </li>
+  {{ range .Site.Sites }}
+  {{ if eq site.Language.LanguageCode .Language.LanguageCode }}
+  <li>{{ .Language.LanguageName }}</li>
+  {{ else }}
+  {{ $link := .Home.RelPermalink }}
+  {{ $translation := where page.Translations ".Language.LanguageCode" .Language.LanguageCode }}
+  {{ with index $translation 0 }}
+  {{ $link = .RelPermalink }}
+  {{ end }}
+  <li><a href="{{ $link }}">{{ .Language.LanguageName }}</a></li>
+  {{ end }}
   {{ end }}
 </ul>
-{{ end }}

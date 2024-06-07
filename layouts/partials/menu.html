@@ -1,0 +1,19 @@
+<ul>
+  {{ range . -}}
+  {{- if eq .type "page" -}}
+  {{- with (index (where site.Pages ".Params.languageKey" .link) 0) -}}
+  <li><a href="{{ .RelPermalink }}">
+      {{- default .Title .Params.menu_title -}}
+    </a></li>
+  {{- end -}}
+  {{- else if eq .type "email" -}}
+  <li><a href="mailto:{{ .email_address }}{{ with .subject }}&subject={{ . }}{{ end }}">
+      {{- default .email_address .title -}}
+    </a></li>
+  {{- else if eq .type "link" -}}
+  <li><a href="{{ .href }}" target="_blank">
+      {{- .title -}}
+    </a></li>
+  {{- end -}}
+  {{- end }}
+</ul>

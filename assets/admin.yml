@@ -55,12 +55,15 @@ collections:
               - label: Hide section name?
                 name: hide_section_name
                 widget: boolean
+                required: false
                 default: true
               - label: Image
                 name: image
+                required: false
                 widget: image
               - label: Content
                 name: content
+                required: false
                 widget: markdown
               - label: Layout
                 name: layout
@@ -80,9 +83,11 @@ collections:
                 widget: string
               - label: Hide section name?
                 name: hide_section_name
+                required: false
                 widget: boolean
                 default: true
               - label: Content
+                required: false
                 name: content
                 widget: markdown
           - label: Detail boxes
@@ -96,9 +101,11 @@ collections:
               - label: Hide section name?
                 name: hide_section_name
                 widget: boolean
+                required: false
                 default: true
               - label: Description
                 name: description
+                required: false
                 widget: markdown
               - label: Description placement
                 name: layout
@@ -120,6 +127,7 @@ collections:
               - label: Smaller boxes?
                 name: smaller
                 widget: boolean
+                required: false
                 default: false
               - label: Boxes
                 label_singular: Box
@@ -148,6 +156,7 @@ collections:
                 widget: string
               - label: Hide section name?
                 name: hide_section_name
+                required: false
                 widget: boolean
                 default: true
               - label: Logos
@@ -160,6 +169,7 @@ collections:
                     widget: string
                   - label: Link
                     name: href
+                    required: false
                     widget: string
                     pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|mailto:.+@.+\..+)$', 'Should start / for internal links, http(s):// for external links, or mailto: for email addresses']
                   - label: Image
@@ -179,6 +189,11 @@ collections:
         default: false
         i18n: true
         hint: Check this if you are not ready for the page to go live
+      - label: Menu title
+        name: menu_title
+        widget: string
+        required: false
+        hint: 
       - label: Redirects
         label_singular: Redirect
         name: redirects
@@ -199,32 +214,67 @@ collections:
     files:
       - label: Menus
         name: menus
-        file: config/_default/navigation/languages.yml
-        i18n: true
+        file: data/menus.yml
+        i18n:
+          structure: single_file
+          locales: [en, nb]
+          default_locale: en
         fields:
-          - label: Menus
-            name: menus
-            widget: object
+          - label: Main
+            name: main
+            label_singular: Main menu item
+            widget: list
             i18n: true
-            fields:
-              - label: Main
-                name: main
-                label_singular: Main menu item
-                widget: list
-                i18n: true
-                fields: &menuFields
-                  - label: Name
-                    name: name
-                    widget: string
-                    i18n: true
+            types: &menuItemTypes
+              - label: Page
+                name: page
+                summary: '{{ print "{{link}}" }}'
+                fields:
                   - label: Link
-                    name: url
+                    name: link
+                    required: true
+                    widget: relation
+                    collection: pages
+                    value_field: languageKey
+                    search_fields:
+                      - languageKey
+                      - slug
+                      - title
+                      - menu_title
+              - label: Email
+                name: email
+                summary: '{{ print "{{email_address}}" }}'
+                fields:
+                  - label: Email addresss
+                    name: email_address
                     widget: string
-                    i18n: true
-                    pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|mailto:.+@.+\..+)$', 'Should start / for internal links, http(s):// for external links, or mailto: for email addresses']
-              - label: Footer
-                name: footer
-                label_singular: Footer menu item
-                widget: list
-                i18n: true
-                fields: *menuFields
+                    required: true
+                    pattern: ['^.*@.*\..*$', 'Should be an email address']
+                  - label: Link title
+                    name: title
+                    required: false
+                    widget: string
+                    hint: Leave blank to use the email address
+                  - label: Pre-filled Subject
+                    name: subject
+                    required: false
+                    widget: string
+              - label: External link
+                name: link
+                summary: '{{ print "{{title}}" }}'
+                fields:
+                  - label: Link
+                    name: href
+                    widget: string
+                    required: true
+                    pattern: ['^https?://', 'Should be a web address']
+                  - label: Link title
+                    name: title
+                    widget: string
+                    required: true
+          - label: Footer
+            name: footer
+            label_singular: Footer menu item
+            widget: list
+            i18n: true
+            types: *menuItemTypes

@@ -19,6 +19,6 @@ unsafe = true
     disabled = false
     languageCode = 'nb-NO'
     languageDirection = 'ltr'
-    languageName = 'Norwegian Bokmål'
+    languageName = 'Norwegian'
     title = 'MHTech'
     weight = 2
