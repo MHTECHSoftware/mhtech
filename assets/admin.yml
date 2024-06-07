@@ -321,3 +321,9 @@ collections:
             i18n: true
             default_language: html
             required: false
+          - label: Google Analytics 4
+            name: ga
+            widget: string
+            required: false
+            pattern: ['^G-', 'Starts ‘G-’']
+            i18n: duplicate

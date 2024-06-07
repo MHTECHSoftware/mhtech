@@ -8,6 +8,7 @@
   {{ partial "stylesheet" . }}
   {{ partial "opengraph" . }}
   {{ partial "head-links" . }}
+  {{ with .Site.Data.code.en.ga }}{{ partial "google-analytics" . }}{{ end }}
   {{- $siteCode := index .Site.Data.code .Page.Language.Lang }}
   {{- with $siteCode.head_extra }}{{.}}{{ end }}
   {{ block "head_extra" . -}}
