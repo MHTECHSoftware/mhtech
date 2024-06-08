@@ -1,0 +1,83 @@
+section.detail-boxes.section>div.alternating {
+  .description {
+    padding: 1em;
+    background-color: $green;
+    color: $white;
+    clip-path: polygon(0 0, 100% 2%, 98% 100%, 2% 98%);
+    margin-bottom: 2em;
+  }
+
+  @media #{$firstBreakpointStr} {
+
+    &.description-on-left,
+    &.description-on-right {
+      align-items: flex-start;
+
+      .description {
+        width: 40%
+      }
+
+      .boxes {
+        width: 60%;
+      }
+    }
+
+    &.description-on-left .boxes {
+      margin-left: 2em;
+    }
+
+    &.description-on-right .boxes {
+      margin-right: 2em;
+    }
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 2em;
+    }
+
+    &:nth-child(2n+1) {
+      text-align: right;
+
+      img {
+        margin-right: 1em;
+      }
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+
+      img {
+        margin-left: 1em;
+      }
+    }
+
+
+    >a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 9;
+    }
+
+    >img {
+      width: 8em;
+      height: auto;
+      object-fit: cover;
+      clip-path: polygon(0 0, 100% 5%, 95% 100%, 5% 95%);
+    }
+
+    &:after {
+      content: '';
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+  }
+}

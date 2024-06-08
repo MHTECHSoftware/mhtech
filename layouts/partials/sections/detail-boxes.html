@@ -22,7 +22,13 @@
         {{- $img := resources.GetMatch . }}
         {{- $media := $img.MediaType.SubType -}}
         {{- if not (eq $media "svg") -}}
+        {{- if eq $.style "slideshow" -}}
         {{- $img = $img.Fit "1000x1000 q75 webp" -}}
+        {{- else if eq $.style "alternating" -}}
+        {{- $img = $img.Fit "200x200 q75 webp" -}}
+        {{- else if eq $.style "left-grid" -}}
+        {{- else if eq $.style "center-grid" -}}
+        {{- end -}}
         {{- end -}}
         {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
         <img src="{{ $src }}">

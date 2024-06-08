@@ -1,4 +1,17 @@
 section.detail-boxes.section>div.slideshow {
+  @media #{$firstBreakpointStr} {
+
+    &.description-on-left,
+    &.description-on-right {
+
+      .description,
+      .boxes {
+        width: 50%;
+      }
+
+    }
+  }
+
 
   .boxes {
     overflow-x: auto;
@@ -13,6 +26,7 @@ section.detail-boxes.section>div.slideshow {
     height: 15em;
     flex-shrink: 0;
     flex-grow: 0;
+    background-color: $green;
 
     >a,
     >img,

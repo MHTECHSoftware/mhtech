@@ -145,6 +145,7 @@ collections:
                   - label: Image
                     name: image
                     widget: image
+                    required: false
                     media_folder: '/assets/images/'
                     public_folder: '/images/'
                   - label: Title

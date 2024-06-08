@@ -21,6 +21,28 @@ sections:
         href: /services
       - image: /images/shipping-containers.jpg
         title: Logistics
+  - type: detail-boxes
+    hide_section_name: true
+    layout: description-on-right
+    style: alternating
+    smaller: false
+    section_name: Our Focus
+    description: >-
+      ### Our Focus
+
+
+      MHTech's focus is to leverage technology to maximise impact and cost benefit for our clients
+    boxes:
+      - title: Technology
+        blurb: Leveraging bespoke and off-the-shelf software and hardware solutions,
+          aligning with client need, and measuring operational impact
+      - title: Impact
+        blurb: Maximising impact on local and global emissions, and evaluating impact on
+          emissions throughout the value chain
+      - title: Cost
+        blurb: Ensuring maximised outcome for minimised cost - our goal is to enable our
+          clients to save cost and realise revenue opportunity through
+          transitioning to more sustainable operations
   - type: logo-grid
     hide_section_name: false
     section_name: Our Partners
