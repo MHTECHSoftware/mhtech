@@ -8,13 +8,22 @@ section.logo-grid.section {
 
     li {
       padding: 0.7em;
-      height: 2.5em;
       position: relative;
     }
 
     img {
       height: 100%;
       width: auto;
+    }
+
+    a {
+      @include transition(scale);
+      display: inline-block;
+      height: 2.5em;
+
+      &:hover {
+        scale: 1.1;
+      }
     }
   }
 }
