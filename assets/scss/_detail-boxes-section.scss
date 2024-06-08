@@ -1,0 +1,38 @@
+section.detail-boxes.section {
+  >div.wrapper {
+    display: flex;
+
+    @media #{$beforeFirstBreakpointStr} {
+      flex-direction: column;
+    }
+
+    .boxes {
+      width: 100%;
+    }
+
+    @media #{$firstBreakpointStr} {
+      &.description-above {
+        flex-direction: column;
+      }
+
+      &.description-on-right {
+        flex-direction: row-reverse;
+      }
+
+      &.description-on-left,
+      &.description-on-right {
+        align-items: center;
+
+        .description,
+        .boxes {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@import 'detail-boxes-section--alternating';
+@import 'detail-boxes-section--slideshow';
+@import 'detail-boxes-section--left-grid';
+@import 'detail-boxes-section--center-grid';

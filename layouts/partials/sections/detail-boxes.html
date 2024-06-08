@@ -3,8 +3,8 @@
   <h2>{{ . }}</h2>
   {{- end }}{{ end }}
   {{ $classes := slice "wrapper" .style }}
-  {{ if .description }}{{ $classes := $classes | append slice .layout }}{{ end }}
-  {{ if .smaller }}{{ $classes := $classes | append slice "smaller" }}{{ end }}
+  {{ if .description }}{{ $classes = $classes | append slice .layout }}{{ end }}
+  {{ if .smaller }}{{ $classes = $classes | append slice "smaller" }}{{ end }}
   <div class="{{ delimit $classes " " }}">
     {{ with .description }}
     <div class="description">
@@ -13,22 +13,26 @@
     {{ end }}
     <div class="boxes">
       {{ range .boxes }}
-      {{ with .href }}
-      {{ $blank := or (strings.HasPrefix . "http" ) (strings.HasSuffix . ".pdf" ) }}
-      <a href="{{ . | safeURL }}" {{- if $blank }} target="_blank" {{- end }}></a>
-      {{ end }}
-      {{- with .image -}}
-      {{- $img := resources.GetMatch . }}
-      {{- $media := $img.MediaType.SubType -}}
-      {{- if not (eq $media "svg") -}}
-      {{- $img = $img.Fit "1000x1000 q75 webp" -}}
-      {{- end -}}
-      {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
-      <div class="image"><img src="{{ $src }}"></div>
-      {{ end }}
-      <div class="text">
-        {{ with .title }}<h3>{{ . }}</h3>{{ end }}
-        {{ with .blurb }}<span>{{ . }}</span>{{ end }}
+      <div class="box">
+        {{ with .href }}
+        {{ $blank := or (strings.HasPrefix . "http" ) (strings.HasSuffix . ".pdf" ) }}
+        <a href="{{ . | safeURL }}" {{- if $blank }} target="_blank" {{- end }}></a>
+        {{ end }}
+        {{- with .image -}}
+        {{- $img := resources.GetMatch . }}
+        {{- $media := $img.MediaType.SubType -}}
+        {{- if not (eq $media "svg") -}}
+        {{- $img = $img.Fit "1000x1000 q75 webp" -}}
+        {{- end -}}
+        {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
+        <img src="{{ $src }}">
+        {{ end }}
+        <div class="text">
+          <div>
+            {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+            {{ with .blurb }}<span>{{ . }}</span>{{ end }}
+          </div>
+        </div>
       </div>
       {{ end }}
     </div>

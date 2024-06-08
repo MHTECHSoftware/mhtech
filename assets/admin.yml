@@ -118,11 +118,11 @@ collections:
               - label: Description placement
                 name: layout
                 widget: select
-                default: description_on_left
+                default: description-on-left
                 options:
-                  - { label: "Description on left", value: "description_on_left" }
-                  - { label: "Description on right", value: "description_on_right" }
-                  - { label: "Description above", value: "description_above" }
+                  - { label: "Description on left", value: "description-on-left" }
+                  - { label: "Description on right", value: "description-on-right" }
+                  - { label: "Description above", value: "description-above" }
               - label: Box style
                 name: style
                 widget: select

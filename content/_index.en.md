@@ -5,7 +5,7 @@ hide_title: true
 sections:
   - type: detail-boxes
     hide_section_name: true
-    layout: description_on_left
+    layout: description-on-left
     style: slideshow
     smaller: false
     section_name: Our Mission
@@ -18,6 +18,9 @@ sections:
       - image: /images/tunnel.jpg
         title: Road transport
         blurb: Driving hard to decarbonise fleet
+        href: /services
+      - image: /images/shipping-containers.jpg
+        title: Logistics
   - type: logo-grid
     hide_section_name: false
     section_name: Our Partners

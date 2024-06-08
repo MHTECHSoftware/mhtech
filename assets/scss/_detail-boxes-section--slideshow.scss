@@ -1,0 +1,77 @@
+section.detail-boxes.section>div.slideshow {
+
+  .boxes {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    clip-path: polygon(0 0, 97% 6%, 100% 100%, 3% 94%);
+  }
+
+  .box {
+    position: relative;
+    width: 100%;
+    height: 15em;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    >a,
+    >img,
+    .text {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    >a {
+      z-index: 8;
+    }
+
+    >img {
+      z-index: 4;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .text {
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+
+      >div {
+        $bg: transparentize($black, 0.6);
+        background-color: $bg;
+        padding: 1em;
+        position: relative;
+        font-size: 0.7em;
+        font-style: italic;
+        color: $white;
+
+        &:after,
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 1.5em;
+          background-color: $bg;
+        }
+
+        &:before {
+          right: 100%;
+          clip-path: polygon(100% 100%, 100% 0, 0 100%);
+        }
+
+        &:after {
+          left: 100%;
+          clip-path: polygon(0 0, 0 100%, 100% 0);
+        }
+      }
+    }
+  }
+}
