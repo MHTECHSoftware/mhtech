@@ -12,6 +12,7 @@ $headerBg: $white;
   right: 0;
   left: 0;
   background-color: $headerBg;
+  border-bottom: 0.05em solid scale-color($white, $lightness: -10%);
 
   >div {
     display: flex;

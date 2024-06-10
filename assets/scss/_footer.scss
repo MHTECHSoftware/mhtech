@@ -16,6 +16,8 @@
     border-style: solid;
     border-color: transparent;
     border-right-color: $lightGreen;
+    border-left-width: 0;
+    border-bottom-width: 0;
   }
 
   &:after {
