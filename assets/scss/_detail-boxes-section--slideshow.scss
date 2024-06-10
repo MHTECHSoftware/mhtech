@@ -9,6 +9,15 @@ section.detail-boxes.section>div.slideshow {
         width: 50%;
       }
 
+      &.smaller {
+        .description {
+          width: 65%;
+        }
+
+        .boxes {
+          width: 35%;
+        }
+      }
     }
   }
 

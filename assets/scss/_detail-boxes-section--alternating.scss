@@ -1,10 +1,11 @@
 section.detail-boxes.section>div.alternating {
   .description {
-    padding: 1em;
+    padding: 2em;
     background-color: $green;
     color: $white;
     clip-path: polygon(0 0, 100% 2%, 98% 100%, 2% 98%);
     margin-bottom: 2em;
+    box-sizing: border-box;
   }
 
   @media #{$firstBreakpointStr} {
@@ -20,6 +21,17 @@ section.detail-boxes.section>div.alternating {
       .boxes {
         width: 60%;
       }
+
+      &.smaller {
+        .description {
+          width: 60%
+        }
+
+        .boxes {
+          width: 40%;
+        }
+
+      }
     }
 
     &.description-on-left .boxes {
@@ -29,6 +41,14 @@ section.detail-boxes.section>div.alternating {
     &.description-on-right .boxes {
       margin-right: 2em;
     }
+  }
+
+  .box>img {
+    width: 12em;
+  }
+
+  &.smaller .box>img {
+    width: 6em;
   }
 
   .box {
@@ -66,9 +86,9 @@ section.detail-boxes.section>div.alternating {
     }
 
     >img {
-      width: 8em;
       height: auto;
       object-fit: cover;
+      flex-shrink: 0;
       clip-path: polygon(0 0, 100% 5%, 95% 100%, 5% 95%);
     }
 
