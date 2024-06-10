@@ -8,6 +8,7 @@
 {{- else if eq $.style "alternating" -}}
   {{- $size = cond .smaller "400x400" "200x200" -}}
 {{- else if eq $.style "left-grid" -}}
+  {{- $size = cond .smaller "500x500" "350x350" -}}
 {{- else if eq $.style "center-grid" -}}
 {{- end -}}
 {{- return $size -}}

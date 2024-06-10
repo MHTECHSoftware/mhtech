@@ -5,7 +5,6 @@ section.detail-boxes.section>div.alternating {
     color: $white;
     clip-path: polygon(0 0, 100% 2%, 98% 100%, 2% 98%);
     margin-bottom: 2em;
-    box-sizing: border-box;
   }
 
   @media #{$firstBreakpointStr} {

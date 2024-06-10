@@ -141,6 +141,7 @@ collections:
                 label_singular: Box
                 name: boxes
                 widget: list
+                summary: '{{ print "“{{title}}” | {{image}}" }}'
                 fields:
                   - label: Image
                     name: image
@@ -155,7 +156,15 @@ collections:
                   - label: Blurb
                     name: blurb
                     required: false
-                    widget: string
+                    widget: markdown
+                    minimal: true
+                    buttons:
+                      - bold
+                      - italic
+                      - link
+                      - bulleted-list
+                      - numbered-list
+                    editor_components: []
                   - label: Link
                     required: false
                     name: href

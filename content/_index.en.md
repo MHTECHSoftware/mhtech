@@ -43,6 +43,47 @@ sections:
         blurb: Ensuring maximised outcome for minimised cost - our goal is to enable our
           clients to save cost and realise revenue opportunity through
           transitioning to more sustainable operations
+  - type: detail-boxes
+    hide_section_name: true
+    layout: description-on-left
+    style: left-grid
+    smaller: false
+    section_name: Our Work
+    description: >-
+      ### Our Work
+
+
+      MHTech is a Norway start-up founded to enable the decarbonization of complex energy systems across transport, energy systems, industry & built environment.
+
+
+      Our solutions couple our proprietary energy simulation engine with data analytics and engineering expertise.
+
+
+      We help our clients optimise the transition to decarbonized and future-ready outcomes – minimising risk and unlocking revenue opportunity.
+
+
+      [Explore our sectors](/sectors)
+    boxes:
+      - title: ZeBra
+        blurb: We supported an innovative road marking company in maintaining their lead
+          in the market by designing the first decarbonised road marking vehicle
+          in Norway
+      - title: Pon ePower
+        image: /images/pon-power.jpg
+        blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
+          online sizing tool to help customers and engineers better understand
+          the cost and benefits of utilizing hybrid drivetrains in small
+          vessels.
+      - title: Lineage
+        blurb: We helped Lineage logistics reduce CO2-emissions energy consumption for a
+          freezer storage facility in Moss. MHTech assisted from feasibility
+          study through project execution. Helping save XXX tonnes of CO2
+          annually.
+      - title: Start-ups
+        blurb: We collaborate with start-ups who share our mission. We provide
+          expertise, development, and strategy support, enabling our partners to
+          rapidly achieve their goals. Thanks to our latest partners including
+          Ezone, Hyke, and AlwaysCargo
   - type: logo-grid
     hide_section_name: false
     section_name: Our Partners

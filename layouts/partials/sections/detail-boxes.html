@@ -32,7 +32,7 @@
         <div class="text">
           <div>
             {{ with .title }}<h3>{{ . }}</h3>{{ end }}
-            {{ with .blurb }}<span>{{ . }}</span>{{ end }}
+            {{ with .blurb }}<div>{{ page.RenderString (dict "display" "block") . }}</div>{{ end }}
           </div>
         </div>
       </div>

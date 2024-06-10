@@ -15,6 +15,12 @@ section.section {
     max-width: 100%;
     height: auto;
   }
+
+  .description,
+  .boxes,
+  .box {
+    box-sizing: border-box;
+  }
 }
 
 @import "text-section";

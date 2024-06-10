@@ -12,7 +12,7 @@ mainMenuBg: "var(--lightGreen)"
 firstBreakpoint: 700px
 secondBreakpoint: 1200px
 fontSize: 4vw
-fontSizeFirst: 1.8vw
+fontSizeFirst: 1.6vw
 lineHeight: 1.5
 headerHeight: 2rem
 headerPadding: 2rem
