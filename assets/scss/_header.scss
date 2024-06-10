@@ -1,5 +1,10 @@
 $headerBg: $white;
 
+.turbo-progress-bar {
+  background-color: $green;
+  height: 0.25em;
+}
+
 #site-header {
   z-index: 10;
   position: fixed;
