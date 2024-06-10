@@ -4,6 +4,7 @@
 
   >h1 {
     @include wrapper();
+    text-align: center;
   }
 
   &:after {

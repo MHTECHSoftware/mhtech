@@ -5,6 +5,7 @@ section.section {
   >h2 {
     @include wrapper($hPadding: 0);
     margin-bottom: 0;
+    text-align: center;
   }
 
   >div.wrapper {

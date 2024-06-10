@@ -2,7 +2,15 @@
   {{ if not .hide_section_name }}{{ with .section_name -}}
   <h2>{{ . }}</h2>
   {{- end }}{{ end }}
-  <div {{- if and (and .content .image) (eq .layout "image_on_right" ) }} class="image-on-right" {{- end }}>
+  {{- $layout := "no-content" -}}
+  {{- if and .content .image -}}
+  {{- $layout = .layout -}}
+  {{- else if .content -}}
+  {{- $layout = "no-image" -}}
+  {{- else if .image -}}
+  {{- $layout = "image-only" -}}
+  {{- end -}}
+  <div class="wrapper {{ $layout }}">
     {{- with .image -}}
     {{- $img := resources.GetMatch . }}
     {{- $media := $img.MediaType.SubType -}}

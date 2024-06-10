@@ -1,0 +1,52 @@
+section.short-text.section {
+  >div.wrapper {
+    text-align: center;
+
+    @media #{$firstBreakpointStr} {
+
+      &.no-image,
+      &.image-only {
+        padding-left: 10em;
+        padding-right: 10em;
+      }
+
+
+      &.image-on-left,
+      &.image-on-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .image,
+        .text {
+          width: 48%;
+          flex-shrink: 0;
+        }
+      }
+
+      &.image-on-right {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .image {
+      position: relative;
+
+      @media #{$beforeFirstBreakpointStr} {
+        padding-bottom: 50%;
+        margin-bottom: 2em;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
