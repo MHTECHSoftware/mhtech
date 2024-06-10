@@ -29,4 +29,6 @@ slug: <HOME>
 menu_title: Hjem
 meta:
   type: website
+redirects:
+  - /home-no
 ---

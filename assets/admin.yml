@@ -266,7 +266,10 @@ collections:
         field:
           name: from
           label: From
-          hint: "Should start with a ‘/’"
+          widget: string
+          pattern:
+            - '^/'
+            - 'Should start with a ‘/’'
         summary: '{{ print "{{from}}" }}'
   - label: Per-language settings
     name: settings
