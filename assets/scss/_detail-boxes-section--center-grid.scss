@@ -1,0 +1,117 @@
+section.detail-boxes.section>div.center-grid {
+  .boxes {
+    @media #{$firstBreakpointStr} {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    text-align: center;
+  }
+
+  img {
+    width: 14em;
+    height: 14em;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  }
+
+  .box {
+    margin-bottom: 3em;
+
+    @media #{$firstBreakpointStr} {
+      flex-shrink: 0;
+      width: 18.5em;
+    }
+  }
+
+  @media #{$firstBreakpointStr} {
+    &.description-above {
+      .description {
+        padding: 1em 10em;
+        margin-bottom: 3em;
+      }
+    }
+
+    &.description-on-left,
+    &.description-on-right {
+      align-items: flex-start;
+
+      .description {
+        width: 33%;
+        flex-shrink: 0;
+      }
+    }
+
+    &.description-on-left {
+      .description {
+        margin-right: 2em;
+      }
+    }
+
+    &.description-on-right {
+      flex-direction: row-reverse;
+
+      .description {
+        margin-left: 2em;
+      }
+    }
+  }
+
+  .box>a {
+    ~img {
+      @include transition(scale);
+    }
+
+    &:hover~img {
+      scale: 1.05;
+    }
+
+    ~.text {
+      @include transition(color);
+    }
+
+    &:hover~.text {
+      color: $green;
+    }
+  }
+
+  &.smaller {
+    .box {
+      background-color: scale-color($white, $lightness: -10%);
+
+      img {
+        background-color: $white;
+        width: 8em;
+        height: 8em;
+      }
+
+      padding: 1em;
+
+      @media #{$firstBreakpointStr} {
+        width: 12em;
+      }
+    }
+
+    &.description-above {
+      .box {
+        @media #{$firstBreakpointStr} {
+          width: 14.5em;
+          margin-bottom: 3em;
+        }
+      }
+    }
+
+    .description {
+      @media #{$beforeFirstBreakpointStr} {
+        margin-bottom: 3em;
+      }
+    }
+
+    .text {
+      font-size: 0.8em;
+    }
+  }
+}

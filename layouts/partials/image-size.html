@@ -1,4 +1,4 @@
-{{- $size := "1000x100" -}}
+{{- $size := "1000x1000" -}}
 {{- if eq .style "slideshow" -}}
   {{- if eq .layout "description-above" -}}
     {{- $size = "2000x2000" -}}
@@ -10,5 +10,6 @@
 {{- else if eq $.style "left-grid" -}}
   {{- $size = cond .smaller "600x600" "350x350" -}}
 {{- else if eq $.style "center-grid" -}}
+  {{- $size = cond .smaller "600x600" "300x300" -}}
 {{- end -}}
 {{- return $size -}}
