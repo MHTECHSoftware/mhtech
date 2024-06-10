@@ -37,7 +37,6 @@ section.detail-boxes.section>div.slideshow {
     flex-grow: 0;
     background-color: $green;
 
-    >a,
     >img,
     .text {
       position: absolute;
@@ -48,7 +47,11 @@ section.detail-boxes.section>div.slideshow {
     }
 
     >a {
-      z-index: 8;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: transparentize($green, 0.6);
+      }
     }
 
     >img {

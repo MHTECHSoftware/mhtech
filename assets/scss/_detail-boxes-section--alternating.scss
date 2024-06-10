@@ -82,13 +82,29 @@ section.detail-boxes.section>div.alternating {
       bottom: 0;
       left: 0;
       z-index: 9;
+
+      &:hover {
+        ~img {
+          scale: 1.05;
+        }
+
+        ~.text {
+          scale: 1.05;
+        }
+      }
     }
 
     >img {
+      position: relative;
+      @include transition(scale);
       height: auto;
       object-fit: cover;
       flex-shrink: 0;
       clip-path: polygon(0 0, 100% 5%, 95% 100%, 5% 95%);
+    }
+
+    .text {
+      @include transition(scale);
     }
 
     &:after {

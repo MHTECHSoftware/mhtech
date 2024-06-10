@@ -92,4 +92,23 @@ section.detail-boxes.section>div.left-grid {
     font-size: 0.8em;
   }
 
+  .box>a {
+    &~img {
+      box-sizing: border-box;
+      @include transition();
+    }
+
+    &:hover~img {
+      border: 0.5em solid $green;
+    }
+
+    &~.text {
+      @include transition(color);
+    }
+
+    &:hover~.text {
+      color: $green;
+    }
+  }
+
 }
