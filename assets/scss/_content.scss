@@ -1,6 +1,8 @@
 #site-main {
   padding-top: $headerHeightWithPadding;
   background-color: $mainBg;
+  display: flex;
+  flex-direction: column;
 
   >h1 {
     @include wrapper();

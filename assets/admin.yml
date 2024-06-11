@@ -191,6 +191,15 @@ collections:
                     name: href
                     widget: string
                     pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|mailto:.+@.+\..+)$', 'Should start / for internal links, http(s):// for external links, or mailto: for email addresses']
+              - label: Background
+                name: background
+                widget: select
+                default: white
+                options:
+                  - { label: "White", value: "white" }
+                  - { label: "Green", value: "Green" }
+                  - { label: "Light green", value: "light-green" }
+                  - { label: "Dark green", value: "dark-green" }
           - label: Logo grid
             name: logo-grid
             summary: '{{ print "{{section_name}}" }}'

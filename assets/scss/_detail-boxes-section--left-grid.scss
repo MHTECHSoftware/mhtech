@@ -1,114 +1,125 @@
-section.detail-boxes.section>div.left-grid {
-  @media #{$firstBreakpointStr} {
+.detail-boxes.section {
+  >div.left-grid {
+    @media #{$firstBreakpointStr} {
+
+      &.description-on-left,
+      &.description-on-right {
+        .description {
+          width: 35%;
+        }
+
+        .boxes {
+          width: 65%;
+        }
+      }
+
+      &.description-on-left {
+        .description {
+          margin-right: 2em;
+        }
+      }
+
+      &.description-on-right {
+        .description {
+          margin-right: 2em;
+        }
+      }
+    }
+
+    .description {
+      padding: 1em;
+    }
+
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+
+      @media #{$firstBreakpointStr} {
+        margin: 0 -1em;
+      }
+
+      .box {
+        width: 100%;
+
+        >img {
+          width: 100%;
+          height: 12em;
+          object-fit: cover;
+        }
+
+        margin-bottom: 2em;
+
+        @media #{$firstBreakpointStr} {
+          margin-bottom: 0;
+          padding: 1em;
+          box-sizing: border-box;
+          width: 33%;
+        }
+      }
+    }
 
     &.description-on-left,
     &.description-on-right {
-      align-items: stretch;
-
-
-      .description {
-        width: 35%;
-      }
-
-      .boxes {
-        width: 65%;
+      .boxes .box {
+        @media #{$firstBreakpointStr} {
+          width: 50%;
+        }
       }
     }
 
-    &.description-on-left {
-      .description {
-        margin-right: 2em;
-      }
-    }
-
-    &.description-on-right {
-      .description {
-        margin-right: 2em;
-      }
-    }
-  }
-
-  .description {
-    padding: 1em;
-    background-color: scale-color($white, $lightness: -10%);
-  }
-
-  .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-
-    @media #{$firstBreakpointStr} {
-      margin: 0 -1em;
-    }
-
-    .box {
-      width: 100%;
-
-      >img {
-        width: 100%;
-        height: 12em;
-        object-fit: cover;
-      }
-
-      margin-bottom: 2em;
-
-      @media #{$firstBreakpointStr} {
-        margin-bottom: 0;
-        padding: 1em;
-        box-sizing: border-box;
-        width: 33%;
-      }
-    }
-  }
-
-  &.description-on-left,
-  &.description-on-right {
-    .boxes .box {
-      @media #{$firstBreakpointStr} {
-        width: 50%;
-      }
-    }
-  }
-
-  &.smaller .boxes .box {
-    width: 50%;
-
-    @media #{$firstBreakpointStr} {
-      width: 25%;
-    }
-  }
-
-  &.description-on-left,
-  &.description-on-right {
     &.smaller .boxes .box {
+      width: 50%;
+
       @media #{$firstBreakpointStr} {
-        width: 33%;
+        width: 25%;
       }
     }
+
+    &.description-on-left,
+    &.description-on-right {
+      &.smaller .boxes .box {
+        @media #{$firstBreakpointStr} {
+          width: 33%;
+        }
+      }
+    }
+
+    &.smaller .boxes {
+      font-size: 0.8em;
+    }
+
+    .box>a {
+      &~img {
+        box-sizing: border-box;
+        @include transition();
+      }
+
+      &:hover~img {
+        border: 0.5em solid $green;
+      }
+
+      &~.text {
+        @include transition(color);
+      }
+
+    }
+
   }
 
-  &.smaller .boxes {
-    font-size: 0.8em;
+  >div.left-grid .description {
+    background-color: transparentize($white, 0.9);
   }
 
-  .box>a {
-    &~img {
-      box-sizing: border-box;
-      @include transition();
-    }
-
-    &:hover~img {
-      border: 0.5em solid $green;
-    }
-
-    &~.text {
-      @include transition(color);
-    }
-
-    &:hover~.text {
-      color: $green;
-    }
+  &.white>div.left-grid .description {
+    background-color: $lightGreen;
   }
 
+  >div.left-grid .box>a:hover~.text {
+    color: $green;
+  }
+
+  &.green>div.left-grid .box>a:hover~.text {
+    color: $lightGreen;
+  }
 }

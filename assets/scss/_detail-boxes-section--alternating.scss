@@ -1,116 +1,140 @@
-section.detail-boxes.section>div.alternating {
-  .description {
-    padding: 2em;
-    background-color: $green;
-    color: $white;
-    margin-bottom: 2em;
-  }
+section.detail-boxes.section {
+  >div.alternating {
+    .description {
+      padding: 2em;
+      margin-bottom: 2em;
+    }
 
-  @media #{$firstBreakpointStr} {
+    @media #{$firstBreakpointStr} {
 
-    &.description-on-left,
-    &.description-on-right {
-      align-items: flex-start;
+      &.description-on-left,
+      &.description-on-right {
+        align-items: flex-start;
 
-      .description {
-        width: 40%
-      }
-
-      .boxes {
-        width: 60%;
-      }
-
-      &.smaller {
         .description {
-          width: 60%
+          width: 40%
         }
 
         .boxes {
-          width: 40%;
+          padding-top: 2em;
+          width: 60%;
         }
 
+        &.smaller {
+          .description {
+            width: 60%
+          }
+
+          .boxes {
+            width: 40%;
+          }
+
+        }
+      }
+
+      &.description-on-left .boxes {
+        margin-left: 2em;
+      }
+
+      &.description-on-right .boxes {
+        margin-right: 2em;
       }
     }
 
-    &.description-on-left .boxes {
-      margin-left: 2em;
+    .box>img {
+      width: 12em;
     }
 
-    &.description-on-right .boxes {
-      margin-right: 2em;
-    }
-  }
-
-  .box>img {
-    width: 12em;
-  }
-
-  &.smaller .box>img {
-    width: 6em;
-  }
-
-  .box {
-    display: flex;
-    align-items: center;
-
-    &:not(:first-child) {
-      margin-top: 2em;
+    &.smaller .box>img {
+      width: 6em;
     }
 
-    &:nth-child(2n+1) {
-      text-align: right;
+    .box {
+      display: flex;
+      align-items: center;
 
-      img {
-        margin-right: 1em;
+      &:not(:first-child) {
+        margin-top: 2em;
+      }
+
+      &:nth-child(2n+1) {
+        text-align: right;
+
+        img {
+          margin-right: 1em;
+        }
+      }
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        img {
+          margin-left: 1em;
+        }
+      }
+
+
+      >a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+
+        &:hover {
+          ~img {
+            scale: 1.05;
+          }
+
+          ~.text {
+            scale: 1.05;
+          }
+        }
+      }
+
+      >img {
+        position: relative;
+        @include transition(scale);
+        height: auto;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .text {
+        @include transition(scale);
+      }
+
+      &:after {
+        content: '';
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
       }
     }
+  }
 
-    &:nth-child(2n) {
-      flex-direction: row-reverse;
+  >div.alternating .description {
+    background-color: $green;
+    color: $white;
 
-      img {
-        margin-left: 1em;
-      }
+    a:hover {
+      color: $white;
     }
+  }
 
+  &.green>div.alternating .description {
+    background-color: $white;
+    color: $black;
 
-    >a {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 9;
+    a {
+      color: $green;
 
       &:hover {
-        ~img {
-          scale: 1.05;
-        }
-
-        ~.text {
-          scale: 1.05;
-        }
+        color: $black;
       }
     }
-
-    >img {
-      position: relative;
-      @include transition(scale);
-      height: auto;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    .text {
-      @include transition(scale);
-    }
-
-    &:after {
-      content: '';
-      visibility: hidden;
-      display: block;
-      height: 0;
-      clear: both;
-    }
   }
+
 }

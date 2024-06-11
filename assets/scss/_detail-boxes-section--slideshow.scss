@@ -1,5 +1,5 @@
 section.detail-boxes.section>div.slideshow {
-  $h: 18em;
+  $h: 20em;
 
   .box {
     height: $h;
@@ -8,6 +8,18 @@ section.detail-boxes.section>div.slideshow {
   @media #{$firstBreakpointStr} {
     .box {
       height: 2*$h;
+    }
+
+    &.description-on-left {
+      .description {
+        margin-right: 2em;
+      }
+    }
+
+    &.description-on-right {
+      .description {
+        margin-left: 2em;
+      }
     }
 
     &.description-on-left,
@@ -42,6 +54,7 @@ section.detail-boxes.section>div.slideshow {
     overflow-x: auto;
     display: flex;
     flex-wrap: nowrap;
+    flex-shrink: 0;
   }
 
   .box {

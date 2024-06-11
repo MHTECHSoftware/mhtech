@@ -4,6 +4,7 @@ languageKey: Products
 slug: products
 sections:
   - type: detail-boxes
+    background: green
     hide_section_name: true
     layout: description-on-left
     style: left-grid

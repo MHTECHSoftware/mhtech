@@ -1,10 +1,12 @@
 ---
 languageKey: About
+hide_title: true
 title: About
 sections:
   - type: short-text
-    hide_section_name: true
+    hide_section_name: false
     layout: image-on-left
+    background: dark-green
     section_name: About us
     content: >-
       **MHTech** was founded in Moss, Norway in 2016 by brothers Ole Harald Moe
@@ -16,6 +18,7 @@ sections:
 
       The business started out modelling electrification of nearshore maritime, before progressing onshore to electrification of public transportation, and onward to the multi-sector decarbonisation solution business offered today.
   - type: detail-boxes
+    background: white
     hide_section_name: false
     layout: description-above
     style: center-grid

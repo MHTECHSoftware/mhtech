@@ -22,8 +22,8 @@
   {{ partial "header" . }}
   <main id="site-main">
     {{ block "main" . }}{{ end }}
+    {{ partial "footer" . }}
   </main>
-  {{ partial "footer" . }}
   {{- with .Site.Data.global_code.body_extra }}{{.}}{{ end }}
   {{- with $code.body_extra }}{{.}}{{ end }}
   {{ block "body_extra" . -}}

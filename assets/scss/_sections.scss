@@ -1,22 +1,54 @@
 section.section {
   position: relative;
 
+  @include sectionDivider($white);
+
+  &.green {
+    background-color: $green;
+    @include sectionDividerColors($green);
+  }
+
+  &.dark-green {
+    background-color: $darkGreen;
+    @include sectionDividerColors($darkGreen);
+  }
+
+  &.green,
+  &.dark-green {
+    color: $white;
+
+    a {
+      color: $lightGreen;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &.light-green {
+    background-color: $lightGreen;
+    @include sectionDividerColors($lightGreen);
+  }
+
 
   >h2 {
     @include wrapper($hPadding: 0);
     margin-bottom: 0;
+    margin-top: $horizontalSectionSpacing;
     text-align: center;
   }
 
   >div.wrapper {
-    @include wrapper($hPadding: $horizontalSectionPadding);
+    @include wrapper();
+    margin-top: $horizontalSectionSpacing;
+    margin-bottom: $horizontalSectionSpacing;
   }
 
   img {
     max-width: 100%;
     height: auto;
   }
-
 }
 
 @import "text-section";

@@ -3,7 +3,8 @@ lightGrey: "#ccc"
 white: "#fff"
 black: "#000"
 green: "#689065"
-lightGreenLightness: 60%
+lightGreenLightness: "60%"
+darkGreenDarkness: "60%"
 headerBg: "var(--white)"
 mainBg: "var(--white)"
 footerBg: "var(--green)"
@@ -18,6 +19,6 @@ headerHeight: 2rem
 headerPadding: 2rem
 verticalPadding: 1rem
 horizontalPadding: 1rem
-horizontalSectionPadding: 3rem
+horizontalSectionSpacing: 5rem
 ---
 

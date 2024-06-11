@@ -23,3 +23,64 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin sectionDivider($color: $green) {
+
+  $h: 1.8em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    top: -$h;
+    height: $h;
+    border-style: solid;
+    border-color: transparent $color;
+    border-top-width: $h;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 100vw;
+    opacity: 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50vw;
+    box-sizing: border-box;
+    top: -$h;
+    height: $h;
+    border-top-width: $h/2;
+    border-bottom-width: $h/2;
+    border-left-width: 50vw;
+    border-right-width: 0;
+    border-style: solid;
+    border-color: transparent $color;
+    opacity: 0.5;
+  }
+
+  &:nth-child(2n) {
+
+    &:before {
+      border-left-width: 100vw;
+      border-right-width: 0;
+    }
+
+    &:after {
+      border-left-width: 0;
+      border-right-width: 50vw;
+      left: 50%;
+    }
+  }
+}
+
+@mixin sectionDividerColors($color) {
+
+  &:before,
+  &:after {
+    border-color: transparent $color;
+  }
+}

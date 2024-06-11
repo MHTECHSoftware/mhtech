@@ -4,10 +4,9 @@ const smoothScrollDuration = 1000 // Time in ms to wait after autoProgress befor
 
 const headerHeight = parseFloat(process.env.headerHeight) + 2 * parseInt(process.env.headerPadding)
 
-let slideshowsController: AbortController | null = null
-let autoProgressTimeouts: {[key: string]: number} = {}
+let abortController: AbortController = new AbortController()
 
-let anchorClickController: AbortController | null = null
+let autoProgressTimeouts: {[key: string]: number} = {}
 
 const setupSlideshow = (el: Element) => {
   if (el.childNodes.length < 2) return
@@ -15,7 +14,7 @@ const setupSlideshow = (el: Element) => {
   let scrollTimeout: number | null = null
   let isAutoScrolling = false
 
-  if (!slideshowsController) slideshowsController = new AbortController()
+  if (!abortController) abortController = new AbortController()
 
   const toNext = () => {
     const width = el.getBoundingClientRect().width
@@ -48,21 +47,17 @@ const setupSlideshow = (el: Element) => {
       autoProgressTimeouts[slideshowId] = setTimeout(toNext, autoProgress * 1.5)
     }, scrollStop)
   }, {
-    signal: slideshowsController.signal,
+    signal: abortController.signal,
   })
 }
 
 const setupSlideshows = () => {
-  if (slideshowsController) slideshowsController.abort()
-  slideshowsController = null
   Object.values(autoProgressTimeouts).forEach(clearTimeout)
   autoProgressTimeouts = {}
   Array.from(document.querySelectorAll('.detail-boxes .slideshow .boxes')).forEach(setupSlideshow)
 }
 
 const setupAnchorClicks = () => {
-  if (anchorClickController) anchorClickController.abort()
-  anchorClickController = new AbortController()
   document.body.addEventListener('click', function (e) {
     if (!(e.target instanceof Element)) return
     const anchor = e.target.closest('a')
@@ -84,11 +79,13 @@ const setupAnchorClicks = () => {
     })
   }, {
     capture: false,
-    signal: anchorClickController.signal,
+    signal: abortController.signal,
   });
 }
 
 const setupAll = () => {
+  abortController.abort()
+  abortController = new AbortController()
   setupSlideshows()
   setupAnchorClicks()
 }

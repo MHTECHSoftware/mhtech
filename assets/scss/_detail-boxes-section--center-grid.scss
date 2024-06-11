@@ -1,117 +1,139 @@
-section.detail-boxes.section>div.center-grid {
-  .boxes {
-    @media #{$firstBreakpointStr} {
+section.detail-boxes.section {
+  >div.center-grid {
+    .boxes {
+      @media #{$firstBreakpointStr} {
 
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      flex-wrap: wrap;
-    }
-
-    text-align: center;
-  }
-
-  img {
-    width: 14em;
-    height: 14em;
-    object-fit: cover;
-    border-radius: 7em;
-  }
-
-  .box {
-    margin-bottom: 3em;
-
-    @media #{$firstBreakpointStr} {
-      flex-shrink: 0;
-      width: 18.5em;
-    }
-  }
-
-  @media #{$firstBreakpointStr} {
-    &.description-above {
-      .description {
-        padding: 1em 10em;
-        margin-bottom: 3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
       }
+
+      text-align: center;
     }
 
-    &.description-on-left,
-    &.description-on-right {
-      align-items: flex-start;
-
-      .description {
-        width: 33%;
-        flex-shrink: 0;
-      }
+    img {
+      width: 14em;
+      height: 14em;
+      object-fit: cover;
+      border-radius: 7em;
+      margin-bottom: 1em;
     }
 
-    &.description-on-left {
-      .description {
-        margin-right: 2em;
-      }
-    }
-
-    &.description-on-right {
-      flex-direction: row-reverse;
-
-      .description {
-        margin-left: 2em;
-      }
-    }
-  }
-
-  .box>a {
-    ~img {
-      @include transition(scale);
-    }
-
-    &:hover~img {
-      scale: 1.05;
-    }
-
-    ~.text {
-      @include transition(color);
-    }
-
-    &:hover~.text {
-      color: $green;
-    }
-  }
-
-  &.smaller {
     .box {
-      background-color: scale-color($white, $lightness: -10%);
-
-      img {
-        background-color: $white;
-        width: 8em;
-        height: 8em;
-      }
-
-      padding: 1em;
+      margin-bottom: 3em;
 
       @media #{$firstBreakpointStr} {
-        width: 12em;
+        flex-shrink: 0;
+        width: 18.5em;
       }
     }
 
-    &.description-above {
-      .box {
-        @media #{$firstBreakpointStr} {
-          width: 14.5em;
+    @media #{$firstBreakpointStr} {
+      &.description-above {
+        .description {
+          padding: 1em 10em;
           margin-bottom: 3em;
+        }
+      }
+
+      &.description-on-left,
+      &.description-on-right {
+        align-items: flex-start;
+
+        .description {
+          width: 33%;
+          flex-shrink: 0;
+        }
+      }
+
+      &.description-on-left {
+        .description {
+          margin-right: 2em;
+        }
+      }
+
+      &.description-on-right {
+        flex-direction: row-reverse;
+
+        .description {
+          margin-left: 2em;
         }
       }
     }
 
-    .description {
-      @media #{$beforeFirstBreakpointStr} {
-        margin-bottom: 3em;
+    .box>a {
+      ~img {
+        @include transition(scale);
+      }
+
+      &:hover~img {
+        scale: 1.05;
+      }
+
+      ~.text {
+        @include transition(color);
       }
     }
 
-    .text {
-      font-size: 0.8em;
+    &.smaller {
+      .box {
+        img {
+          background-color: $white;
+          width: 8em;
+          height: 8em;
+        }
+
+        padding: 1em;
+
+        @media #{$firstBreakpointStr} {
+          width: 12em;
+        }
+      }
+
+      &.description-above {
+        .box {
+          @media #{$firstBreakpointStr} {
+            width: 14.5em;
+            margin-bottom: 3em;
+          }
+        }
+      }
+
+      .description {
+        @media #{$beforeFirstBreakpointStr} {
+          margin-bottom: 3em;
+        }
+      }
+
+      .text {
+        font-size: 0.8em;
+      }
     }
+
+    h3 {
+      font-size: 1.8em;
+    }
+  }
+
+
+  div.center-grid .box>a:hover~.text {
+    color: $green;
+  }
+
+  &.green div.center-grid .box>a~.text {
+    color: $lightGreen;
+  }
+
+  &.green div.center-grid .box>a:hover~.text {
+    color: $white;
+  }
+
+  div.center-grid.smaller .box {
+    background-color: transparentize($white, 0.6);
+  }
+
+  &.white div.center-grid.smaller .box {
+    background-color: transparentize($lightGreen, 0.6);
   }
 }

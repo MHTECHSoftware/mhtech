@@ -1,5 +1,6 @@
 {{ $sectionId := replace (lower .section_name) " " "-" -}}
-<section class="{{ .type }} section" id="{{$sectionId}}">
+{{ $color := default "white" .background }}
+<section class="{{ $color }} {{ .type }} section" id="{{$sectionId}}">
   {{ if not .hide_section_name }}{{ with .section_name -}}
   <h2>{{ . }}</h2>
   {{- end }}{{ end }}

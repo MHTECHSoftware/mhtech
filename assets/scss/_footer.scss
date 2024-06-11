@@ -1,45 +1,12 @@
 #site-footer {
+  background-color: $footerBg;
   color: $footerFg;
   position: relative;
 
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    box-sizing: border-box;
-    top: -1.5em;
-    height: 3em;
-    border-top-width: 1.5em;
-    border-bottom-width: 1.5em;
-    border-right-width: 100vw;
-    border-style: solid;
-    border-color: transparent;
-    border-right-color: $green;
-    border-left-width: 0;
-    border-bottom-width: 0;
-    opacity: 0.5;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 50%;
-    box-sizing: border-box;
-    top: -1.5em;
-    height: 1.5em;
-    border-top-width: 0.75em;
-    border-bottom-width: 0.75em;
-    border-left-width: 50vw;
-    border-style: solid;
-    border-color: transparent;
-    border-left-color: $green;
-    opacity: 0.25;
-  }
+  @include sectionDivider($footerBg);
 
   >div {
-    @include wrapper($vPadding: $verticalPadding, $hPadding: $horizontalSectionPadding);
+    @include wrapper($vPadding: $verticalPadding, $hPadding: $horizontalSectionSpacing);
   }
 
   ul.menu {

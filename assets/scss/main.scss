@@ -2,6 +2,7 @@
 
 
 $lightGreen: scale-color($green, $lightness: $lightGreenLightness);
+$darkGreen: scale-color($green, $lightness: -$darkGreenDarkness);
 $beforeFirstBreakpointStr: "(max-width: #{$firstBreakpoint - 1})";
 $firstBreakpointStr: "(min-width: #{$firstBreakpoint})";
 $secondBreakpointStr: "(min-width: #{$secondBreakpoint})";

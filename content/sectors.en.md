@@ -3,6 +3,7 @@ languageKey: Sectors
 title: Sectors
 sections:
   - type: detail-boxes
+    background: light-green
     hide_section_name: true
     layout: description-above
     style: center-grid

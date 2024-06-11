@@ -3,6 +3,7 @@ languageKey: Services
 title: Services
 sections:
   - type: detail-boxes
+    background: dark-green
     hide_section_name: true
     layout: description-on-left
     style: left-grid

@@ -9,6 +9,7 @@ sections:
     image: /images/tunnel.jpg
     text:  Helping clients decarbonise and optimise complex energy systems across Transport, Built Environment and Industry
   - type: detail-boxes
+    background: white
     hide_section_name: true
     layout: description-on-left
     style: slideshow
@@ -27,6 +28,7 @@ sections:
       - image: /images/shipping-containers.jpg
         title: Logistics
   - type: detail-boxes
+    background: light-green
     hide_section_name: true
     layout: description-on-right
     style: alternating
@@ -49,6 +51,7 @@ sections:
           clients to save cost and realise revenue opportunity through
           transitioning to more sustainable operations
   - type: detail-boxes
+    background: dark-green
     hide_section_name: true
     layout: description-on-left
     style: left-grid
