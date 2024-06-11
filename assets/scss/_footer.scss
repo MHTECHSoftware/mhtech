@@ -1,9 +1,9 @@
 #site-footer {
-  background-color: $footerBg;
-  color: $footerFg;
+  background-color: $green;
+  color: $white;
   position: relative;
 
-  @include sectionDivider($footerBg);
+  @include sectionDivider($green);
 
   >div {
     @include wrapper();
@@ -30,16 +30,21 @@
 
       a {
         padding: 0.2em 0;
-        color: $footerFg;
+        color: $white;
 
         &.current {
           border-color: $lightGreen;
         }
 
         &:hover {
-          border-color: $footerFg;
+          border-color: $lightGreen;
         }
       }
     }
   }
+}
+
+section.green+#site-footer {
+  background-color: $darkGreen;
+  @include sectionDivider($darkGreen);
 }
