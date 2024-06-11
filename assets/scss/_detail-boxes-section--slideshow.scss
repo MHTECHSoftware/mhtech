@@ -1,12 +1,24 @@
 section.detail-boxes.section>div.slideshow {
+  $h: 18em;
+
+  .box {
+    height: $h;
+  }
+
   @media #{$firstBreakpointStr} {
+    .box {
+      height: 2*$h;
+    }
 
     &.description-on-left,
     &.description-on-right {
 
-      .description,
+      .description {
+        width: 35%;
+      }
+
       .boxes {
-        width: 50%;
+        width: 65%;
       }
 
       &.smaller {
@@ -17,6 +29,10 @@ section.detail-boxes.section>div.slideshow {
         .boxes {
           width: 35%;
         }
+      }
+
+      .box {
+        height: $h;
       }
     }
   }
@@ -31,7 +47,6 @@ section.detail-boxes.section>div.slideshow {
   .box {
     position: relative;
     width: 100%;
-    height: 15em;
     flex-shrink: 0;
     flex-grow: 0;
     background-color: $green;
