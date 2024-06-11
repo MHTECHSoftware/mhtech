@@ -8,13 +8,13 @@
   {{ partial "stylesheet" . }}
   {{ partial "opengraph" . }}
   {{ partial "head-links" . }}
+  {{ partial "javascript" . }}
   {{- with .Site.Data.global_code.head_extra }}{{.}}{{ end }}
   {{- $code := index .Site.Data.code .Page.Language.Lang }}
   {{- with $code.head_extra }}{{.}}{{ end }}
   {{ block "head_extra" . -}}
   {{- with .Params.head_extra }}{{.}}{{ end }}
   {{- end }}
-  <script src="https://unpkg.com/@hotwired/turbo@^8.0.4/dist/turbo.es2017-esm.js" type="module" async></script>
   {{ partial "favicons" . }}
 </head>
 

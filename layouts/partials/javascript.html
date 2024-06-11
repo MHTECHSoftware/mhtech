@@ -1,0 +1,7 @@
+<script src="https://unpkg.com/@hotwired/turbo@^8.0.4/dist/turbo.es2017-esm.js" type="module" async></script>
+{{ with resources.Get "js/main.ts" -}}
+{{- $opts := dict "minify" true "target" "es2018" -}}
+{{- with . | js.Build $opts | fingerprint -}}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" async></script>
+{{- end -}}
+{{- end }}
