@@ -91,8 +91,8 @@ section.detail-boxes.section>div.slideshow {
     .text {
       z-index: 6;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: stretch;
+      justify-content: flex-end;
       text-align: center;
       flex-direction: column;
 
@@ -103,7 +103,6 @@ section.detail-boxes.section>div.slideshow {
         position: relative;
         font-size: 0.7em;
         color: $white;
-        max-width: 70%;
       }
     }
   }
