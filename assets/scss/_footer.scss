@@ -6,7 +6,9 @@
   @include sectionDivider($footerBg);
 
   >div {
-    @include wrapper($vPadding: $verticalPadding, $hPadding: $horizontalSectionSpacing);
+    @include wrapper();
+    margin-top: $horizontalSectionSpacing;
+    margin-bottom: $headerPadding;
   }
 
   ul.menu {
