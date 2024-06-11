@@ -26,7 +26,6 @@ section.detail-boxes.section>div.slideshow {
     overflow-x: auto;
     display: flex;
     flex-wrap: nowrap;
-    clip-path: polygon(0 0, 97% 6%, 100% 100%, 3% 94%);
   }
 
   .box {
@@ -75,28 +74,8 @@ section.detail-boxes.section>div.slideshow {
         padding: 1em;
         position: relative;
         font-size: 0.7em;
-        font-style: italic;
         color: $white;
-
-        &:after,
-        &:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          width: 1.5em;
-          background-color: $bg;
-        }
-
-        &:before {
-          right: 100%;
-          clip-path: polygon(100% 100%, 100% 0, 0 100%);
-        }
-
-        &:after {
-          left: 100%;
-          clip-path: polygon(0 0, 0 100%, 100% 0);
-        }
+        max-width: 70%;
       }
     }
   }
