@@ -2,8 +2,12 @@ const scrollStop = 500 // Time in ms to wait after scrolling has finished to dec
 const autoProgress = 8000 // Time in ms each slide should display for before progressing
 const smoothScrollDuration = 1000 // Time in ms to wait after autoProgress before resuming scroll listening
 
+const headerHeight = parseFloat(process.env.headerHeight) + 2 * parseInt(process.env.headerPadding)
+
 let slideshowsController: AbortController | null = null
 let autoProgressTimeouts: {[key: string]: number} = {}
+
+let anchorClickController: AbortController | null = null
 
 const setupSlideshow = (el: Element) => {
   const slideshowId = String(Math.random())
@@ -50,13 +54,42 @@ const setupSlideshow = (el: Element) => {
 const setupSlideshows = () => {
   if (slideshowsController) slideshowsController.abort()
   slideshowsController = null
+  Object.values(autoProgressTimeouts).forEach(clearTimeout)
+  autoProgressTimeouts = {}
   Array.from(document.querySelectorAll('.detail-boxes .slideshow .boxes')).forEach(setupSlideshow)
 }
 
+const setupAnchorClicks = () => {
+  if (anchorClickController) anchorClickController.abort()
+  anchorClickController = new AbortController()
+  document.body.addEventListener('click', function (e) {
+    if (!(e.target instanceof Element)) return
+    const anchor = e.target.closest('a')
+    if (!anchor) return
+    const beginning = `${document.location.origin}/#`
+    if (!anchor.href.startsWith(beginning)) return
+    const id = anchor.href.replace(beginning, '')
+    const el = document.getElementById(id)
+    if (!el) return
+    e.stopPropagation()
+    e.preventDefault()
+    const rem = parseFloat(getComputedStyle(document.documentElement).fontSize)
+    const headerOffset = rem * headerHeight
+    const y = el.getBoundingClientRect().y
+    document.documentElement.scrollTo({
+      top: document.documentElement.scrollTop + y - headerOffset,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }, {
+    capture: false,
+    signal: anchorClickController.signal,
+  });
+}
+
 const setupAll = () => {
-  Object.values(autoProgressTimeouts).forEach(clearTimeout)
-  autoProgressTimeouts = {}
   setupSlideshows()
+  setupAnchorClicks()
 }
 
 if (document.readyState != 'loading') {
@@ -65,3 +98,5 @@ if (document.readyState != 'loading') {
   document.addEventListener('DOMContentLoaded', setupAll);
 }
 document.addEventListener('turbo:load', setupAll)
+
+

@@ -1,42 +1,37 @@
-<section class="{{ .type }} section">
-  {{ if not .hide_section_name }}{{ with .section_name -}}
-  <h2>{{ . }}</h2>
-  {{- end }}{{ end }}
-  {{ $classes := slice "wrapper" .style }}
-  {{ if .description }}{{ $classes = $classes | append slice .layout }}{{ end }}
-  {{ if .smaller }}{{ $classes = $classes | append slice "smaller" }}{{ end }}
-  <div class="{{ delimit $classes " " }}">
-    {{ with .description }}
-    <div class="description">
-      {{- page.RenderString (dict "display" "block") . -}}
-    </div>
-    {{ end }}
-    <div class="boxes">
-      {{ $imageSize := partial "image-size" (dict "layout" .layout "style" .style "smaller" .smaller) }}
-      {{ $fitString := printf "%s q75 webp" $imageSize }}
-      {{ range .boxes }}
-      <div class="box">
-        {{ with .href }}
-        {{ $blank := or (strings.HasPrefix . "http" ) (strings.HasSuffix . ".pdf" ) }}
-        <a href="{{ . | safeURL }}" {{- if $blank }} target="_blank" {{- end }}></a>
-        {{ end }}
-        {{- with .image -}}
-        {{- $img := resources.GetMatch . }}
-        {{- $media := $img.MediaType.SubType -}}
-        {{- if not (eq $media "svg") -}}
-        {{- $img = $img.Fit $fitString -}}
-        {{- end -}}
-        {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
-        <img src="{{ $src }}">
-        {{ end }}
-        <div class="text">
-          <div>
-            {{ with .title }}<h3>{{ . }}</h3>{{ end }}
-            {{ with .blurb }}<div>{{ page.RenderString (dict "display" "block") . }}</div>{{ end }}
-          </div>
+{{ $classes := slice "wrapper" .style }}
+{{ if .description }}{{ $classes = $classes | append slice .layout }}{{ end }}
+{{ if .smaller }}{{ $classes = $classes | append slice "smaller" }}{{ end }}
+<div class="{{ delimit $classes " " }}">
+  {{ with .description }}
+  <div class="description">
+    {{- page.RenderString (dict "display" "block") . -}}
+  </div>
+  {{ end }}
+  <div class="boxes">
+    {{ $imageSize := partial "image-size" (dict "layout" .layout "style" .style "smaller" .smaller) }}
+    {{ $fitString := printf "%s q75 webp" $imageSize }}
+    {{ range .boxes }}
+    <div class="box">
+      {{ with .href }}
+      {{ $blank := or (strings.HasPrefix . "http" ) (strings.HasSuffix . ".pdf" ) }}
+      <a href="{{ . | safeURL }}" {{- if $blank }} target="_blank" {{- end }}></a>
+      {{ end }}
+      {{- with .image -}}
+      {{- $img := resources.GetMatch . }}
+      {{- $media := $img.MediaType.SubType -}}
+      {{- if not (eq $media "svg") -}}
+      {{- $img = $img.Fit $fitString -}}
+      {{- end -}}
+      {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
+      <img src="{{ $src }}">
+      {{ end }}
+      <div class="text">
+        <div>
+          {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+          {{ with .blurb }}<div>{{ page.RenderString (dict "display" "block") . }}</div>{{ end }}
         </div>
       </div>
-      {{ end }}
     </div>
+    {{ end }}
   </div>
-</section>
+</div>

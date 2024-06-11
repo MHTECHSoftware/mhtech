@@ -1,4 +1,4 @@
 {{ if not .Params.hide_title }}<h1>{{.Page.Title}}</h1>{{ end }}
 {{- range .Params.sections }}
-{{ partial (printf "sections/%s" .type) . }}
+{{ partial "section" . }}
 {{ end -}}

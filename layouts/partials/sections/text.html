@@ -1,8 +1,3 @@
-<section class="{{ .type }} section">
-  {{ if not .hide_section_name }}{{ with .section_name -}}
-  <h2>{{ . }}</h2>
-  {{- end }}{{ end }}
-  <div class="wrapper">
-    {{ page.RenderString (dict "display" "block") .content }}
-  </div>
-</section>
+<div class="wrapper">
+  {{ page.RenderString (dict "display" "block") .content }}
+</div>

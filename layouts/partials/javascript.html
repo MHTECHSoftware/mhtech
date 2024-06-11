@@ -1,6 +1,14 @@
 <script src="https://unpkg.com/@hotwired/turbo@^8.0.4/dist/turbo.es2017-esm.js" type="module" async></script>
 {{ with resources.Get "js/main.ts" -}}
-{{- $opts := dict "minify" true "target" "es2018" -}}
+{{- $defines := dict
+"process.env.headerHeight" (printf `"%s"` site.Data.style.headerHeight)
+"process.env.headerPadding" (printf `"%s"` site.Data.style.headerPadding)
+-}}
+{{- $opts := dict
+"minify" true
+"target" "es2018"
+"defines" $defines
+-}}
 {{- with . | js.Build $opts | fingerprint -}}
 <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" async></script>
 {{- end -}}

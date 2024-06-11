@@ -1,31 +1,26 @@
-<section class="{{ .type }} section">
-  {{ if not .hide_section_name }}{{ with .section_name -}}
-  <h2>{{ . }}</h2>
-  {{- end }}{{ end }}
-  {{- $layout := "no-content" -}}
-  {{- if and .content .image -}}
-  {{- $layout = .layout -}}
-  {{- else if .content -}}
-  {{- $layout = "no-image" -}}
-  {{- else if .image -}}
-  {{- $layout = "image-only" -}}
+{{- $layout := "no-content" -}}
+{{- if and .content .image -}}
+{{- $layout = .layout -}}
+{{- else if .content -}}
+{{- $layout = "no-image" -}}
+{{- else if .image -}}
+{{- $layout = "image-only" -}}
+{{- end -}}
+<div class="wrapper {{ $layout }}">
+  {{- with .image -}}
+  {{- $img := resources.GetMatch . }}
+  {{- $media := $img.MediaType.SubType -}}
+  {{- if not (eq $media "svg") -}}
+  {{- $img = $img.Fit "1000x1000 q75 webp" -}}
   {{- end -}}
-  <div class="wrapper {{ $layout }}">
-    {{- with .image -}}
-    {{- $img := resources.GetMatch . }}
-    {{- $media := $img.MediaType.SubType -}}
-    {{- if not (eq $media "svg") -}}
-    {{- $img = $img.Fit "1000x1000 q75 webp" -}}
-    {{- end -}}
-    {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
-    <div class="image">
-      <img src="{{ $src }}">
-    </div>
-    {{ end -}}
-    {{- with .content -}}
-    <div class="text">
-      {{ page.RenderString (dict "display" "block") . }}
-    </div>
-    {{- end }}
+  {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
+  <div class="image">
+    <img src="{{ $src }}">
   </div>
-</section>
+  {{ end -}}
+  {{- with .content -}}
+  <div class="text">
+    {{ page.RenderString (dict "display" "block") . }}
+  </div>
+  {{- end }}
+</div>
