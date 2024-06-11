@@ -98,6 +98,27 @@ collections:
                 required: false
                 name: content
                 widget: markdown
+          - label: Hero
+            name: hero
+            summary: '{{ print "{{section_name}}" }}'
+            fields:
+              - label: Section name
+                name: section_name
+                required: true
+                widget: string
+              - label: Hide section name?
+                name: hide_section_name
+                widget: boolean
+                required: false
+                default: true
+              - label: Text
+                name: text
+                required: false
+                widget: markdown
+              - label: Image
+                name: image
+                required: false
+                widget: image
           - label: Detail boxes
             name: detail-boxes
             summary: '{{ print "{{section_name}}" }}'

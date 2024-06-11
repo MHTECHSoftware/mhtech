@@ -1,0 +1,12 @@
+{{- with .image -}}
+{{- $img := resources.GetMatch . }}
+{{- $media := $img.MediaType.SubType -}}
+{{- if not (eq $media "svg") -}}
+{{- $img = $img.Fill "2000x1000 Smart q75 webp" -}}
+{{- end -}}
+{{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
+<div class="image"><img src="{{ $src }}"></div>
+{{ end }}
+{{ with .text }}
+<div class="text">{{ page.RenderString (dict "display" "block") . }}</div>
+{{ end }}

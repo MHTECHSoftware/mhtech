@@ -3,16 +3,11 @@ languageKey: Home page
 title: MHTech
 hide_title: true
 sections:
-  - type: detail-boxes
+  - type: hero
     hide_section_name: true
-    layout: description-on-left
-    style: slideshow
-    smaller: false
     section_name: Helping clients
-    description: ''
-    boxes:
-      - image: /images/tunnel.jpg
-        title:  Helping clients decarbonise and optimise complex energy systems across Transport, Built Environment and Industry
+    image: /images/tunnel.jpg
+    text:  Helping clients decarbonise and optimise complex energy systems across Transport, Built Environment and Industry
   - type: detail-boxes
     hide_section_name: true
     layout: description-on-left
