@@ -11,6 +11,7 @@ section.hero.section {
 
   .image {
     height: 130vw;
+    background-color: $green;
 
     @media #{$firstBreakpointStr} {
       height: 50vw;
