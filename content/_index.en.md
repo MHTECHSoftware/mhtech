@@ -9,10 +9,10 @@ sections:
     style: slideshow
     smaller: false
     section_name: Helping clients
-    description: Helping clients decarbonise and optimise complex energy systems
-      across Transport, Built Environment and Industry
+    description: ''
     boxes:
       - image: /images/tunnel.jpg
+        title:  Helping clients decarbonise and optimise complex energy systems across Transport, Built Environment and Industry
   - type: detail-boxes
     hide_section_name: true
     layout: description-on-left

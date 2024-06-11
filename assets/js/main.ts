@@ -10,31 +10,14 @@ let autoProgressTimeouts: {[key: string]: number} = {}
 let anchorClickController: AbortController | null = null
 
 const setupSlideshow = (el: Element) => {
+  if (el.childNodes.length < 2) return
   const slideshowId = String(Math.random())
   let scrollTimeout: number | null = null
   let isAutoScrolling = false
-  let isPaused = false
 
   if (!slideshowsController) slideshowsController = new AbortController()
 
-  el.addEventListener('scroll', () => {
-    if (isAutoScrolling) return
-    isPaused = true
-    if (scrollTimeout) clearTimeout(scrollTimeout)
-    scrollTimeout = setTimeout(() => {
-      const width = el.getBoundingClientRect().width
-      const nearest = Math.round(el.scrollLeft / width)
-      el.scrollTo({
-        top: 0,
-        left: nearest * width,
-        behavior: 'smooth',
-      })
-    }, scrollStop)
-  }, {
-    signal: slideshowsController.signal,
-  })
   const toNext = () => {
-    if (isPaused) return
     const width = el.getBoundingClientRect().width
     const nearest = Math.round(el.scrollLeft / width)
     const count = Math.round(el.scrollWidth / width)
@@ -49,6 +32,24 @@ const setupSlideshow = (el: Element) => {
     autoProgressTimeouts[slideshowId] = setTimeout(toNext, autoProgress)
   }
   autoProgressTimeouts[slideshowId] = setTimeout(toNext, autoProgress)
+
+  el.addEventListener('scroll', () => {
+    if (isAutoScrolling) return
+    if (scrollTimeout) clearTimeout(scrollTimeout)
+    if (autoProgressTimeouts[slideshowId]) clearTimeout(autoProgressTimeouts[slideshowId])
+    scrollTimeout = setTimeout(() => {
+      const width = el.getBoundingClientRect().width
+      const nearest = Math.round(el.scrollLeft / width)
+      el.scrollTo({
+        top: 0,
+        left: nearest * width,
+        behavior: 'smooth',
+      })
+      autoProgressTimeouts[slideshowId] = setTimeout(toNext, autoProgress * 1.5)
+    }, scrollStop)
+  }, {
+    signal: slideshowsController.signal,
+  })
 }
 
 const setupSlideshows = () => {
