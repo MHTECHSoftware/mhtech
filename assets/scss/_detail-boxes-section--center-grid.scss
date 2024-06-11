@@ -33,7 +33,6 @@ section.detail-boxes.section {
       &.description-above {
         .description {
           padding: 1em 10em;
-          margin-bottom: 3em;
         }
       }
 
@@ -97,12 +96,6 @@ section.detail-boxes.section {
             width: 14.5em;
             margin-bottom: 3em;
           }
-        }
-      }
-
-      .description {
-        @media #{$beforeFirstBreakpointStr} {
-          margin-bottom: 3em;
         }
       }
 

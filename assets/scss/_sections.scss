@@ -3,6 +3,16 @@ section.section {
 
   @include sectionDivider($white);
 
+  @media #{$beforeFirstBreakpointStr} {
+    .description+.boxes {
+      margin-top: 3em;
+    }
+  }
+
+  .description-above .description+.boxes {
+    margin-top: 3em;
+  }
+
   &.green {
     background-color: $green;
     @include sectionDividerColors($green);
