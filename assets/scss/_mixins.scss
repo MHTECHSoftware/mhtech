@@ -10,6 +10,7 @@
   padding-right: calc(#{$vPadding} + env(safe-area-inset-right));
   box-sizing: border-box;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @mixin transition($what: all, $time: 0.1s, $fn: ease-in-out) {
