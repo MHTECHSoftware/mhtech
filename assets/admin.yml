@@ -190,7 +190,7 @@ collections:
                     required: false
                     name: href
                     widget: string
-                    pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|mailto:.+@.+\..+)$', 'Should start / for internal links, http(s):// for external links, or mailto: for email addresses']
+                    pattern: ['^(/[-a-zåøæ0-9/]*|https?://.*|#|mailto:.+@.+\..+)$', 'Should start / or # for internal links, http(s):// for external links, or mailto: for email addresses']
               - label: Background
                 name: background
                 widget: select
