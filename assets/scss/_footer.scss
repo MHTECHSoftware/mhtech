@@ -9,12 +9,22 @@
     @include wrapper();
     margin-top: $horizontalSectionSpacing;
     margin-bottom: $headerPadding;
+    display: flex;
+    flex-direction: column;
+
+    >div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $horizontalPadding;
+
+      @media #{$beforeFirstBreakpointStr} {
+        flex-direction: column;
+      }
+    }
   }
 
   ul.menu {
-    @media #{$firstBreakpointStr} {
-      display: flex;
-    }
+    display: flex;
 
     li {
       @media #{$firstBreakpointStr} {
@@ -40,6 +50,18 @@
           border-color: $lightGreen;
         }
       }
+    }
+
+    &.icons li:not(:first-child) {
+      margin-left: $verticalPadding;
+    }
+
+    &:not(.icons) {
+      @media #{$beforeFirstBreakpointStr} {
+        flex-direction: column;
+      }
+
+      margin-bottom: $horizontalPadding;
     }
   }
 }

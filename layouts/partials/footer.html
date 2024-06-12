@@ -1,5 +1,12 @@
 <footer id="site-footer">
   <div>
-    {{ partial "menu" (index .Site.Data.menus .Language.Lang).footer }}
+    {{ $menu := index .Site.Data.menus .Language.Lang -}}
+    <div>
+      {{ partial "menu" $menu.footer }}
+      {{ partial "icons" $menu.footer_right }}
+    </div>
+    <div>
+      {{ page.RenderString (dict "display" "block") $menu.footer_text }}
+    </div>
   </div>
 </footer>

@@ -384,6 +384,33 @@ collections:
             widget: list
             i18n: true
             types: *menuItemTypes
+          - label: Footer (right)
+            name: footer_right
+            label_singular: Footer icon
+            widget: list
+            i18n: true
+            summary: '{{ print "{{title}} ({{href}})" }}'
+            fields:
+              - label: Link
+                name: href
+                widget: string
+                required: true
+                pattern: ['^https?://|mailto:', 'Should start http://, https://, or mailto:']
+              - label: Link title
+                name: title
+                widget: string
+                required: true
+              - label: Icon
+                name: icon
+                media_folder: '/assets/icons/'
+                public_folder: '/icons/'
+                required: true
+                widget: image
+          - label: Footer text
+            name: footer_text
+            i18n: true
+            widget: markdown
+            required: false
       - label: Code
         name: code
         file: data/code.yml

@@ -34,4 +34,12 @@
         width: auto;
       }
     }
+
+    &.icons {
+      img {
+        height: $lineHeight * 1em;
+        width: auto;
+        filter: brightness(0) invert(1);
+      }
+    }
   }

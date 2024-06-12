@@ -1,0 +1,7 @@
+<ul class="site icons menu">
+  {{ range . }}
+  {{ $img := resources.GetMatch .icon | resources.Fingerprint "md5" -}}
+  <li><a href="{{ .href }}" title="{{ .title }}" target="_blank"><img src="{{ $img.RelPermalink }}"
+        alt="{{ .title }}"></a></li>
+  {{- end }}
+</ul>

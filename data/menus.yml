@@ -15,11 +15,14 @@ en:
   footer:
     - type: page
       link: Privacy policy
+  footer_right:
     - type: email
-      email_address: kontakt@mhtech.no
-    - type: link
-      href: https://www.linkedin.com/company/mhtech-as
+      icon: /icons/mail.svg
+      href: mailto:kontakt@mhtech.no
+    - href: https://www.linkedin.com/company/mhtech-as
       title: LinkedIn
+      icon: /icons/linkedin.svg
+  footer_text: © MHTech - Org Nr. 917882134
 nb:
   main:
     - type: page
@@ -37,8 +40,11 @@ nb:
   footer:
     - type: page
       link: Privacy policy
+  footer_right:
     - type: email
-      email_address: kontakt@mhtech.no
-    - type: link
-      href: https://www.linkedin.com/company/mhtech-as
+      icon: /icons/mail.svg
+      href: mailto:kontakt@mhtech.no
+    - href: https://www.linkedin.com/company/mhtech-as
       title: LinkedIn
+      icon: /icons/linkedin.svg
+  footer_text: © MHTech - Org Nr. 917882134
