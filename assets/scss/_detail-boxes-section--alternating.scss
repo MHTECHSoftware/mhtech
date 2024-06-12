@@ -42,6 +42,8 @@ section.detail-boxes.section {
 
     .box>img {
       width: 12em;
+      border-radius: 6em;
+      shape-outside: circle(6em);
     }
 
     &.smaller .box>img {

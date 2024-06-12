@@ -9,7 +9,7 @@
   {{ end }}
   <div class="boxes">
     {{ $imageSize := partial "image-size" (dict "layout" .layout "style" .style "smaller" .smaller) }}
-    {{ $fitString := printf "%s q75 webp" $imageSize }}
+    {{ $fitString := printf "%s Center q75 webp" $imageSize }}
     {{ range .boxes }}
     <div class="box">
       {{ with .href }}
@@ -20,7 +20,7 @@
       {{- $img := resources.GetMatch . }}
       {{- $media := $img.MediaType.SubType -}}
       {{- if not (eq $media "svg") -}}
-      {{- $img = $img.Fit $fitString -}}
+      {{- $img = $img.Fill $fitString -}}
       {{- end -}}
       {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
       <img src="{{ $src }}">

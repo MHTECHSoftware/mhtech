@@ -1,15 +1,15 @@
 {{- $size := "1000x1000" -}}
 {{- if eq .style "slideshow" -}}
-  {{- if eq .layout "description-above" -}}
-    {{- $size = "2000x2000" -}}
-  {{- else -}}
-    {{- $size = cond .smaller "1000x1000" "700x700" -}}
-  {{- end -}}
+{{- if eq .layout "description-above" -}}
+{{- $size = "2000x2000" -}}
+{{- else -}}
+{{- $size = cond .smaller "1000x1000" "700x700" -}}
+{{- end -}}
 {{- else if eq $.style "alternating" -}}
-  {{- $size = cond .smaller "400x400" "200x200" -}}
+{{- $size = cond .smaller "400x400" "200x200" -}}
 {{- else if eq $.style "left-grid" -}}
-  {{- $size = cond .smaller "600x600" "350x350" -}}
+{{- $size = cond .smaller "700x460" "350x230" -}}
 {{- else if eq $.style "center-grid" -}}
-  {{- $size = cond .smaller "600x600" "300x300" -}}
+{{- $size = cond .smaller "600x600" "300x300" -}}
 {{- end -}}
 {{- return $size -}}

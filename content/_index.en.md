@@ -7,56 +7,84 @@ sections:
     hide_section_name: true
     section_name: Helping clients
     image: /images/tunnel.jpg
-    text:  Helping clients decarbonise and optimise complex energy systems across Transport, Built Environment and Industry
-  - type: detail-boxes
-    background: white
-    hide_section_name: true
+    text: Helping clients decarbonise and optimise complex energy systems across
+      Transport, Built Environment and Industry
+  - hide_section_name: true
+    section_name: Our Mission
     layout: description-on-left
+    background: white
     style: slideshow
     smaller: false
-    section_name: Our Mission
+    boxes:
+      - image: /images/tunnel.jpg
+        title: Road transport
+        blurb: Driving hard to decarbonise fleet
+        href: ""
+      - image: /images/shipping-containers.jpg
+        title: Logistics
+    type: detail-boxes
     description: >-
       Our mission is to speed the transition to a sustainable energy system.
 
 
       We collaborate with innovative, forward-thinking companies to evaluate infrastructure and economics for transition to energy efficient and decarbonised solutions.
-    boxes:
-      - image: /images/tunnel.jpg
-        title: Road transport
-        blurb: Driving hard to decarbonise fleet
-        href: '#our-focus'
-      - image: /images/shipping-containers.jpg
-        title: Logistics
-  - type: detail-boxes
-    background: light-green
-    hide_section_name: true
+  - hide_section_name: true
+    section_name: Our Focus
     layout: description-on-right
+    background: light-green
     style: alternating
     smaller: false
-    section_name: Our Focus
+    boxes:
+      - title: Technology
+        blurb: Leveraging bespoke and off-the-shelf software and hardware solutions,
+          aligning with client need, and measuring operational impact
+        image: /images/motherboard.jpg
+      - title: Impact
+        blurb: Maximising impact on local and global emissions, and evaluating impact on
+          emissions throughout the value chain
+        image: /images/growth.jpg
+      - title: Cost
+        blurb: Ensuring maximised outcome for minimised cost - our goal is to enable our
+          clients to save cost and realise revenue opportunity through
+          transitioning to more sustainable operations
+        image: /images/coins.jpg
+    type: detail-boxes
     description: >-
       ### Our Focus
 
 
       MHTech's focus is to leverage technology to maximise impact and cost benefit for our clients
-    boxes:
-      - title: Technology
-        blurb: Leveraging bespoke and off-the-shelf software and hardware solutions,
-          aligning with client need, and measuring operational impact
-      - title: Impact
-        blurb: Maximising impact on local and global emissions, and evaluating impact on
-          emissions throughout the value chain
-      - title: Cost
-        blurb: Ensuring maximised outcome for minimised cost - our goal is to enable our
-          clients to save cost and realise revenue opportunity through
-          transitioning to more sustainable operations
-  - type: detail-boxes
-    background: dark-green
-    hide_section_name: true
+  - hide_section_name: true
+    section_name: Our Work
     layout: description-on-left
+    background: dark-green
     style: left-grid
     smaller: false
-    section_name: Our Work
+    boxes:
+      - title: ZeBra
+        blurb: We supported an innovative road marking company in maintaining their lead
+          in the market by designing the first decarbonised road marking vehicle
+          in Norway
+        image: /images/zebra.webp
+      - title: Pon ePower
+        image: /images/pon-norway.jpg
+        blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
+          online sizing tool to help customers and engineers better understand
+          the cost and benefits of utilizing hybrid drivetrains in small
+          vessels.
+      - title: Lineage
+        blurb: We helped Lineage logistics reduce CO2-emissions energy consumption for a
+          freezer storage facility in Moss. MHTech assisted from feasibility
+          study through project execution. Helping save XXX tonnes of CO2
+          annually.
+        image: /images/lineage.jpg
+      - title: Start-ups
+        blurb: We collaborate with start-ups who share our mission. We provide
+          expertise, development, and strategy support, enabling our partners to
+          rapidly achieve their goals. Thanks to our latest partners including
+          Ezone, Hyke, and AlwaysCargo
+        image: /images/startups.jpg
+    type: detail-boxes
     description: >-
       ### Our Work
 
@@ -71,27 +99,6 @@ sections:
 
 
       [Explore our sectors](/sectors)
-    boxes:
-      - title: ZeBra
-        blurb: We supported an innovative road marking company in maintaining their lead
-          in the market by designing the first decarbonised road marking vehicle
-          in Norway
-      - title: Pon ePower
-        image: /images/pon-power.jpg
-        blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
-          online sizing tool to help customers and engineers better understand
-          the cost and benefits of utilizing hybrid drivetrains in small
-          vessels.
-      - title: Lineage
-        blurb: We helped Lineage logistics reduce CO2-emissions energy consumption for a
-          freezer storage facility in Moss. MHTech assisted from feasibility
-          study through project execution. Helping save XXX tonnes of CO2
-          annually.
-      - title: Start-ups
-        blurb: We collaborate with start-ups who share our mission. We provide
-          expertise, development, and strategy support, enabling our partners to
-          rapidly achieve their goals. Thanks to our latest partners including
-          Ezone, Hyke, and AlwaysCargo
   - type: logo-grid
     hide_section_name: false
     section_name: Our Partners
