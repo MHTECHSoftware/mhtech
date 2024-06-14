@@ -129,6 +129,7 @@ sections:
         image: /logos/nordic-edge.png
       - name: UKRI Innovate UK - Business Growth
         image: /logos/ukri-innovate-uk-square-logo_h.png
+        href: https://www.innovateukedge.ukri.org/about-us#:~:text=Innovate%20UK%20Business%20Growth%20is,businesses%20that%20drive%20economic%20growth.
 slug: <HOME>
 menu_title: Home
 meta:
