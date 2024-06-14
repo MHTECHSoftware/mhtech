@@ -32,7 +32,8 @@ section.detail-boxes.section {
     @media #{$firstBreakpointStr} {
       &.description-above {
         .description {
-          padding: 1em 10em;
+          padding-left: 10em;
+          padding-right: 10em;
         }
       }
 

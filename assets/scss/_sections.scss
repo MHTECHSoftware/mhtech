@@ -8,12 +8,12 @@ section.section {
 
   @media #{$beforeFirstBreakpointStr} {
     .description+.boxes {
-      margin-top: 3em;
+      margin-top: 2rem;
     }
   }
 
   .description-above .description+.boxes {
-    margin-top: 3em;
+    margin-top: 2rem;
   }
 
   &.green {
