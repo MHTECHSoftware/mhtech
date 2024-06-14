@@ -235,7 +235,8 @@ collections:
         name: slug
         widget: string
         required: true
-        pattern: ['^(<HOME>|[-a-zåøæ0-9]+)$', 'Can only contain lowercase letters, numbers and dashes']
+        pattern: ['^(<HOME>|[-a-zåøæ0-9]+(\/[-a-zåøæ0-9]+)*)$', 'Can only contain lowercase letters, numbers and dashes']
+        hint: What comes after 'mhtech.no/' or 'mhtech.no/nb/'. Should not start or end with a '/'
         i18n: true
       - label: Keep as draft?
         name: draft
