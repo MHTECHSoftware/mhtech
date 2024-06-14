@@ -27,17 +27,13 @@
     }
 
     .description {
-      padding: 1em;
+      padding: 1rem;
     }
 
     .boxes {
       display: flex;
       flex-wrap: wrap;
       flex-shrink: 0;
-
-      @media #{$firstBreakpointStr} {
-        margin: 0 -1em;
-      }
 
       .box {
         width: 100%;
@@ -54,9 +50,17 @@
 
         @media #{$firstBreakpointStr} {
           margin-bottom: 0;
-          padding: 1em;
+          padding: 1rem;
           box-sizing: border-box;
           width: 33%;
+        }
+      }
+    }
+
+    &.description-above {
+      .description {
+        @media #{$firstBreakpointStr} {
+          margin: 1rem;
         }
       }
     }

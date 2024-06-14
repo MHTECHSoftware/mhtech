@@ -1,6 +1,9 @@
 section.section {
   position: relative;
 
+  padding-top: $horizontalSectionSpacing;
+  padding-bottom: $horizontalSectionSpacing;
+
   @include sectionDivider($white);
 
   @media #{$beforeFirstBreakpointStr} {
@@ -44,15 +47,11 @@ section.section {
 
   >h2 {
     @include wrapper($hPadding: 0);
-    margin-bottom: 0;
-    margin-top: $horizontalSectionSpacing;
     text-align: center;
   }
 
   >div.wrapper {
     @include wrapper();
-    margin-top: $horizontalSectionSpacing;
-    margin-bottom: $horizontalSectionSpacing;
   }
 
   img {

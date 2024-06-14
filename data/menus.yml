@@ -11,7 +11,7 @@ en:
     - type: page
       link: About
     - type: email
-      email_address: kontakt@mhtech.no
+      email_address: contact@mhtech.no
   footer:
     - type: page
       link: Privacy policy

@@ -11,7 +11,7 @@ sections:
       Transport, Built Environment and Industry
   - hide_section_name: true
     section_name: Our Mission
-    layout: description-on-left
+    layout: description-on-right
     background: white
     style: slideshow
     smaller: false
@@ -30,13 +30,13 @@ sections:
         blurb: Optimising energy production and energy carrier systems
     type: detail-boxes
     description: >-
-      Our mission is to speed the transition to a sustainable energy system.
+      ### Our mission is to speed the transition to a sustainable energy system.
 
 
       We collaborate with innovative, forward-thinking companies to evaluate infrastructure and economics for transition to energy efficient and decarbonised solutions.
-  - hide_section_name: true
+  - hide_section_name: false
     section_name: Our Focus
-    layout: description-on-right
+    layout: description-on-left
     background: light-green
     style: alternating
     smaller: false
@@ -56,21 +56,18 @@ sections:
         image: /images/coins.jpg
     type: detail-boxes
     description: >-
-      ### Our Focus
-
-
       MHTech's focus is to leverage technology to maximise impact and cost benefit for our clients
-  - hide_section_name: true
+  - hide_section_name: false
     section_name: Our Work
-    layout: description-on-left
+    layout: description-above
     background: dark-green
     style: left-grid
-    smaller: false
+    smaller: true
     boxes:
       - title: ZeBra
         blurb: We supported an innovative road marking company in maintaining their lead
           in the market by designing the first decarbonised road marking vehicle
-          in Norway
+          in Norway.
         image: /images/zebra.webp
       - title: Pon ePower
         image: /images/pon-norway.jpg
@@ -88,13 +85,10 @@ sections:
         blurb: We collaborate with start-ups who share our mission. We provide
           expertise, development, and strategy support, enabling our partners to
           rapidly achieve their goals. Thanks to our latest partners including
-          Ezone, Hyke, and AlwaysCargo
+          Ezone, Hyke, and AlwaysCargo.
         image: /images/startups.jpg
     type: detail-boxes
     description: >-
-      ### Our Work
-
-
       MHTech is a Norway start-up founded to enable the decarbonization of complex energy systems across transport, energy systems, industry & built environment.
 
 

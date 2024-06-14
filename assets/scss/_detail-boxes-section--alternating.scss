@@ -15,7 +15,6 @@ section.detail-boxes.section {
         }
 
         .boxes {
-          padding-top: 2em;
           width: 60%;
         }
 
@@ -41,9 +40,15 @@ section.detail-boxes.section {
     }
 
     .box>img {
-      width: 12em;
-      border-radius: 6em;
-      shape-outside: circle(6em);
+      width: 8em;
+      border-radius: 4em;
+      shape-outside: circle(4em);
+
+      @media #{$firstBreakpointStr} {
+        width: 12em;
+        border-radius: 6em;
+        shape-outside: circle(6em);
+      }
     }
 
     &.smaller .box>img {
@@ -57,23 +62,6 @@ section.detail-boxes.section {
       &:not(:first-child) {
         margin-top: 2em;
       }
-
-      &:nth-child(2n+1) {
-        text-align: right;
-
-        img {
-          margin-right: 1em;
-        }
-      }
-
-      &:nth-child(2n) {
-        flex-direction: row-reverse;
-
-        img {
-          margin-left: 1em;
-        }
-      }
-
 
       >a {
         position: absolute;
@@ -114,6 +102,26 @@ section.detail-boxes.section {
         clear: both;
       }
     }
+
+    &.description-on-left .box:nth-child(2n),
+    &:not(.description-on-left) .box:nth-child(2n+1) {
+      text-align: right;
+
+      img {
+        margin-right: 1em;
+      }
+    }
+
+    &.description-on-left .box:nth-child(2n+1),
+    &:not(.description-on-left) .box:nth-child(2n) {
+      flex-direction: row-reverse;
+
+      img {
+        margin-left: 1em;
+      }
+    }
+
+
   }
 
   >div.alternating .description {

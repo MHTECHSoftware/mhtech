@@ -1,6 +1,9 @@
 section.hero.section {
   text-align: center;
 
+  padding-top: 0;
+  padding-bottom: 0;
+
   @media #{$beforeFirstBreakpointStr} {
     font-size: 0.7em;
   }
