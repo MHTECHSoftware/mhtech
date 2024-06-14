@@ -127,6 +127,8 @@ sections:
       - name: Nordic Edge
         href: https://nordicedge.org/
         image: /logos/nordic-edge.png
+      - name: UKRI Innovate UK - Business Growth
+        image: /logos/ukri-innovate-uk-square-logo.png
 slug: <HOME>
 menu_title: Home
 meta:
