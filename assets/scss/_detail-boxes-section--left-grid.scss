@@ -74,14 +74,6 @@
       }
     }
 
-    &.smaller .boxes .box {
-      width: 50%;
-
-      @media #{$firstBreakpointStr} {
-        width: 25%;
-      }
-    }
-
     &.description-on-left,
     &.description-on-right {
       &.smaller .boxes .box {
@@ -93,6 +85,20 @@
 
     &.smaller .boxes {
       font-size: 0.8em;
+
+      @media #{$beforeFirstBreakpointStr} {
+        justify-content: space-between;
+
+        .box {
+          width: (100vw - $fontSize*3)/2;
+        }
+      }
+
+      @media #{$firstBreakpointStr} {
+        .box {
+          width: 25%;
+        }
+      }
     }
 
     .box>a {
