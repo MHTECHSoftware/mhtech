@@ -6,12 +6,12 @@ sections:
   - type: hero
     hide_section_name: true
     section_name: Helping clients
-    image: /images/tunnel.jpg
+    image: /images/leaf.jpg
     text: Helping clients decarbonise and optimise complex energy systems across
       Transport, Built Environment and Industry
   - hide_section_name: true
     section_name: Our Mission
-    layout: description-on-left
+    layout: description-on-right
     background: white
     style: slideshow
     smaller: false
@@ -30,13 +30,13 @@ sections:
         blurb: Optimising energy production and energy carrier systems
     type: detail-boxes
     description: >-
-      Our mission is to speed the transition to a sustainable energy system.
+      ### Our mission is to speed the transition to a sustainable energy system.
 
 
       We collaborate with innovative, forward-thinking companies to evaluate infrastructure and economics for transition to energy efficient and decarbonised solutions.
-  - hide_section_name: true
+  - hide_section_name: false
     section_name: Our Focus
-    layout: description-on-right
+    layout: description-on-left
     background: light-green
     style: alternating
     smaller: false
@@ -56,22 +56,19 @@ sections:
         image: /images/coins.jpg
     type: detail-boxes
     description: >-
-      ### Our Focus
-
-
       MHTech's focus is to leverage technology to maximise impact and cost benefit for our clients
-  - hide_section_name: true
+  - hide_section_name: false
     section_name: Our Work
-    layout: description-on-left
-    background: dark-green
+    layout: description-above
+    background: green
     style: left-grid
-    smaller: false
+    smaller: true
     boxes:
       - title: ZeBra
         blurb: We supported an innovative road marking company in maintaining their lead
           in the market by designing the first decarbonised road marking vehicle
-          in Norway
-        image: /images/zebra.webp
+          in Norway.
+        image: /images/road-marking.jpg
       - title: Pon ePower
         image: /images/pon-norway.jpg
         blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
@@ -88,13 +85,10 @@ sections:
         blurb: We collaborate with start-ups who share our mission. We provide
           expertise, development, and strategy support, enabling our partners to
           rapidly achieve their goals. Thanks to our latest partners including
-          Ezone, Hyke, and AlwaysCargo
+          Ezone, Hyke, and AlwaysCargo.
         image: /images/startups.jpg
     type: detail-boxes
     description: >-
-      ### Our Work
-
-
       MHTech is a Norway start-up founded to enable the decarbonization of complex energy systems across transport, energy systems, industry & built environment.
 
 
@@ -104,7 +98,33 @@ sections:
       We help our clients optimise the transition to decarbonized and future-ready outcomes – minimising risk and unlocking revenue opportunity.
 
 
-      [Explore our sectors](/nb/sektorer)
+      [Explore our sectors](/sectors)
+  - hide_section_name: true
+    section_name: Testimonials
+    layout: descripton-above
+    style: center-grid
+    background: dark-green
+    type: detail-boxes
+    smaller: false
+    boxes:
+        - title:
+          blurb: |
+            > “Vi har samarbeidet med MHTech i en betydelig periode, og vi har som plan å fortsette med det, ettersom det er preget av gjensidig tillit og en løsningsorientert tilnærming.”
+
+            **-- FlowChange -- Daglig leder**
+          image: /images/flowchange.webp
+        - title:
+          blurb: |
+            > “Vi i Ze Bra setter stor pris på MHTech sin ekspertise og ideer rettet mot innovasjon og utvikling innenfor vår bransje. Vi opplever at MHTech er kunnskapsrike og dyktige tjenesteleverandører med fokus på profesjonalitet og effektivitet. Vi ser frem til videre samarbeid på våre prosjekter.”
+
+            **-- Ze Bra -- Prosjektleder**
+          image: /images/zebra.webp
+        - title:
+          blurb: |
+            > “Et faglig sterkt og inspirerende team. Utfordrer partnere og kunder til å tenke utenfor den tradisjonelle boksen. Evner å se helheten,  samtidig som de er svært detaljorienterte. Glimrende prosjektledere.”
+
+            **-- El av Sol Norge AS -- Daglig leder**
+          image: /images/el-av-sol.webp
   - type: logo-grid
     hide_section_name: false
     section_name: Våre Forretningspartnere
