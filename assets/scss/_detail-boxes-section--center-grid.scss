@@ -116,8 +116,18 @@ section.detail-boxes.section {
     color: $green;
   }
 
-  &.green div.center-grid .box>a~.text {
-    color: $lightGreen;
+  blockquote {
+    margin: 0;
+  }
+
+  &.green div.center-grid .box {
+    >img {
+      background-color: $darkGreen;
+    }
+
+    >a~.text {
+      color: $lightGreen;
+    }
   }
 
   &.green div.center-grid .box>a:hover~.text {

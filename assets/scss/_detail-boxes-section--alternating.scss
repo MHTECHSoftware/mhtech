@@ -133,15 +133,21 @@ section.detail-boxes.section {
     }
   }
 
-  &.green>div.alternating .description {
-    background-color: $white;
-    color: $black;
+  &.green>div.alternating {
+    .box>img {
+      background-color: $darkGreen;
+    }
 
-    a {
-      color: $green;
+    .description {
+      background-color: $white;
+      color: $black;
 
-      &:hover {
-        color: $black;
+      a {
+        color: $green;
+
+        &:hover {
+          color: $black;
+        }
       }
     }
   }

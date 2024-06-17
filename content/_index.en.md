@@ -60,7 +60,7 @@ sections:
   - hide_section_name: false
     section_name: Our Work
     layout: description-above
-    background: dark-green
+    background: green
     style: left-grid
     smaller: true
     boxes:
@@ -68,7 +68,7 @@ sections:
         blurb: We supported an innovative road marking company in maintaining their lead
           in the market by designing the first decarbonised road marking vehicle
           in Norway.
-        image: /images/zebra.webp
+        image: /images/road-marking.jpg
       - title: Pon ePower
         image: /images/pon-norway.jpg
         blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
@@ -99,6 +99,32 @@ sections:
 
 
       [Explore our sectors](/sectors)
+  - hide_section_name: true
+    section_name: Testimonials
+    layout: descripton-above
+    style: center-grid
+    background: dark-green
+    type: detail-boxes
+    smaller: false
+    boxes:
+        - title:
+          blurb: |
+            > “We have been collaborating with MHTech for a significant period, and we plan to continue because it is characterized by mutual trust and a solution-oriented approach.”
+
+            **-- FlowChange -- CEO**
+          image: /images/flowchange.webp
+        - title:
+          blurb: |
+            > “We at Ze Bra greatly appreciate MHTech's expertise and ideas aimed at innovation and development within our industry. We find MHTech to be knowledgeable and skilled service providers with a focus on professionalism and efficiency. We look forward to continued collaboration on our projects.”
+
+            **-- Ze Bra -- Project Manager**
+          image: /images/zebra.webp
+        - title:
+          blurb: |
+            > “A professionally strong and inspiring team. Challenges partners and customers to think ELAVSOL outside the traditional box. Capable of seeing the big picture while being highly detail-oriented. Excellent project managers.”
+
+            **-- El av Sol Norge AS -- CEO**
+          image: /images/el-av-sol.webp
   - type: logo-grid
     hide_section_name: false
     section_name: Our Partners
