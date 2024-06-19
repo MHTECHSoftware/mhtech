@@ -2,6 +2,7 @@ section.detail-boxes.section {
   >div.alternating {
     .description {
       padding: 2em;
+      margin-bottom: 2em;
     }
 
     @media #{$firstBreakpointStr} {
@@ -14,7 +15,7 @@ section.detail-boxes.section {
           width: 40%
         }
 
-        .boxes {
+        .boxes-wrapper {
           width: 60%;
         }
 
@@ -23,18 +24,18 @@ section.detail-boxes.section {
             width: 60%
           }
 
-          .boxes {
+          .boxes-wrapper {
             width: 40%;
           }
 
         }
       }
 
-      &.description-on-left .boxes {
+      &.description-on-left .boxes-wrapper {
         margin-left: 2em;
       }
 
-      &.description-on-right .boxes {
+      &.description-on-right .boxes-wrapper {
         margin-right: 2em;
       }
     }

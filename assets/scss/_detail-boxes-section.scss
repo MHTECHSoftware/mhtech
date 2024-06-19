@@ -1,6 +1,7 @@
 section.detail-boxes.section {
 
   .description,
+  .boxes,
   .boxes-wrapper,
   .box {
     box-sizing: border-box;
@@ -23,7 +24,7 @@ section.detail-boxes.section {
       flex-direction: column;
     }
 
-    .boxes {
+    .boxes-wrapper {
       width: 100%;
     }
 

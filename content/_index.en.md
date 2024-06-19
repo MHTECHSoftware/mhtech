@@ -16,16 +16,16 @@ sections:
     style: slideshow
     smaller: false
     boxes:
-      - image: /images/tunnel.jpg
+      - image: /images/norway-road-valley.jpg
         title: Road transport
         blurb: Tackling hard to decarbonise fleet
       - image: /images/shipping-containers.jpg
         title: Marine operations
         blurb: Reducing emissions for operators, ports & owners
-      - image: /images/tunnel.jpg
+      - image: /images/solar-warehouses.jpg
         title: Industry & Built environment
         blurb: Energy efficiency gains through optimised operations, energy and heat
-      - image: /images/shipping-containers.jpg
+      - image: /images/energy-systems.jpg
         title: Energy Systems
         blurb: Optimising energy production and energy carrier systems
     type: detail-boxes

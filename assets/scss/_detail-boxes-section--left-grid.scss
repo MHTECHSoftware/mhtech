@@ -8,7 +8,7 @@
           width: 35%;
         }
 
-        .boxes {
+        .boxes-wrapper {
           width: 65%;
         }
       }
@@ -30,6 +30,18 @@
       padding: 1rem;
     }
 
+    @media #{$beforeFirstBreakpointStr} {
+      .boxes {
+        margin-top: 2rem;
+      }
+    }
+
+    @media #{$firstBreakpointStr} {
+      &.description-above .boxes {
+        margin-top: 1rem;
+      }
+    }
+
     .boxes {
       display: flex;
       flex-wrap: wrap;
@@ -43,7 +55,7 @@
           height: 12em;
           object-fit: cover;
           position: relative;
-          top: -1em;
+          top: -1rem;
         }
 
         margin-bottom: 3em;

@@ -7,31 +7,38 @@
     {{- page.RenderString (dict "display" "block") . -}}
   </div>
   {{ end }}
-  <div class="boxes">
-    {{ $imageSize := partial "image-size" (dict "layout" .layout "style" .style "smaller" .smaller) }}
-    {{ $fitString := printf "%s Center q75 webp" $imageSize }}
-    {{ range .boxes }}
-    <div class="box">
-      {{ with .href }}
-      {{ $blank := or (strings.HasPrefix . "http" ) (strings.HasSuffix . ".pdf" ) }}
-      <a href="{{ . | safeURL }}" {{- if $blank }} target="_blank" {{- end }}></a>
-      {{ end }}
-      {{- with .image -}}
-      {{- $img := resources.GetMatch . }}
-      {{- $media := $img.MediaType.SubType -}}
-      {{- if not (eq $media "svg") -}}
-      {{- $img = $img.Fill $fitString -}}
-      {{- end -}}
-      {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
-      <img src="{{ $src }}">
-      {{ end }}
-      <div class="text">
-        <div>
-          {{ with .title }}<h3>{{ . }}</h3>{{ end }}
-          {{ with .blurb }}<div>{{ page.RenderString (dict "display" "block") . }}</div>{{ end }}
+  <div class="boxes-wrapper">
+    <div class="boxes">
+      {{ $style := .style }}
+      {{ $imageSize := partial "image-size" (dict "layout" .layout "style" .style "smaller" .smaller) }}
+      {{ $fitString := printf "%s Center q75 webp" $imageSize }}
+      {{ range .boxes }}
+      <div class="box">
+        {{ with .href }}
+        {{ $blank := or (strings.HasPrefix . "http" ) (strings.HasSuffix . ".pdf" ) }}
+        <a href="{{ . | safeURL }}" {{- if $blank }} target="_blank" {{- end }}></a>
+        {{ end }}
+        {{- with .image -}}
+        {{- $img := resources.GetMatch . }}
+        {{- $media := $img.MediaType.SubType -}}
+        {{- if not (eq $media "svg") -}}
+        {{- if eq $style "slideshow" }}
+        {{- $img = $img.Fit $fitString -}}
+        {{- else -}}
+        {{- $img = $img.Fill $fitString -}}
+        {{- end -}}
+        {{- end -}}
+        {{- $src := ($img | resources.Fingerprint "md5").RelPermalink -}}
+        <img src="{{ $src }}">
+        {{ end }}
+        <div class="text">
+          <div>
+            {{ with .title }}<h3>{{ . }}</h3>{{ end }}
+            {{ with .blurb }}<div>{{ page.RenderString (dict "display" "block") . }}</div>{{ end }}
+          </div>
         </div>
       </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
 </div>

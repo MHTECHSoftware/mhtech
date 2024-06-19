@@ -24,6 +24,7 @@ section.detail-boxes.section>div.slideshow {
 
     &.description-on-left,
     &.description-on-right {
+      justify-content: flex-start;
 
       .description {
         width: 35%;
@@ -31,6 +32,9 @@ section.detail-boxes.section>div.slideshow {
 
       .boxes {
         align-items: center;
+      }
+
+      .boxes-wrapper {
         width: 65%;
       }
 
@@ -39,13 +43,13 @@ section.detail-boxes.section>div.slideshow {
           width: 65%;
         }
 
-        .boxes {
+        .boxes-wrapper {
           width: 35%;
         }
       }
 
       .box {
-        height: $h;
+        height: $h*1.2;
       }
     }
   }
@@ -102,8 +106,108 @@ section.detail-boxes.section>div.slideshow {
         background-color: $bg;
         padding: 1em;
         position: relative;
-        font-size: 0.7em;
+        font-size: 0.9em;
         color: $white;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+
+    button {
+      $c: rgba(0, 0, 0, 0.3);
+      $h: rgba(0, 0, 0, 0.5);
+      $s: 1em;
+      $i: 0.9em;
+      $t: 0.25em;
+      width: $s;
+      height: $s;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: transparent $c;
+        @include transition(border left);
+
+      }
+
+      &:hover {
+
+        &:before,
+        &:after {
+          border-color: transparent $h;
+        }
+      }
+
+      &.play,
+      &.pause {
+        &:after {
+          border: 0;
+        }
+
+        &:before {
+          width: $i;
+          height: $i;
+          top: ($s - $i)/2;
+          left: ($s - $i)/2;
+        }
+      }
+
+      &.play:before {
+        border-width: ($i/2) 0 ($i/2) $i;
+      }
+
+      &.pause:before {
+        border-width: 0 $t;
+      }
+
+      &.prev,
+      &.next {
+
+        &:before,
+        &:after {
+          top: ($s - $i/2)/2;
+          left: ($s - $i)/2;
+          width: $i/2;
+          height: $i/2;
+        }
+
+        &:hover:after,
+        &:before {
+          left: ($s - $i)/2;
+        }
+
+        &:hover:before,
+        &:after {
+          left: ($s - $i)/2 + $i/2;
+        }
+      }
+
+      &.prev {
+
+        &:before,
+        &:after {
+          border-width: $i/4 $i/2 $i/4 0;
+        }
+      }
+
+      &.next {
+
+        &:before,
+        &:after {
+          border-width: $i/4 0 $i/4 $i/2;
+        }
       }
     }
   }
