@@ -1,7 +1,7 @@
 ---
 languageKey: About
-hide_title: true
 title: About
+hide_title: true
 sections:
   - type: short-text
     hide_section_name: false
@@ -17,14 +17,12 @@ sections:
 
 
       The business started out modelling electrification of nearshore maritime, before progressing onshore to electrification of public transportation, and onward to the multi-sector decarbonisation solution business offered today.
-  - type: detail-boxes
-    background: white
-    hide_section_name: false
+  - hide_section_name: false
+    section_name: Our team
     layout: description-above
+    background: white
     style: center-grid
     smaller: false
-    section_name: Our team
-    description: ""
     boxes:
       - blurb: |-
           CEO
@@ -84,6 +82,8 @@ sections:
           [kje@mhtech.no](mailto:kje@mhtech.no)
 
           [+47 932 14 224](tel:004793214224)
+    type: detail-boxes
+    description: ""
 slug: about
 draft: false
 ---

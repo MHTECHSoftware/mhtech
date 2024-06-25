@@ -1,9 +1,7 @@
 ---
 languageKey: About
-hide_title: true
 title: Om
-slug: om
-draft: false
+hide_title: true
 sections:
   - type: short-text
     hide_section_name: false
@@ -11,22 +9,20 @@ sections:
     background: dark-green
     section_name: Om
     content: >-
-      **MHTech** was founded in Moss, Norway in 2016 by brothers Ole Harald Moe
-      and Anders Martin Moe.
+      **MHTech** ble grunnlagt i Moss, Norge i 2016 av brødrene Ole Harald Moe
+      og Anders Martin Moe.
 
 
-      The brothers recognised the connected challenge of global warming and energy waste. Calling on their energy industry design, project delivery and software expertise they developed a platform to analyse and simulate energy systems, enabling optimisation and decarbonisation.
+      Brødrene erkjente den sammenhengende utfordringen med global oppvarming og energisløsing. Ved å bruke sin energiindustridesign, prosjektleveranse og programvareekspertise utviklet de en plattform for å analysere og simulere energisystemer, noe som muliggjør optimalisering og dekarbonisering.
 
 
-      The business started out modelling electrification of nearshore maritime, before progressing onshore to electrification of public transportation, and onward to the multi-sector decarbonisation solution business offered today.
-  - type: detail-boxes
-    background: white
-    hide_section_name: false
+      Virksomheten startet med å modellere elektrifisering av maritimt kystnært område, før de gikk på land til elektrifisering av offentlig transport, og videre til den multisektorielle avkarboniseringsløsningen som tilbys i dag.
+  - hide_section_name: false
+    section_name: Vårt team
     layout: description-above
+    background: white
     style: center-grid
     smaller: false
-    section_name: Our team
-    description: ""
     boxes:
       - blurb: |-
           CEO
@@ -86,4 +82,8 @@ sections:
           [kje@mhtech.no](mailto:kje@mhtech.no)
 
           [+47 932 14 224](tel:004793214224)
+    type: detail-boxes
+    description: ""
+slug: om
+draft: false
 ---
