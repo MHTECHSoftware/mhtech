@@ -10,55 +10,56 @@ sections:
     text: Helping clients decarbonise and optimise complex energy systems across
       Transport, Built Environment and Industry
   - hide_section_name: true
-    section_name: Our Mission
+    section_name: Vårt oppdrag
     layout: description-on-right
     background: white
     style: slideshow
     smaller: false
     boxes:
       - image: /images/norway-road-valley.jpg
-        title: Road transport
-        blurb: Tackling hard to decarbonise fleet
+        title: Veitransport
+        blurb: Takler en flåte som er vanskelig å avkarbonisere
       - image: /images/shipping-containers.jpg
-        title: Marine operations
-        blurb: Reducing emissions for operators, ports & owners
+        title: Marine operasjonsv
+        blurb: Redusere utslipp for operatører, havner og eiere
       - image: /images/solar-warehouses.jpg
         title: Industry & Built environment
-        blurb: Energy efficiency gains through optimised operations, energy and heat
+        blurb: Energieffektivisering gjennom optimalisert drift, energi og varme
       - image: /images/energy-systems.jpg
-        title: Energy Systems
-        blurb: Optimising energy production and energy carrier systems
+        title: Energisystemer
+        blurb: Optimalisering av energiproduksjon og energibærersystemer
     type: detail-boxes
     description: >-
-      ### Our mission is to speed the transition to a sustainable energy system.
+      ### Vårt oppdrag er å fremskynde overgangen til et bærekraftig
+      energisystem.
 
 
-      We collaborate with innovative, forward-thinking companies to evaluate infrastructure and economics for transition to energy efficient and decarbonised solutions.
+      Vi samarbeider med innovative, fremtidsrettede selskaper for å evaluere infrastruktur og økonomi for overgang til energieffektive og avkarboniserte løsninger.
   - hide_section_name: false
-    section_name: Our Focus
+    section_name: Vårt fokus
     layout: description-on-left
     background: light-green
     style: alternating
     smaller: false
     boxes:
-      - title: Technology
-        blurb: Leveraging bespoke and off-the-shelf software and hardware solutions,
-          aligning with client need, and measuring operational impact
+      - title: Teknologi
+        blurb: Utnytte skreddersydde og hyllevareløsninger for programvare og
+          maskinvare, tilpasset kundens behov og måle driftseffekten
         image: /images/motherboard.jpg
-      - title: Impact
-        blurb: Maximising impact on local and global emissions, and evaluating impact on
-          emissions throughout the value chain
+      - title: Innvirkning
+        blurb: Maksimere innvirkning på lokale og globale utslipp, og evaluere
+          innvirkning på utslipp gjennom hele verdikjeden
         image: /images/growth.jpg
-      - title: Cost
-        blurb: Ensuring maximised outcome for minimised cost - our goal is to enable our
-          clients to save cost and realise revenue opportunity through
-          transitioning to more sustainable operations
+      - title: Koste
+        blurb: Sikre maksimert resultat for minimale kostnader - målet vårt er å gjøre
+          det mulig for våre kunder å spare kostnader og realisere
+          inntektsmuligheter gjennom overgang til mer bærekraftig drift
         image: /images/coins.jpg
     type: detail-boxes
-    description: >-
-      MHTech's focus is to leverage technology to maximise impact and cost benefit for our clients
+    description: MHTech's fokus er å utnytte teknologi for å maksimere innvirkning
+      og kostnadsfordeler for våre kunder
   - hide_section_name: false
-    section_name: Our Work
+    section_name: Vårt arbeid
     layout: description-above
     background: green
     style: left-grid
@@ -89,42 +90,56 @@ sections:
         image: /images/startups.jpg
     type: detail-boxes
     description: >-
-      MHTech is a Norway start-up founded to enable the decarbonization of complex energy systems across transport, energy systems, industry & built environment.
+      MHTech er et norsk oppstartsselskap grunnlagt for å muliggjøre
+      dekarbonisering av komplekse energisystemer på tvers av transport,
+      energisystemer, industri og bygd miljø.
 
 
-      Our solutions couple our proprietary energy simulation engine with data analytics and engineering expertise.
+      Våre løsninger kobler vår proprietære energisimuleringsmotor med dataanalyse og ingeniørekspertise.
 
 
-      We help our clients optimise the transition to decarbonized and future-ready outcomes – minimising risk and unlocking revenue opportunity.
+      Vi hjelper kundene våre med å optimalisere overgangen til dekarboniserte og fremtidsklare resultater – minimere risiko og frigjøre inntektsmuligheter.
 
 
-      [Explore our sectors](/sectors)
+      [Utforsk våre sektorer](/sectors)
   - hide_section_name: true
-    section_name: Testimonials
+    section_name: Attester
     layout: descripton-above
     style: center-grid
     background: dark-green
     type: detail-boxes
     smaller: false
     boxes:
-        - title:
-          blurb: |
-            > “Vi har samarbeidet med MHTech i en betydelig periode, og vi har som plan å fortsette med det, ettersom det er preget av gjensidig tillit og en løsningsorientert tilnærming.”
+      - title: null
+        blurb: >
+          > “Vi har samarbeidet med MHTech i en betydelig periode, og vi har som
+          plan å fortsette med det, ettersom det er preget av gjensidig tillit
+          og en løsningsorientert tilnærming.”
 
-            **-- FlowChange -- Daglig leder**
-          image: /images/flowchange.webp
-        - title:
-          blurb: |
-            > “Vi i Ze Bra setter stor pris på MHTech sin ekspertise og ideer rettet mot innovasjon og utvikling innenfor vår bransje. Vi opplever at MHTech er kunnskapsrike og dyktige tjenesteleverandører med fokus på profesjonalitet og effektivitet. Vi ser frem til videre samarbeid på våre prosjekter.”
 
-            **-- Ze Bra -- Prosjektleder**
-          image: /images/zebra.webp
-        - title:
-          blurb: |
-            > “Et faglig sterkt og inspirerende team. Utfordrer partnere og kunder til å tenke utenfor den tradisjonelle boksen. Evner å se helheten,  samtidig som de er svært detaljorienterte. Glimrende prosjektledere.”
+          **-- FlowChange -- Daglig leder**
+        image: /images/flowchange.webp
+      - title: null
+        blurb: >
+          > “Vi i Ze Bra setter stor pris på MHTech sin ekspertise og ideer
+          rettet mot innovasjon og utvikling innenfor vår bransje. Vi opplever
+          at MHTech er kunnskapsrike og dyktige tjenesteleverandører med fokus
+          på profesjonalitet og effektivitet. Vi ser frem til videre samarbeid
+          på våre prosjekter.”
 
-            **-- El av Sol Norge AS -- Daglig leder**
-          image: /images/el-av-sol.webp
+
+          **-- Ze Bra -- Prosjektleder**
+        image: /images/zebra.webp
+      - title: null
+        blurb: >
+          > “Et faglig sterkt og inspirerende team. Utfordrer partnere og kunder
+          til å tenke utenfor den tradisjonelle boksen. Evner å se
+          helheten,  samtidig som de er svært detaljorienterte. Glimrende
+          prosjektledere.”
+
+
+          **-- El av Sol Norge AS -- Daglig leder**
+        image: /images/el-av-sol.webp
   - type: logo-grid
     hide_section_name: false
     section_name: Våre Forretningspartnere

@@ -55,8 +55,8 @@ sections:
           transitioning to more sustainable operations
         image: /images/coins.jpg
     type: detail-boxes
-    description: >-
-      MHTech's focus is to leverage technology to maximise impact and cost benefit for our clients
+    description: MHTech's focus is to leverage technology to maximise impact and
+      cost benefit for our clients
   - hide_section_name: false
     section_name: Our Work
     layout: description-above
@@ -89,7 +89,9 @@ sections:
         image: /images/startups.jpg
     type: detail-boxes
     description: >-
-      MHTech is a Norway start-up founded to enable the decarbonization of complex energy systems across transport, energy systems, industry & built environment.
+      MHTech is a Norway start-up founded to enable the decarbonization of
+      complex energy systems across transport, energy systems, industry & built
+      environment.
 
 
       Our solutions couple our proprietary energy simulation engine with data analytics and engineering expertise.
@@ -107,24 +109,36 @@ sections:
     type: detail-boxes
     smaller: false
     boxes:
-        - title:
-          blurb: |
-            > “We have been collaborating with MHTech for a significant period, and we plan to continue because it is characterized by mutual trust and a solution-oriented approach.”
+      - title: null
+        blurb: >
+          > “We have been collaborating with MHTech for a significant period,
+          and we plan to continue because it is characterized by mutual trust
+          and a solution-oriented approach.”
 
-            **-- FlowChange -- CEO**
-          image: /images/flowchange.webp
-        - title:
-          blurb: |
-            > “We at Ze Bra greatly appreciate MHTech's expertise and ideas aimed at innovation and development within our industry. We find MHTech to be knowledgeable and skilled service providers with a focus on professionalism and efficiency. We look forward to continued collaboration on our projects.”
 
-            **-- Ze Bra -- Project Manager**
-          image: /images/zebra.webp
-        - title:
-          blurb: |
-            > “A professionally strong and inspiring team. Challenges partners and customers to think ELAVSOL outside the traditional box. Capable of seeing the big picture while being highly detail-oriented. Excellent project managers.”
+          **-- FlowChange -- CEO**
+        image: /images/flowchange.webp
+      - title: null
+        blurb: >
+          > “We at Ze Bra greatly appreciate MHTech's expertise and ideas aimed
+          at innovation and development within our industry. We find MHTech to
+          be knowledgeable and skilled service providers with a focus on
+          professionalism and efficiency. We look forward to continued
+          collaboration on our projects.”
 
-            **-- El av Sol Norge AS -- CEO**
-          image: /images/el-av-sol.webp
+
+          **-- Ze Bra -- Project Manager**
+        image: /images/zebra.webp
+      - title: null
+        blurb: >
+          > “A professionally strong and inspiring team. Challenges partners and
+          customers to think ELAVSOL outside the traditional box. Capable of
+          seeing the big picture while being highly detail-oriented. Excellent
+          project managers.”
+
+
+          **-- El av Sol Norge AS -- CEO**
+        image: /images/el-av-sol.webp
   - type: logo-grid
     hide_section_name: false
     section_name: Our Partners
