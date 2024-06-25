@@ -5,67 +5,69 @@ sections:
   - type: text
     section_name: Privacy policy
     hide_section_name: true
-    content: >
-      We at MHTech value your privacy and are committed to protecting your
-      personal data. This Privacy Statement outlines how we handle information
-      when you visit our website.
-
-      ## Information We Collect
-
-      We at MHTech value your privacy and are committed to protecting your
-      personal data. This Privacy Statement outlines how we handle information
-      when you visit our website.
+    content: >-
+      Vi i MHTech verdsetter ditt personvern og er forpliktet til å beskytte
+      dine personlige data. Denne personvernerklæringen beskriver hvordan vi
+      håndterer informasjon når du besøker nettstedet vårt.
 
 
-      We do not collect any personal information through our website. You can browse our site without providing any personal details.
+      ## Informasjon vi samler inn
 
 
-      We may collect non-personal information through standard analytics tools to improve your browsing experience and understand website usage.
+      Vi i MHTech verdsetter ditt personvern og er forpliktet til å beskytte dine personlige data. Denne personvernerklæringen beskriver hvordan vi håndterer informasjon når du besøker nettstedet vårt.
 
 
-      Analytics tools collect non-personal data such as your IP address, browser type, pages visited, and time spent on the site. This information is anonymized and used solely for statistical purposes.
+      Vi samler ikke inn noen personlig informasjon via nettstedet vårt. Du kan bla gjennom siden vår uten å oppgi noen personlige opplysninger.
 
-      ## Analytics Tools
 
-      To improve our website and understand how visitors engage with it, we use
-      analytics tools such as Google Analytics. 
+      Vi kan samle inn ikke-personlig informasjon gjennom standard analyseverktøy for å forbedre nettleseropplevelsen din og forstå bruken av nettstedet.
 
-      These tools are used to analyze website traffic, understand user behavior and interests, and improve the website's functionality and user experience.
 
-      ## Cookies
+      Analyseverktøy samler inn ikke-personlige data som din IP-adresse, nettlesertype, besøkte sider og tid brukt på nettstedet. Denne informasjonen er anonymisert og brukes kun til statistiske formål.
 
-      Cookies are used for the purposes of analytics. You can manage or disable
-      cookies through your browser settings.
 
-      ## Data sharing and Third Parties
+      ## Analyseverktøy
 
-      We may disclose non-personal information collected through analytics tools
-      to third-party service providers who help us operate and improve our
-      website. These service providers are obligated to keep your information
-      confidential.
 
-      ## Your Choices
+      For å forbedre nettstedet vårt og forstå hvordan besøkende bruker det, bruker vi analyseverktøy som Google Analytics.
 
-      Most web browsers allow you to control cookies and other tracking tools.
-      You can adjust your browser settings to block or delete cookies or to
-      notify you when a website is trying to place a cookie on your device.
 
-      ## Data Protection
+      Disse verktøyene brukes til å analysere nettstedtrafikk, forstå brukeratferd og interesser, og forbedre nettsidens funksjonalitet og brukeropplevelse.
 
-      We ensure that any data collected via analytics tools is securely stored
-      and handled in compliance with relevant data protection laws, including
-      the General Data Protection Regulation (GDPR). Under GDPR, users of our
-      website have data protection rights, such as the right to access, rectify
-      or erase their data that our website collects through analytics.
 
-      ## Changes to this Privacy Statement
+      ## Informasjonskapsler
 
-      We may update this Privacy Statement from time to time. We will post any
-      changes on this page.
 
-      ## Contact Us
+      Informasjonskapsler brukes til analyseformål. Du kan administrere eller deaktivere informasjonskapsler gjennom nettleserinnstillingene.
 
-      If you have any questions about this Privacy Statement, please contact us
-      at kontact@mhtech.no.
+
+      ## Datadeling og tredjeparter
+
+
+      Vi kan avsløre ikke-personlig informasjon samlet inn gjennom analyseverktøy til tredjeparts tjenesteleverandører som hjelper oss å drifte og forbedre nettstedet vårt. Disse tjenesteleverandørene er forpliktet til å holde informasjonen din konfidensiell.
+
+
+      ## Dine valg
+
+
+      De fleste nettlesere lar deg kontrollere informasjonskapsler og andre sporingsverktøy. Du kan justere nettleserinnstillingene dine for å blokkere eller slette informasjonskapsler eller for å varsle deg når et nettsted prøver å plassere en informasjonskapsel på enheten din.
+
+
+      ## Data beskyttelse
+
+
+      Vi sikrer at all data som samles inn via analyseverktøy, lagres og håndteres sikkert i samsvar med relevante databeskyttelseslover, inkludert den generelle databeskyttelsesforordningen (GDPR). I henhold til GDPR har brukere av nettstedet vårt databeskyttelsesrettigheter, for eksempel retten til å få tilgang til, korrigere eller slette dataene deres som nettstedet vårt samler inn gjennom analyser.
+
+
+      ## Endringer i denne personvernerklæringen
+
+
+      Vi kan oppdatere denne personvernerklæringen fra tid til annen. Vi vil legge ut eventuelle endringer på denne siden.
+
+
+      ## Kontakt oss
+
+
+      Hvis du har spørsmål om denne personvernerklæringen, vennligst kontakt oss på kontakt@mhtech.no.
 slug: personvernerklæring
 ---
