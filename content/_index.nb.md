@@ -5,7 +5,7 @@ hide_title: true
 sections:
   - type: hero
     hide_section_name: true
-    section_name: Helping clients
+    section_name: Hjelper kunder
     image: /images/leaf.jpg
     text: Hjelper kunder med å avkarbonisere og optimalisere komplekse
       energisystemer på tvers av transport, bygget miljø og industri
