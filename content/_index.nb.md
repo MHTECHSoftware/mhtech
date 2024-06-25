@@ -23,7 +23,7 @@ sections:
         title: Marine operasjonsv
         blurb: Redusere utslipp for operatører, havner og eiere
       - image: /images/solar-warehouses.jpg
-        title: Industry & Built environment
+        title: Industri og bygd miljø
         blurb: Energieffektivisering gjennom optimalisert drift, energi og varme
       - image: /images/energy-systems.jpg
         title: Energisystemer
