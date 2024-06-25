@@ -66,27 +66,26 @@ sections:
     smaller: true
     boxes:
       - title: ZeBra
-        blurb: We supported an innovative road marking company in maintaining their lead
-          in the market by designing the first decarbonised road marking vehicle
-          in Norway.
+        blurb: Vi støttet et innovativt veimerkeselskap i å opprettholde sin ledelse i
+          markedet ved å designe det første dekarboniserte veimerkekjøretøyet i
+          Norge.
         image: /images/road-marking.jpg
       - title: Pon ePower
         image: /images/pon-norway.jpg
-        blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
-          online sizing tool to help customers and engineers better understand
-          the cost and benefits of utilizing hybrid drivetrains in small
-          vessels.
+        blurb: MHTech støttet Pon Power Norway i utviklingen av pon ePower, et
+          innovativt online dimensjoneringsverktøy for å hjelpe kunder og
+          ingeniører bedre å forstå kostnadene og fordelene ved å bruke
+          hybriddrivlinjer i små fartøyer.
       - title: Lineage
-        blurb: We helped Lineage logistics reduce CO2-emissions energy consumption for a
-          freezer storage facility in Moss. MHTech assisted from feasibility
-          study through project execution. Helping save XXX tonnes of CO2
-          annually.
+        blurb: Vi hjalp Lineage logistikk med å redusere CO2-utslipp energiforbruk for
+          et fryselager i Moss. MHTech bistod fra mulighetsstudie gjennom
+          prosjektgjennomføring.
         image: /images/lineage.jpg
       - title: Start-ups
-        blurb: We collaborate with start-ups who share our mission. We provide
-          expertise, development, and strategy support, enabling our partners to
-          rapidly achieve their goals. Thanks to our latest partners including
-          Ezone, Hyke, and AlwaysCargo.
+        blurb: Vi samarbeider med oppstartsbedrifter som deler vårt oppdrag. Vi tilbyr
+          ekspertise, utvikling og strategistøtte, slik at partnerne våre raskt
+          kan nå sine mål. Takk til våre siste partnere, inkludert Ezone, Hyke
+          og AlwaysCargo.
         image: /images/startups.jpg
     type: detail-boxes
     description: >-

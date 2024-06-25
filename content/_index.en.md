@@ -78,8 +78,7 @@ sections:
       - title: Lineage
         blurb: We helped Lineage logistics reduce CO2-emissions energy consumption for a
           freezer storage facility in Moss. MHTech assisted from feasibility
-          study through project execution. Helping save XXX tonnes of CO2
-          annually.
+          study through project execution.
         image: /images/lineage.jpg
       - title: Start-ups
         blurb: We collaborate with start-ups who share our mission. We provide
