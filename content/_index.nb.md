@@ -7,8 +7,8 @@ sections:
     hide_section_name: true
     section_name: Helping clients
     image: /images/leaf.jpg
-    text: Helping clients decarbonise and optimise complex energy systems across
-      Transport, Built Environment and Industry
+    text: Hjelper kunder med å avkarbonisere og optimalisere komplekse
+      energisystemer på tvers av transport, bygget miljø og industri
   - hide_section_name: true
     section_name: Vårt oppdrag
     layout: description-on-right
