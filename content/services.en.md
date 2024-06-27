@@ -2,17 +2,12 @@
 languageKey: Services
 title: Services
 sections:
-  - type: detail-boxes
-    background: dark-green
-    hide_section_name: true
+  - hide_section_name: true
+    section_name: Overview
     layout: description-on-left
+    background: dark-green
     style: left-grid
     smaller: true
-    section_name: Overview
-    description: MHTech combines our energy simulation software with data analytics
-      and engineering expertise to help our clients understand energy flows and
-      simulate future decarbonised operations, enabling rapid screening &
-      selection of sustainable technology alternatives.
     boxes:
       - title: Analytics & mapping
         blurb: |-
@@ -74,6 +69,11 @@ sections:
           Project execution
 
           Owner’s engineer
+    type: detail-boxes
+    description: MHTech combines our energy simulation software with data analytics
+      and engineering expertise to help our clients understand energy flows and
+      simulate future decarbonised operations, enabling rapid screening &
+      selection of sustainable technology alternatives.
 slug: services
 draft: false
 ---

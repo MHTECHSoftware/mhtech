@@ -1,79 +1,79 @@
 ---
 languageKey: Services
 title: Tjenester
-slug: tjenester
-draft: false
 sections:
-  - type: detail-boxes
-    background: dark-green
-    hide_section_name: true
+  - hide_section_name: true
+    section_name: Oversikt
     layout: description-on-left
+    background: dark-green
     style: left-grid
     smaller: true
-    section_name: Overview
-    description: MHTech combines our energy simulation software with data analytics
-      and engineering expertise to help our clients understand energy flows and
-      simulate future decarbonised operations, enabling rapid screening &
-      selection of sustainable technology alternatives.
     boxes:
-      - title: Analytics & mapping
+      - title: Analyse og kartlegging
         blurb: |-
-          Operations analysis
+          Driftsanalyse
 
-          Operations optimisation
+          Driftsoptimalisering
 
-          Decarbonisation road-mapping
+          Kartlegging av dekarbonisering
 
-          Emissions reduction road-mapping
+          Veikartlegging av utslippsreduksjoner
 
-          Energy demand mapping
-      - title: Software
+          Kartlegging av energibehov
+      - title: Programvare
         blurb: |-
-          Energy consumption
+          Energiforbruk
 
-          Energy efficiency & savings
+          Energieffektivitet og besparelser
 
-          Decarbonisation simulation
+          Simulering av avkarbonisering
 
-          Impact tracking
+          Effektsporing
 
-          Bespoke solutions
-      - title: Impact measurement
+          Skreddersydde løsninger
+      - title: Effektmåling
         blurb: |-
-          Emissions calculations
+          Utslippsberegninger
 
-          Emissions reduction analysis
+          Utslippsreduksjonsanalyse
 
-          Cost of Carbon
+          Kostnader for karbon
 
-          ETS impact prediction & measurement
-      - title: Infrastructure & cost
+          ETS-påvirkningsprediksjon og måling
+      - title: Infrastruktur og kostnader
         blurb: |-
-          Viability analysis
+          Levedyktighetsanalyse
 
-          Infrastructure optioneering
+          Infrastrukturalternativer
 
-          Infrastructure sizing and costing
+          Infrastruktur dimensjonering og kostnadsberegning
 
-          Total Cost of Ownership analysis
+          Totale eierkostnader analyse
       - title: Design
         blurb: |-
-          Energy system design
+          Design av energisystem
 
-          Heat re-use studies
+          Studier om gjenbruk av varme
 
-          Marine studies
+          Marine studier
 
           System design
-      - title: Planning & roll-out
+      - title: Planlegging og utrulling
         blurb: |-
-          Business case analysis
+          Business case analyse
 
-          Technology roll-out planning
+          Planlegging av utrulling av teknologi
 
-          Project management
+          Prosjektledelse
 
-          Project execution
+          Prosjektgjennomføring
 
-          Owner’s engineer
+          Eierens ingeniør
+    type: detail-boxes
+    description: MHTech kombinerer vår energisimuleringsprogramvare med dataanalyse
+      og ingeniørkompetanse for å hjelpe kundene våre med å forstå
+      energistrømmer og simulere fremtidige karboniserte operasjoner, noe som
+      muliggjør rask screening og valg av bærekraftige teknologialternativer.
+slug: tjenester
+draft: false
 ---
