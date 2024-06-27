@@ -1,35 +1,35 @@
 ---
 languageKey: Sectors
 title: Sektorer
-slug: sektorer
-draft: false
 sections:
   - hide_section_name: true
-    section_name: Sectors
+    section_name: Sektorer
     layout: description-above
     background: light-green
     style: center-grid
     smaller: true
     boxes:
-      - title: Road transport
-        blurb: MHTech helps you simulate and assess pathways to a decarbonised road
-          fleet operation.
+      - title: Veitransport
+        blurb: MHTech hjelper deg med å simulere og vurdere veier til en avkarbonisert
+          veiflåteoperasjon.
         image: /images/road-transport.jpg
-      - title: Marine transport & operations
-        blurb: MHTech helps you model decarbonised technology solutions and emissions
-          impact across your shipping & port operations.
+      - title: Sjøtransport og operasjoner
+        blurb: MHTech hjelper deg med å modellere dekarboniserte teknologiløsninger og
+          utslippspåvirkning på tvers av frakt- og havneoperasjoner.
         image: /images/port.jpg
-      - title: Industrial & built environment
-        blurb: MHTech maps energy systems in built and industrial facilities to target
-          lower energy consumption and minimised waste heat.
+      - title: Industrielt og bygget miljø
+        blurb: MHTech kartlegger energisystemer i bygde og industrielle anlegg for å
+          målrette lavere energiforbruk og minimert spillvarme.
         image: /images/industry.jpg
-      - title: Energy systems
-        blurb: MHTech helps energy production and energy carrier operators to reduce
-          climate impact of energy infrastructure.
+      - title: Energisystemer
+        blurb: MHTech hjelper energiproduksjon og energibæreroperatører med å redusere
+          klimapåvirkningen fra energiinfrastruktur.
         image: /images/pylons.jpg
     type: detail-boxes
-    description: With our proprietary energy mapping software at our core, MHTech
-      enables innovative and forward-thinking companies to decarbonise complex
-      energy systems across transport, energy systems, industry & built
-      environment.
+    description: Med vår proprietære energikartprogramvare i kjernen, gjør MHTech
+      det mulig for innovative og fremtidsrettede selskaper å dekarbonisere
+      komplekse energisystemer på tvers av transport, energisystemer, industri
+      og bygd miljø.
+slug: sektorer
+draft: false
 ---
