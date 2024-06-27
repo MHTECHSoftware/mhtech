@@ -1,27 +1,13 @@
 ---
-title: Produkter
 languageKey: Products
-slug: produkter
+title: Produkter
 sections:
-  - type: detail-boxes
-    background: green
-    hide_section_name: true
+  - hide_section_name: true
+    section_name: Oversikt
     layout: description-on-left
+    background: green
     style: left-grid
     smaller: false
-    section_name: Overview
-    description: |-
-      MHTech builds tools to help organisations decarbonise.
-
-      At our core is our energy
-      simulation engine, enabling
-      accurate modelling of current
-      and future energy consumption
-      scenarios.
-
-      Get in touch to discuss how
-      our products can assist your
-      business in achieving Net Zero.
     boxes:
       - title: Seidr.ai
         blurb: |-
@@ -63,4 +49,36 @@ sections:
 
           [Contact us](mailto:kontakt@mhtech.no) to discuss how we can help
           support your journey to NetZero
+    type: detail-boxes
+    description: |-
+      MHTech bygger verktøy for å hjelpe organisasjoner med å avkarbonisere.
+
+      At our core is our energy
+      simulation engine, enabling
+      accurate modelling of current
+      and future energy consumption
+      scenarios.
+
+      I kjernen vår er energien vår
+
+      simuleringsmotor, muliggjøring
+
+      nøyaktig modellering av strøm
+
+      og fremtidig energiforbruk
+
+      scenarier.
+
+
+
+      Get in touch to discuss how
+      our products can assist your
+      business in achieving Net Zero.
+
+      Ta kontakt for å diskutere hvordan
+
+      våre produkter kan hjelpe deg
+
+      virksomhet i å oppnå Net Zero.
+slug: produkter
 ---
