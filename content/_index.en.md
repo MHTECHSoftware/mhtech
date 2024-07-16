@@ -145,9 +145,9 @@ sections:
       - name: Innovation Norway
         href: https://en.innovasjonnorge.no
         image: /logos/innovation-norway.png
-      - name: Viken Technology Cluster
-        href: https://vikenklynge.no/english/
-        image: /logos/viken-technology-cluster.webp
+      - name: Nec:\ia
+        href: https://necia.no/
+        image: /logos/n3iywvirdxr9jzubwa68omgodi.png
       - name: SAMS Norway
         href: https://sams-norway.no
         image: /logos/sams-norway.png

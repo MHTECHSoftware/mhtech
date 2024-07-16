@@ -7,10 +7,10 @@ sections:
     hide_section_name: true
     section_name: Hjelper kunder
     image: /images/leaf.jpg
-    text: Hjelper kunder med å avkarbonisere og optimalisere komplekse
+    text: Vi hjelper våre kunder med å redusere utslipp og optimalisere komplekse
       energisystemer på tvers av transport, bygget miljø og industri
   - hide_section_name: true
-    section_name: Vårt oppdrag
+    section_name: Vårt formål
     layout: description-on-right
     background: white
     style: slideshow
@@ -18,19 +18,20 @@ sections:
     boxes:
       - image: /images/norway-road-valley.jpg
         title: Veitransport
-        blurb: Takler en flåte som er vanskelig å avkarbonisere
+        blurb: Reduser utslipp fra kjøretøy og kjøretøysflåter som er vanskelige å
+          avkarbonisere
       - image: /images/shipping-containers.jpg
-        title: Marine operasjonsv
-        blurb: Redusere utslipp for operatører, havner og eiere
+        title: Marine operasjoner
+        blurb: Redusere utslipp sammen med operatører, havner og redere
       - image: /images/solar-warehouses.jpg
-        title: Industri og bygd miljø
-        blurb: Energieffektivisering gjennom optimalisert drift, energi og varme
+        title: Industri og infrastruktur
+        blurb: Energieffektivisering gjennom optimalisert drift og energiforbruk
       - image: /images/energy-systems.jpg
         title: Energisystemer
-        blurb: Optimalisering av energiproduksjon og energibærersystemer
+        blurb: Optimalisering av energiproduksjon og energibærer
     type: detail-boxes
     description: >-
-      ### Vårt oppdrag er å fremskynde overgangen til et bærekraftig
+      ### Vårt formål er å fremskynde overgangen til et bærekraftig
       energisystem.
 
 
@@ -43,23 +44,24 @@ sections:
     smaller: false
     boxes:
       - title: Teknologi
-        blurb: Utnytte skreddersydde og hyllevareløsninger for programvare og
-          maskinvare, tilpasset kundens behov og måle driftseffekten
+        blurb: Utnytte kombinasjoner av skreddersøm og hyllevare for programvare og
+          maskinvare, tilpasset kundens behov med måling og oppfølging av effekt
+          på drift
         image: /images/motherboard.jpg
-      - title: Innvirkning
-        blurb: Maksimere innvirkning på lokale og globale utslipp, og evaluere
-          innvirkning på utslipp gjennom hele verdikjeden
+      - title: Effekt
+        blurb: Maksimere effekt på lokale og globale utslipp, og evaluere utslipp i hele
+          verdikjeden
         image: /images/growth.jpg
-      - title: Koste
-        blurb: Sikre maksimert resultat for minimale kostnader - målet vårt er å gjøre
-          det mulig for våre kunder å spare kostnader og realisere
-          inntektsmuligheter gjennom overgang til mer bærekraftig drift
+      - title: Økonomisk bærekraft
+        blurb: Sikre best mulig resultat for minst mulig kost - målet vårt er å
+          muliggjøre kostnadsbesparelser og realisere nye inntektsmuligheter
+          gjennom overgang til mer bærekraftig drift
         image: /images/coins.jpg
     type: detail-boxes
-    description: MHTech's fokus er å utnytte teknologi for å maksimere innvirkning
-      og kostnadsfordeler for våre kunder
+    description: MHTech's fokus er å utnytte innovasjon og teknologi for å maksimere
+      resultat på bærekraft og økonomi  for våre kunder
   - hide_section_name: false
-    section_name: Vårt arbeid
+    section_name: Vår oppgave
     layout: description-above
     background: green
     style: left-grid
@@ -90,19 +92,19 @@ sections:
     type: detail-boxes
     description: >-
       MHTech er et norsk oppstartsselskap grunnlagt for å muliggjøre
-      dekarbonisering av komplekse energisystemer på tvers av transport,
-      energisystemer, industri og bygd miljø.
+      avkarbonisering av komplekse energisystemer på tvers av transport,
+      energisystemer, industri og infrastruktur.
 
 
-      Våre løsninger kobler vår proprietære energisimuleringsmotor med dataanalyse og ingeniørekspertise.
+      Våre løsninger kobler vår proprietære energisimuleringsmotor med dataanalyse og ingeniørfaglig ekspertise.
 
 
-      Vi hjelper kundene våre med å optimalisere overgangen til dekarboniserte og fremtidsklare resultater – minimere risiko og frigjøre inntektsmuligheter.
+      Vi hjelper kundene våre med å optimalisere overgangen til avkarboniserte og fremtidsklare resultater -  samtidig bidrar vi til å minimere risiko og muliggjør nye inntektsstrømmer.
 
 
-      [Utforsk våre sektorer](/sectors)
+      [Utforsk markedsområder](/sectors)
   - hide_section_name: true
-    section_name: Attester
+    section_name: Kundereferanser
     layout: descripton-above
     style: center-grid
     background: dark-green
@@ -141,14 +143,14 @@ sections:
         image: /images/el-av-sol.webp
   - type: logo-grid
     hide_section_name: false
-    section_name: Våre Forretningspartnere
+    section_name: Våre samarbeidspartnere
     logos:
       - name: Innovasjon Norge
         href: https://www.innovasjonnorge.no
         image: /logos/inovasjon-norge.webp
-      - name: Viken Teknologiklynge
-        href: https://vikenklynge.no/
-        image: /logos/viken-teknologiklynge.webp
+      - name: Nec:\ia
+        href: https://necia.no/
+        image: /logos/n3iywvirdxr9jzubwa68omgodi.png
       - name: SAMS Norway
         href: https://sams-norway.no
         image: /logos/sams-norway.png
