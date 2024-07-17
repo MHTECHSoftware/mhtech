@@ -86,7 +86,7 @@ sections:
       - title: Start-ups
         blurb: Vi samarbeider med oppstartsbedrifter som deler våre visjoner og fomål.
           Vi tilbyr ekspertise, utviklingsassistanse og strategistøtte, slik at
-          partnerne våre raskt kan nå sine mål. Takk til våre siste partnere,
+          partnerne våre raskt kan nå sine mål. Takk til våre partnere,
           inkludert Ezone, Hayk og AlwaysCargo.
         image: /images/startups.jpg
     type: detail-boxes
