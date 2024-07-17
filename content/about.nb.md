@@ -7,13 +7,13 @@ sections:
     hide_section_name: false
     layout: image-on-left
     background: dark-green
-    section_name: Om
+    section_name: Om oss
     content: >-
       **MHTech** ble grunnlagt i Moss, Norge i 2016 av brødrene Ole Harald Moe
       og Anders Martin Moe.
 
 
-      Brødrene erkjente den sammenhengende utfordringen med global oppvarming og energisløsing. Ved å bruke sin energiindustridesign, prosjektleveranse og programvareekspertise utviklet de en plattform for å analysere og simulere energisystemer, noe som muliggjør optimalisering og dekarbonisering.
+      De to var interessert i sammenkoblingen mellom utfordringen med global oppvarming og energisløsing samt kompleksiteten i begge problemstillingene. Ved å bruke sin kompetanse og erfaring innen energiindustridesign, prosjektleveranse og programvareekspertise utviklet de en plattform for å analysere og simulere energisystemer, noe som muliggjør optimalisering og dekarbonisering.
 
 
       Virksomheten startet med å modellere elektrifisering av maritimt kystnært område, før de gikk på land til elektrifisering av offentlig transport, og videre til den multisektorielle avkarboniseringsløsningen som tilbys i dag.
