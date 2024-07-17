@@ -5,7 +5,7 @@ hide_title: true
 sections:
   - type: hero
     hide_section_name: true
-    section_name: Hjelper kunder
+    section_name: Vi hjelper våre kunder
     image: /images/leaf.jpg
     text: Vi hjelper våre kunder med å redusere utslipp og optimalisere komplekse
       energisystemer på tvers av transport, bygget miljø og industri
@@ -68,26 +68,26 @@ sections:
     smaller: true
     boxes:
       - title: ZeBra
-        blurb: Vi støttet et innovativt veimerkeselskap i å opprettholde sin ledelse i
-          markedet ved å designe det første dekarboniserte veimerkekjøretøyet i
-          Norge.
+        blurb: Vi har bistått et innovativt veimerkeselskap i å opprettholde sin
+          markedsledende posisjon ved å designe det første veimerkekjøretøyet
+          som kan driftes uten utslipp.
         image: /images/road-marking.jpg
       - title: Pon ePower
         image: /images/pon-norway.jpg
         blurb: MHTech støttet Pon Power Norway i utviklingen av pon ePower, et
           innovativt online dimensjoneringsverktøy for å hjelpe kunder og
-          ingeniører bedre å forstå kostnadene og fordelene ved å bruke
-          hybriddrivlinjer i små fartøyer.
+          ingeniører til å forstå kostnadene og fordelene ved å bruke
+          hybriddrivlinjer i små fartøyer bedre.
       - title: Lineage
-        blurb: Vi hjalp Lineage logistikk med å redusere CO2-utslipp energiforbruk for
-          et fryselager i Moss. MHTech bistod fra mulighetsstudie gjennom
-          prosjektgjennomføring.
+        blurb: Vi hjalp Lineage logistikk med å redusere CO2-utslipp og energiforbruk
+          for et fryselager i Moss. MHTech har bistått Lineage fra
+          mulighetsstudie videre gjennom hele prosjektgjennomføringen.
         image: /images/lineage.jpg
       - title: Start-ups
-        blurb: Vi samarbeider med oppstartsbedrifter som deler vårt oppdrag. Vi tilbyr
-          ekspertise, utvikling og strategistøtte, slik at partnerne våre raskt
-          kan nå sine mål. Takk til våre siste partnere, inkludert Ezone, Hyke
-          og AlwaysCargo.
+        blurb: Vi samarbeider med oppstartsbedrifter som deler våre visjoner og fomål.
+          Vi tilbyr ekspertise, utviklingsassistanse og strategistøtte, slik at
+          partnerne våre raskt kan nå sine mål. Takk til våre siste partnere,
+          inkludert Ezone, Hayk og AlwaysCargo.
         image: /images/startups.jpg
     type: detail-boxes
     description: >-

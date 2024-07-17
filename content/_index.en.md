@@ -84,7 +84,7 @@ sections:
         blurb: We collaborate with start-ups who share our mission. We provide
           expertise, development, and strategy support, enabling our partners to
           rapidly achieve their goals. Thanks to our latest partners including
-          Ezone, Hyke, and AlwaysCargo.
+          Ezone, Hayk, and AlwaysCargo.
         image: /images/startups.jpg
     type: detail-boxes
     description: >-
