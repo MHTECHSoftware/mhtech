@@ -53,7 +53,7 @@ sections:
         blurb: |-
           Energy system design
 
-          Heat re-use studies
+          Waste heat recovery studies
 
           Marine studies
 

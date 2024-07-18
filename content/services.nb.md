@@ -11,13 +11,13 @@ sections:
     boxes:
       - title: Analyse og kartlegging
         blurb: |-
-          Driftsanalyse
+          Drifts/operasjonsanalyse
 
           Driftsoptimalisering
 
-          Kartlegging av dekarbonisering
+          Veikart for avkarbonisering
 
-          Veikartlegging av utslippsreduksjoner
+          Veikart for energioptimalisering og utslippsreduksjon
 
           Kartlegging av energibehov
       - title: Programvare
@@ -28,37 +28,37 @@ sections:
 
           Simulering av avkarbonisering
 
-          Effektsporing
+          Beregning av effekter
 
           Skreddersydde løsninger
-      - title: Effektmåling
+      - title: Måling av effekt
         blurb: |-
           Utslippsberegninger
 
           Utslippsreduksjonsanalyse
 
-          Kostnader for karbon
+          Kostnader for klimagassutslipp
 
-          ETS-påvirkningsprediksjon og måling
+          ETS-prediksjon og måling
       - title: Infrastruktur og kostnader
         blurb: |-
-          Levedyktighetsanalyse
+          Mulighetsanalyser
 
-          Infrastrukturalternativer
+          Konseptutvikling og evaluering
 
-          Infrastruktur dimensjonering og kostnadsberegning
+          Dimensjonering og kostnadsberegning for infrastruktur
 
           Totale eierkostnader analyse
       - title: Design
         blurb: |-
           Design av energisystem
 
-          Studier om gjenbruk av varme
+          Spillvarmeutnyttelse
 
           Marine studier
 
           System design
-      - title: Planlegging og utrulling
+      - title: Planlegging og gjennomføring
         blurb: |-
           Business case analyse
 
@@ -68,12 +68,13 @@ sections:
 
           Prosjektgjennomføring
 
-          Eierens ingeniør
+          Teknisk spesialistrådgiver til kunde
     type: detail-boxes
     description: MHTech kombinerer vår energisimuleringsprogramvare med dataanalyse
-      og ingeniørkompetanse for å hjelpe kundene våre med å forstå
-      energistrømmer og simulere fremtidige karboniserte operasjoner, noe som
-      muliggjør rask screening og valg av bærekraftige teknologialternativer.
+      og ingeniørkompetanse for å hjelpe kundene våre med å forstå sine
+      energistrømmer og utslipp samt til å simulere fremtidige avkarboniserte
+      operasjoner. Vår metodikk muliggjør rask screening og datadrevne valg av
+      bærekraftige teknologialternativer.
 slug: tjenester
 draft: false
 ---
