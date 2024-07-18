@@ -1,6 +1,6 @@
 ---
 languageKey: About
-title: Om
+title: Om Oss
 hide_title: true
 sections:
   - type: short-text
@@ -13,12 +13,12 @@ sections:
       og Anders Martin Moe.
 
 
-      De to var interessert i sammenkoblingen mellom utfordringen med global oppvarming og energisløsing samt kompleksiteten i begge problemstillingene. Ved å bruke sin kompetanse og erfaring innen energiindustridesign, prosjektleveranse og programvareekspertise utviklet de en plattform for å analysere og simulere energisystemer, noe som muliggjør optimalisering og dekarbonisering.
+      De var begge interessert i sammenkoblingen mellom utfordringen med global oppvarming og energisløsing samt kompleksiteten i begge problemstillingene. Ved å bruke kompetanse og erfaring med energiprosjekter, prosjektgjennomføring og programvareutvikling utviklet de en plattform for å analysere og simulere energisystemer med mål om å optimalisere energiforbruk og redusere utslipp.
 
 
-      Virksomheten startet med å modellere elektrifisering av maritimt kystnært område, før de gikk på land til elektrifisering av offentlig transport, og videre til den multisektorielle avkarboniseringsløsningen som tilbys i dag.
+      Virksomheten startet med å modellere maritim elektrifisering av fartøy som opererer i kystnære områder, før tilsvarende arbeid ble utført på land for elektrifisering av offentlig transport, og deretter videre til det bedriften tilbyr i dag for energioptimalisering og avkarbonisering på tvers av flere industrier.
   - hide_section_name: false
-    section_name: Vårt team
+    section_name: Teamet
     layout: description-above
     background: white
     style: center-grid
@@ -36,7 +36,7 @@ sections:
         image: /images/anders-martin-moe.jpg
       - title: Ole Harald Moe
         blurb: |-
-          CTO & FOUNDER
+          CTO & Gründer
 
           MOSS (NORWAY)
 
