@@ -10,26 +10,29 @@ sections:
     smaller: true
     boxes:
       - title: Veitransport
-        blurb: MHTech hjelper deg med å simulere og vurdere veier til en avkarbonisert
-          veiflåteoperasjon.
+        blurb: MHTech hjelper deg med å simulere og vurdere løsninger for en
+          avkarbonisert drift av kjøretøysflåten.
         image: /images/road-transport.jpg
-      - title: Sjøtransport og operasjoner
-        blurb: MHTech hjelper deg med å modellere dekarboniserte teknologiløsninger og
-          utslippspåvirkning på tvers av frakt- og havneoperasjoner.
+      - title: Sjøtransport og marine operasjoner
+        blurb: MHTech hjelper deg med å modellere og simulere energiforbruk og
+          utslippsreduksjon fra teknologiløsninger på tvers av shipping- og
+          havneoperasjoner.
         image: /images/port.jpg
-      - title: Industrielt og bygget miljø
-        blurb: MHTech kartlegger energisystemer i bygde og industrielle anlegg for å
-          målrette lavere energiforbruk og minimert spillvarme.
+      - title: Industri og infrastruktur
+        blurb: MHTech kartlegger og simulerer energisystemer i industrielle anlegg og
+          anlegg for infrastruktur for å oppnå lavere energiforbruk og minimere
+          spillvarme.
         image: /images/industry.jpg
       - title: Energisystemer
-        blurb: MHTech hjelper energiproduksjon og energibæreroperatører med å redusere
-          klimapåvirkningen fra energiinfrastruktur.
+        blurb: MHTech hjelper energiselskaper, både for tradisjonelle og nye
+          energibærere, med å redusere klimapåvirkningen fra
+          energiinfrastruktur.
         image: /images/pylons.jpg
     type: detail-boxes
-    description: Med vår proprietære energikartprogramvare i kjernen, gjør MHTech
-      det mulig for innovative og fremtidsrettede selskaper å dekarbonisere
+    description: Med vår proprietære energikartprogramvare som grunnmur, gjør MHTech
+      det mulig for innovative og fremtidsrettede selskaper å avkarbonisere
       komplekse energisystemer på tvers av transport, energisystemer, industri
-      og bygd miljø.
+      og infrastruktur.
 slug: sektorer
 draft: false
 ---
