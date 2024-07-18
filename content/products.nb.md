@@ -10,75 +10,51 @@ sections:
     smaller: false
     boxes:
       - title: Seidr.ai
-        blurb: |-
-          *Emissions & energy tracking in transport*
+        blurb: >-
+          *Kartlegging av energiforbruk og utslipp fra transport*
 
-          Siedr is designed to support transport planning at all
-          levels – from the individual seeking a greener journey
-          to the business seeking to transition to greener fleet.
-          Reach out to discuss further.
-      - title: Analytics
-        blurb: |-
-          Probabalistic demand modelling
 
-          Operational optimisation
-      - title: Energy simulation
-        blurb: |-
-          Modelling energy flows to simulate existing and future
-          demand to enable energy system decarbonisation across
-          transport, maritime, and built environment
-      - title: Software services
-        blurb: |-
-          Bespoke tools to meet organisation
-          requirements across energy, emissions
-          and movement tracking
-      - title: Mobility
-        blurb: |-
-          Traffic & route optimisation
+          Seidr er utviklet for å støtte transportplanlegging på alle nivåer - fra individet som søker en grønnere reise til virksomheter som søker å gå over til en grønnere kjøretøysflåte.
 
-          Multi-modal transport systems & journey modelling
 
-          Freight & logistics system design & optimisation
-
-          Emissions tracking
-      - title: Access
+          Ta kontakt for å diskutere nærmere.
+      - title: Analyser
         blurb: |-
-          Our products are available via project-
-          based delivery, subscription, or via API
-          call
+          Modellering av probabilistisk etterspørsel
 
-          [Contact us](mailto:kontakt@mhtech.no) to discuss how we can help
-          support your journey to NetZero
+          Drifts/operasjons optimalisering
+      - title: Energisimulering
+        blurb: Modellering av energiflyt og simulering av nåværende og framtidig
+          energibehov med formål om å muliggjøre avkarbonisering av
+          energisystemer på tvers av transport, maritim, industri og
+          infrastruktur.
+      - title: Softwareutvikling
+        blurb: Vi leverer skreddersydde løsninger for å møte din virksomhets behov for å
+          følge, måle og evaluere utslipp, energiforbruk og materialstrømmer.
+      - title: Mobilitet
+        blurb: |-
+          Trafikk og ruteoptimalisering
+
+          Modellering av multimodale transportsystemer og reiser
+
+          Systemdesign og optimalisering for transport- og logistikksystemer
+
+          Utslippsberegning
+      - title: Tilgang
+        blurb: >-
+          Våre produkter er tilgjengelige via prosjektbasert leveranse,
+          abonnementsløsninger eller "pay as you go" API tilgang. 
+
+
+          [Kontakt oss](mailto:kontakt@mhtech.no) for å diskutere hvordan våre produkter kan støtte deg i oppnåelsen av dine klima og miljømål.
     type: detail-boxes
-    description: |-
+    description: >-
       MHTech bygger verktøy for å hjelpe organisasjoner med å avkarbonisere.
 
-      At our core is our energy
-      simulation engine, enabling
-      accurate modelling of current
-      and future energy consumption
-      scenarios.
 
-      I kjernen vår er energien vår
-
-      simuleringsmotor, muliggjøring
-
-      nøyaktig modellering av strøm
-
-      og fremtidig energiforbruk
-
-      scenarier.
+      Vår grunnmur er energisimuleringsmotoren vår: Med den kan vi presist modellere nåværende og fremtidige scenarier for energiforbruk. 
 
 
-
-      Get in touch to discuss how
-      our products can assist your
-      business in achieving Net Zero.
-
-      Ta kontakt for å diskutere hvordan
-
-      våre produkter kan hjelpe deg
-
-      virksomhet i å oppnå Net Zero.
+      Ta kontakt for å diskutere hvordan våre produkter kan hjelpe din virksomhet til å oppnå klimamålene.
 slug: produkter
 ---

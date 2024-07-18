@@ -13,7 +13,7 @@ sections:
         blurb: |-
           *Emissions & energy tracking in transport*
 
-          Siedr is designed to support transport planning at all
+          Seidr is designed to support transport planning at all
           levels – from the individual seeking a greener journey
           to the business seeking to transition to greener fleet.
           Reach out to discuss further.
