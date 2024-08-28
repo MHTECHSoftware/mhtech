@@ -1,3 +1,10 @@
+http://www.mhtech.uk/* https://www.mhtech.no/:splat 301!
+http://mhtech.uk/* https://www.mhtech.no/:splat 301!
+http://mhtech.no/* https://www.mhtech.no/:splat 301!
+https://www.mhtech.uk/* https://www.mhtech.no/:splat 301!
+https://mhtech.uk/* https://www.mhtech.no/:splat 301!
+https://mhtech.no/* https://www.mhtech.no/:splat 301!
+http://www.mhtech.no/* https://www.mhtech.no/:splat 301!
 {{- range site.Data.redirects.redirects -}}
   {{- .from }} {{ .to }} 301 {{- print "\n" -}}
 {{- end -}}
@@ -9,9 +16,5 @@
 {{- end -}}
 / /nb/ 303 Language=nb
 / /nb/ 303 Language=nn
-/ /en/ 303
-/en/404/ /en/404/ 404
-/nb/404/ /nb/404/ 404
-/en/* /en/404/ 404
 /nb/* /nb/404/ 404
-/* /en/404.html 404
+/* /404/ 404
