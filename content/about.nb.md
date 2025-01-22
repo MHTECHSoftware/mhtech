@@ -33,7 +33,7 @@ sections:
 
           [+47 996 98 341](tel:004799698431)
         title: Anders Martin Moe
-        image: /images/anders-martin-moe.jpg
+        image: /images/dsc_3849-3.jpg
       - title: Ole Harald Moe
         blurb: |-
           CTO & Gründer
@@ -43,8 +43,8 @@ sections:
           [ohm@mhtech.no](mailto:ohm@mhtech.no)
 
           [+47 476 02 848](tel:004747602848)
-        image: /images/ole-harald-moe.jpg
-      - image: /images/robert-helme.jpg
+        image: /images/dsc_3863-3.jpg
+      - image: /images/dsc_4455-3.jpg
         title: Robert Helme
         blurb: |-
           CHIEF GROWTH OFFICER
@@ -52,7 +52,7 @@ sections:
           LONDON (UK)
 
           [rhe@mhtech.no](mailto:rhe@mhtech.no)
-      - image: /images/thomas-kolbenstvedt.jpg
+      - image: /images/dsc_3854-3-sunshine-large.jpg
         blurb: |-
           CHIEF MARKETING OFFICER
 
@@ -62,7 +62,7 @@ sections:
 
           [+47 402 92 929](tel:004740292929)
         title: Thomas Kolbenstvedt
-      - image: /images/gerhard-n-larsen.jpg
+      - image: /images/dsc_3845-3-sunshine-large.jpg
         blurb: |-
           SOFTWARE DEVELOPER
 
@@ -72,7 +72,7 @@ sections:
 
           [+47 936 11 600](tel:004793611600)
         title: Gerhard N. Larsen
-      - image: /images/karoline-jespersen.jpg
+      - image: /images/dsc_3857-3.jpg
         title: Karoline Jespersen
         blurb: |-
           PROJECT MANAGER
