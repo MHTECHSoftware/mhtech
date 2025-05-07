@@ -82,6 +82,16 @@ sections:
           [kje@mhtech.no](mailto:kje@mhtech.no)
 
           [+47 932 14 224](tel:004793214224)
+      - blurb: |-
+          Spesialist Ingeniør
+
+          HØLEN (NORWAY)
+
+          [tme@mhtech.no](<>)
+
+          [+47 98446844](<>)
+        title: Torbjørn Mehl
+        image: /images/pxl_20250507_120547786.mp.jpg
     type: detail-boxes
     description: ""
 slug: about
