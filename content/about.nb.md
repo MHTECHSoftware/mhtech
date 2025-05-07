@@ -44,6 +44,16 @@ sections:
 
           [+47 476 02 848](tel:004747602848)
         image: /images/dsc_3863-3.jpg
+      - image: /images/dsc_3857-3.jpg
+        title: Karoline Jespersen
+        blurb: |-
+          CHIEF OPERATING OFFICER
+
+          MOSS (NORWAY)
+
+          [kje@mhtech.no](mailto:kje@mhtech.no)
+
+          [+47 932 14 224](tel:004793214224)
       - image: /images/dsc_4455-3.jpg
         title: Robert Helme
         blurb: |-
@@ -72,16 +82,16 @@ sections:
 
           [+47 936 11 600](tel:004793611600)
         title: Gerhard N. Larsen
-      - image: /images/dsc_3857-3.jpg
-        title: Karoline Jespersen
+      - image: /images/pxl_20250507_120547786.mp.jpg
         blurb: |-
-          PROJECT MANAGER
+          SPECIALIST ENGINEER
 
-          MOSS (NORWAY)
+          HØLEN (NORWAY)
 
-          [kje@mhtech.no](mailto:kje@mhtech.no)
+          [tme@mhtech.no](<>)
 
-          [+47 932 14 224](tel:004793214224)
+          [+47 984 46 844](<>)
+        title: Torbjørn Mehl
     type: detail-boxes
     description: ""
 slug: om
