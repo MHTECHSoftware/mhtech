@@ -85,7 +85,7 @@ sections:
       - blurb: |-
           SPECIALIST ENGINEER
 
-          HØLEN (NORWAY)
+          MOSS (NORWAY)
 
           [tme@mhtech.no](<>)
 
