@@ -91,7 +91,7 @@ sections:
 
           [+47 984 46 844](<>)
         title: Torbjørn Mehl
-        image: /images/pxl_20250507_120547786.mp.jpg
+        image: /images/dsc_0751-3.jpg
     type: detail-boxes
     description: ""
 slug: about

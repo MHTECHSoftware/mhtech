@@ -82,7 +82,7 @@ sections:
 
           [+47 936 11 600](tel:004793611600)
         title: Gerhard N. Larsen
-      - image: /images/pxl_20250507_120547786.mp.jpg
+      - image: /images/dsc_0751-3.jpg
         blurb: |-
           SPECIALIST ENGINEER
 
