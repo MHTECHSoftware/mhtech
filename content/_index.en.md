@@ -8,13 +8,10 @@ sections:
     section_name: Helping clients
     image: /images/leaf.jpg
     text: >-
-      \*\*Deliver what works now. Build for what's coming next.\*\*
+      **Deliver what works now. Build for what's coming next.**
 
 
       We help energy-intensive industries understand what decarbonisation looks like for their specific operation — and what it will actually cost. Simulation-led. Data-driven. Built on real operational data, not assumptions.
-
-
-      Helping clients decarbonise and optimise complex energy systems across Transport, Built Environment and Industry
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
