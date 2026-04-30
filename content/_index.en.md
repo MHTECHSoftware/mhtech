@@ -87,6 +87,11 @@ sections:
         blurb: Comprehensive energy audit and action plan for a Norwegian industrial
           facility, identifying high-impact measures across heat pump
           technology, solar PV, and energy management to cut energy use by 30%.
+      - image: /images/asko-logo.png
+        title: Asko
+        blurb: Truck charging infrastructure sizing for a zero-emission HGV and ferry
+          barge supply chain project at Moss port, Norway — part of a pioneering
+          integrated battery-electric freight operation.
       - title: Pon ePower
         image: /images/pon-norway.jpg
         blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
@@ -99,7 +104,6 @@ sections:
           rapidly achieve their goals. Thanks to our latest partners including
           Ezone, Hayk, and AlwaysCargo.
         image: /images/startups.jpg
-      - {}
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
