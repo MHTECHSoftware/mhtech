@@ -87,7 +87,7 @@ sections:
         image: /images/startups.jpg
     type: detail-boxes
     description: >-
-      MHTech is a Norway start-up founded to enable the decarbonization of
+      MHTech is a Norway-UK start-up founded to enable the decarbonisation of
       complex energy systems across transport, energy systems, industry & built
       environment.
 
@@ -95,7 +95,7 @@ sections:
       Our solutions couple our proprietary energy simulation engine with data analytics and engineering expertise.
 
 
-      We help our clients optimise the transition to decarbonized and future-ready outcomes – minimising risk and unlocking revenue opportunity.
+      We help our clients optimise the transition to decarbonised and future-ready outcomes – minimising risk and unlocking revenue opportunity.
 
 
       [Explore our sectors](/sectors)
