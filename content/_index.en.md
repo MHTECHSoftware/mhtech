@@ -85,6 +85,11 @@ sections:
           rapidly achieve their goals. Thanks to our latest partners including
           Ezone, Hayk, and AlwaysCargo.
         image: /images/startups.jpg
+      - image: /images/kier-logo.png
+        title: Kier Transportation
+        blurb: We helped a Tier 1 UK contractor decarbonise Road Maintenance vehicle
+          activity, performing innovative simulation to capture seasonal
+          activity and energy consumption variatiance.
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
