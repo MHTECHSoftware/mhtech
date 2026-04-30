@@ -7,10 +7,7 @@ sections:
     hide_section_name: true
     section_name: Hero
     image: /images/leaf.jpg
-    text: |
-      <span style="font-size: 64px; font-weight: bold; display: block;">
-        Deliver what works now. <br> Build for what's coming next.
-      </span>
+    text: "### Deliver what works now. <br> Build for what's coming next."
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
