@@ -8,7 +8,7 @@ sections:
     section_name: Hero
     image: /images/leaf.jpg
     text: |
-      <span style="font-size: 44px; font-weight: bold; display: block;">
+      <span style="font-size: 64px; font-weight: bold; display: block;">
         Deliver what works now. <br> Build for what's coming next.
       </span>
   - hide_section_name: true
