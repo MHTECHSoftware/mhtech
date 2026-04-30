@@ -97,7 +97,7 @@ sections:
           electrification, hybrid — modelled against real operational data from
           depot, route, and contract constraints.
         title: Kier Transportation
-      - image: /images/transportscotlandimage1.png
+      - image: /images/transportscotlandimage3.png
         title: Transport Scotland
         blurb: Fleet electrification analysis for Scottish SME HGV operators, delivered
           under a Transport Scotland grant programme. 44-tonne articulated
