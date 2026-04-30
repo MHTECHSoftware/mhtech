@@ -95,6 +95,12 @@ sections:
           activity, performing innovative simulation to capture seasonal
           activity and energy consumption variatiance.
         title: Kier Transportation
+      - image: /images/transportscotlandimage.png
+        title: Transport Scotland
+        blurb: Through a Transport Scotland grant scheme, we supported SME HGV operators
+          understand their pathway to zero emission vehicle operations -
+          considering 44t technology availability and suitability alongside cost
+          and payback parity with diesel.
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
