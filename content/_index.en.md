@@ -7,7 +7,12 @@ sections:
     hide_section_name: true
     section_name: Hero
     image: /images/leaf.jpg
-    text: "#### Deliver what works now.  <br> Build for what's coming next."
+    text: |-
+      <div style="text-align: left;">
+
+      #### Deliver what works now.  <br> Build for what's coming next.
+
+      </div>
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
@@ -107,8 +112,8 @@ sections:
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
-      complex energy systems across transport, energy systems, industry & built
-      environment.
+      complex energy systems across transport, industry & built environment and
+      maritime.
 
 
       Our solutions couple our proprietary energy simulation engine with data analytics and engineering expertise.
