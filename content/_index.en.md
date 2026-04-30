@@ -7,7 +7,7 @@ sections:
     hide_section_name: true
     section_name: Hero
     image: /images/leaf.jpg
-    text: "### Deliver what works now.  ### Build for what's coming next."
+    text: "### Deliver what works now.  Build for what's coming next."
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
@@ -29,10 +29,10 @@ sections:
         blurb: Optimising energy production and energy carrier systems
     type: detail-boxes
     description: >-
-      ### Our mission is to speed the transition to a sustainable energy system.
+      ### Economic & Operational Assurance for the Energy Transition
 
 
-      We collaborate with innovative, forward-thinking companies to evaluate infrastructure and economics for transition to energy efficient and decarbonised solutions.
+      We help energy-intensive industries understand what decarbonisation looks like for their specific operation — and what it will actually cost. Simulation-led. Data-driven. Built on real operational data, not assumptions.
   - hide_section_name: false
     section_name: Our Focus
     layout: description-on-left
