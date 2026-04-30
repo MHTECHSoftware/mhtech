@@ -7,7 +7,7 @@ sections:
     hide_section_name: true
     section_name: Hero
     image: /images/leaf.jpg
-    text: Deliver what works now.  Build for what's coming next.
+    text: "### Deliver what works now.  Build for what's coming next."
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
@@ -17,16 +17,13 @@ sections:
     boxes:
       - image: /images/norway-road-valley.jpg
         title: Road transport
-        blurb: Tackling hard to decarbonise fleet
-      - image: /images/shipping-containers.jpg
-        title: Marine operations
-        blurb: Reducing emissions for operators, ports & owners
+        blurb: HGV fleet decarbonisation — from data to transition roadmap.
       - image: /images/solar-warehouses.jpg
         title: Industry & Built environment
         blurb: Energy efficiency gains through optimised operations, energy and heat
-      - image: /images/energy-systems.jpg
-        title: Energy Systems
-        blurb: Optimising energy production and energy carrier systems
+      - image: /images/shipping-containers.jpg
+        title: Marine operations
+        blurb: Energy mapping, audit and efficiency planning for large industrials
     type: detail-boxes
     description: >-
       ### Economic & Operational Assurance for the Energy Transition
