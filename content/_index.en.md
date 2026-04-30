@@ -4,13 +4,11 @@ title: MHTech
 hide_title: true
 sections:
   - type: hero
-    hide_section_name: false
-    section_name: Deliver what works now. Build for what's coming next.
+    hide_section_name: true
+    section_name: Hero
     image: /images/leaf.jpg
-    text: We help energy-intensive industries understand what decarbonisation looks
-      like for their specific operation — and what it will actually cost.
-      Simulation-led. Data-driven. Built on real operational data, not
-      assumptions.
+    text: |
+      Deliver what works now. Build for what's coming next.
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
