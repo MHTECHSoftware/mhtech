@@ -10,7 +10,7 @@ sections:
     text: |-
       <div style="text-align: left;">
 
-      #### Deliver what works now.  <br> Build for what's coming next.
+      ### Deliver what works now.  <br> Build for what's coming next.
 
       </div>
   - hide_section_name: true
