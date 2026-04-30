@@ -85,7 +85,7 @@ sections:
           rapidly achieve their goals. Thanks to our latest partners including
           Ezone, Hayk, and AlwaysCargo.
         image: /images/startups.jpg
-      - image: /images/kier-logo.png
+      - image: /images/kierlogo_full.png
         title: Kier Transportation
         blurb: We helped a Tier 1 UK contractor decarbonise Road Maintenance vehicle
           activity, performing innovative simulation to capture seasonal
