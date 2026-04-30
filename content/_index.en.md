@@ -81,7 +81,7 @@ sections:
           fleet decarbonisation. Technology-neutral assessment — biomethane,
           electrification, hybrid — modelled against real operational data from
           depot, route, and contract constraints.
-        title: Kier Transportation
+        title: Kier Group Plc
       - image: /images/glommapapp.jpg
         title: Glomma Papp
         blurb: Comprehensive energy audit and action plan for a Norwegian industrial
@@ -99,6 +99,7 @@ sections:
           rapidly achieve their goals. Thanks to our latest partners including
           Ezone, Hayk, and AlwaysCargo.
         image: /images/startups.jpg
+      - {}
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
