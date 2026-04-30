@@ -8,7 +8,7 @@ sections:
     section_name: Hero
     image: /images/leaf.jpg
     text: |-
-      # Deliver what works now. 
+      ## Deliver what works now. 
       Build for what's coming next.
   - hide_section_name: true
     section_name: Our Mission
