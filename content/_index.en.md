@@ -7,7 +7,7 @@ sections:
     hide_section_name: true
     section_name: Hero
     image: /images/leaf.jpg
-    text: "### Deliver what works now.  Build for what's coming next."
+    text: "## Deliver what works now.  Build for what's coming next."
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
@@ -23,7 +23,7 @@ sections:
         blurb: Energy efficiency gains through optimised operations, energy and heat
       - image: /images/shipping-containers.jpg
         title: Marine operations
-        blurb: Energy mapping, audit and efficiency planning for large industrials.
+        blurb: Data-driven emissions reduction for vessels, ports, and operators.
     type: detail-boxes
     description: >-
       ### Economic & Operational Assurance for the Energy Transition
@@ -177,6 +177,7 @@ sections:
         image: /logos/ukri-innovate-uk-square-logo_h.png
         href: https://www.innovateukedge.ukri.org/about-us#:~:text=Innovate%20UK%20Business%20Growth%20is,businesses%20that%20drive%20economic%20growth.
 slug: <HOME>
+draft: false
 menu_title: Home
 meta:
   type: website
