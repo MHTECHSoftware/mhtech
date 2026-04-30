@@ -87,20 +87,22 @@ sections:
         image: /images/startups.jpg
       - image: /images/kierlogo_full.png
         title: Kier Transportation
-        blurb: We helped a Tier 1 UK contractor decarbonise Road Maintenance vehicle
-          activity, performing innovative simulation to capture seasonal
-          activity and energy consumption variatiance.
+        blurb: Multi-study engagement with Kier Transportation covering road maintenance
+          fleet decarbonisation. Technology-neutral assessment — biomethane,
+          electrification, hybrid — modelled against real operational data from
+          depot, route, and contract constraints.
       - image: /images/kier_corporate.jpg
-        blurb: We helped a Tier 1 UK contractor decarbonise Road Maintenance vehicle
-          activity, performing innovative simulation to capture seasonal
-          activity and energy consumption variatiance.
+        blurb: Multi-study engagement with Kier Transportation covering road maintenance
+          fleet decarbonisation. Technology-neutral assessment — biomethane,
+          electrification, hybrid — modelled against real operational data from
+          depot, route, and contract constraints.
         title: Kier Transportation
       - image: /images/transportscotlandimage.png
         title: Transport Scotland
-        blurb: Through a Transport Scotland grant scheme, we supported SME HGV operators
-          understand their pathway to zero emission vehicle operations -
-          considering 44t technology availability and suitability alongside cost
-          and payback parity with diesel.
+        blurb: Fleet electrification analysis for Scottish SME HGV operators, delivered
+          under a Transport Scotland grant programme. 44-tonne articulated
+          fleets assessed — from single-depot supermarket distribution to
+          multi-customer rural haulage.
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
