@@ -7,12 +7,8 @@ sections:
     hide_section_name: true
     section_name: Hero
     image: /images/leaf.jpg
-    text: |-
-      <div style="text-align: left;">
-
+    text: |
       ### Deliver what works now.  <br> Build for what's coming next.
-
-      </div>
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
@@ -186,6 +182,9 @@ sections:
       - name: UKRI Innovate UK - Business Growth
         image: /logos/ukri-innovate-uk-square-logo_h.png
         href: https://www.innovateukedge.ukri.org/about-us#:~:text=Innovate%20UK%20Business%20Growth%20is,businesses%20that%20drive%20economic%20growth.
+      - href: https://cp.catapult.org.uk/
+        name: Connected Places Catapult
+        image: /logos/connectedplaces.png
 slug: <HOME>
 draft: false
 menu_title: Home
