@@ -97,12 +97,17 @@ sections:
           electrification, hybrid — modelled against real operational data from
           depot, route, and contract constraints.
         title: Kier Transportation
-      - image: /images/transportscotlandimage3.png
+      - image: /images/transportscotlandimage4.png
         title: Transport Scotland
         blurb: Fleet electrification analysis for Scottish SME HGV operators, delivered
           under a Transport Scotland grant programme. 44-tonne articulated
           fleets assessed — from single-depot supermarket distribution to
           multi-customer rural haulage.
+      - image: /images/glommapapp.jpg
+        title: Glomma Papp
+        blurb: Comprehensive energy audit and action plan for a Norwegian industrial
+          facility, identifying high-impact measures across heat pump
+          technology, solar PV, and energy management to cut energy use by 30%.
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
