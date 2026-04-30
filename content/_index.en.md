@@ -7,7 +7,7 @@ sections:
     hide_section_name: true
     section_name: Hero
     image: /images/leaf.jpg
-    text: "# Deliver what works now.  Build for what's coming next."
+    text: "## Deliver what works now.  Build for what's coming next."
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
@@ -68,46 +68,40 @@ sections:
           in the market by designing the first decarbonised road marking vehicle
           in Norway.
         image: /images/road-marking.jpg
-      - title: Pon ePower
-        image: /images/pon-norway.jpg
-        blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
-          online sizing tool to help customers and engineers better understand
-          the cost and benefits of utilizing hybrid drivetrains in small
-          vessels.
-      - title: Lineage
-        blurb: We helped Lineage logistics reduce CO2-emissions energy consumption for a
-          freezer storage facility in Moss. MHTech assisted from feasibility
-          study through project execution.
-        image: /images/lineage.jpg
-      - title: Start-ups
-        blurb: We collaborate with start-ups who share our mission. We provide
-          expertise, development, and strategy support, enabling our partners to
-          rapidly achieve their goals. Thanks to our latest partners including
-          Ezone, Hayk, and AlwaysCargo.
-        image: /images/startups.jpg
-      - image: /images/kierlogo_full.png
-        title: Kier Transportation
-        blurb: Multi-study engagement with Kier Transportation covering road maintenance
-          fleet decarbonisation. Technology-neutral assessment — biomethane,
-          electrification, hybrid — modelled against real operational data from
-          depot, route, and contract constraints.
-      - image: /images/kier_corporate.jpg
-        blurb: Multi-study engagement with Kier Transportation covering road maintenance
-          fleet decarbonisation. Technology-neutral assessment — biomethane,
-          electrification, hybrid — modelled against real operational data from
-          depot, route, and contract constraints.
-        title: Kier Transportation
       - image: /images/transportscotlandimage4.png
         title: Transport Scotland
         blurb: Fleet electrification analysis for Scottish SME HGV operators, delivered
           under a Transport Scotland grant programme. 44-tonne articulated
           fleets assessed — from single-depot supermarket distribution to
           multi-customer rural haulage.
+      - title: Lineage
+        blurb: We helped Lineage logistics reduce CO2-emissions energy consumption for a
+          freezer storage facility in Moss. MHTech assisted from feasibility
+          study through project execution.
+        image: /images/lineage.jpg
+      - image: /images/kier_corporate.jpg
+        blurb: Multi-study engagement with Kier Transportation covering road maintenance
+          fleet decarbonisation. Technology-neutral assessment — biomethane,
+          electrification, hybrid — modelled against real operational data from
+          depot, route, and contract constraints.
+        title: Kier Transportation
       - image: /images/glommapapp.jpg
         title: Glomma Papp
         blurb: Comprehensive energy audit and action plan for a Norwegian industrial
           facility, identifying high-impact measures across heat pump
           technology, solar PV, and energy management to cut energy use by 30%.
+      - title: Pon ePower
+        image: /images/pon-norway.jpg
+        blurb: MHTech supported Pon Power Norway in developing pon ePower, an innovative
+          online sizing tool to help customers and engineers better understand
+          the cost and benefits of utilizing hybrid drivetrains in small
+          vessels.
+      - title: Start-ups
+        blurb: We collaborate with start-ups who share our mission. We provide
+          expertise, development, and strategy support, enabling our partners to
+          rapidly achieve their goals. Thanks to our latest partners including
+          Ezone, Hayk, and AlwaysCargo.
+        image: /images/startups.jpg
     type: detail-boxes
     description: >-
       MHTech is a Norway-UK start-up founded to enable the decarbonisation of
