@@ -8,7 +8,9 @@ sections:
     section_name: Hero
     image: /images/leaf.jpg
     text: |
-      #### Deliver what works now.  <br> Build for what's coming next.
+      <span style="font-size: 28px; font-weight: bold; display: block;">
+        Deliver what works now. <br> Build for what's coming next.
+      </span>
   - hide_section_name: true
     section_name: Our Mission
     layout: description-on-right
