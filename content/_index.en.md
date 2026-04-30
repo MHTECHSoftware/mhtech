@@ -4,7 +4,7 @@ title: MHTech
 hide_title: true
 sections:
   - type: hero
-    hide_section_name: true
+    hide_section_name: false
     section_name: Deliver what works now. Build for what's coming next.
     image: /images/leaf.jpg
     text: We help energy-intensive industries understand what decarbonisation looks
