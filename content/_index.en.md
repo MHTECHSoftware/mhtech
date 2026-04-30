@@ -23,7 +23,7 @@ sections:
         blurb: Energy efficiency gains through optimised operations, energy and heat
       - image: /images/shipping-containers.jpg
         title: Marine operations
-        blurb: Energy mapping, audit and efficiency planning for large industrials
+        blurb: Energy mapping, audit and efficiency planning for large industrials.
     type: detail-boxes
     description: >-
       ### Economic & Operational Assurance for the Energy Transition
