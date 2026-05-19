@@ -93,7 +93,7 @@ sections:
         title: Torbjørn Mehl
         image: /images/dsc_0751-3.jpg
       - blurb: |-
-          PROSJEKT INGENIØR
+          PROJECT ENGINEER
 
           MOSS (NORWAY)
 

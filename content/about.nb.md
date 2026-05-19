@@ -92,6 +92,16 @@ sections:
 
           [+47 984 46 844](<>)
         title: Torbjørn Mehl
+      - image: /images/dsc_2164.jpg
+        title: Rebekka Helgeland
+        blurb: |-
+          PROSJEKTINGENIØR
+
+          MOSS (NORWAY)
+
+          [srh@mhtech.no](<>)
+
+          [+47 ](<>)971 64 585
     type: detail-boxes
     description: ""
 slug: om
