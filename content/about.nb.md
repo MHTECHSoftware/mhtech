@@ -92,7 +92,7 @@ sections:
 
           [+47 984 46 844](<>)
         title: Torbjørn Mehl
-      - image: /images/dsc_2164.jpg
+      - image: /images/dsc_2161.jpg
         title: Rebekka Helgeland
         blurb: |-
           PROSJEKTINGENIØR

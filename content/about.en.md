@@ -101,7 +101,7 @@ sections:
 
           [+47 ](<>)971 64 585
         title: Rebekka Helgeland
-        image: /images/dsc_2164.jpg
+        image: /images/dsc_2161.jpg
     type: detail-boxes
     description: ""
 slug: about
