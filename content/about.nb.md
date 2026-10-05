@@ -86,6 +86,8 @@ sections:
         blurb: |-
           SPECIALIST ENGINEER
 
+          *Ph.d. i miljøfysikk og fornybar energi*
+
           MOSS (NORWAY)
 
           [tme@mhtech.no](<>)

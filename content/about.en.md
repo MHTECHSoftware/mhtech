@@ -31,7 +31,7 @@ sections:
 
           [amm@mhtech.no](mailto:amm@mhtech.no)
 
-          [+47 996 98 341](tel:004799698431)
+          [+47 996 98 341](tel:004799698341)
         title: Anders Martin Moe
         image: /images/dsc_3849-3.jpg
       - title: Ole Harald Moe
@@ -85,11 +85,13 @@ sections:
       - blurb: |-
           SPECIALIST ENGINEER
 
+          *PhD in Environmental Physics and Renewable Energy*
+
           MOSS (NORWAY)
 
           [tme@mhtech.no](<>)
 
-          [+47 984 46 844](<>)
+          [+47 984 46 844](tel:004798446844)
         title: Torbjørn Mehl
         image: /images/dsc_0751-3.jpg
       - blurb: |-
@@ -99,7 +101,7 @@ sections:
 
           [srh@mhtech.no](<>)
 
-          [+47 ](<>)971 64 585
+          [+47 971 64 585](tel:004797164585)
         title: Rebekka Helgeland
         image: /images/dsc_2161.jpg
     type: detail-boxes
